@@ -5,6 +5,7 @@
 <div class="padding">
     <form method="post" action="{% url 'home' %}" onsubmit="return validateForm()">
         {% csrf_token %}
+
         <div class="hms_margin">
             <select class="form-select hms_bg" aria-label="Default select example" name="CV" id="selectCV">
                 <option value="0" selected>Select Conveyor ...</option>
@@ -29,9 +30,30 @@
     </form>
 </div>
 
+<div id="messages-container">
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li id="message" class="{{ message.tags }}">{% if message == "Bag successfully added to Cage" %}Bag Added to Cage{% endif %}{% if message == "Bag Already Added" %}Duplicate bags{% endif %}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</div>
+
 <script>
 
-function validateForm() {
+document.addEventListener('DOMContentLoaded', function () {
+        var messagesContainer = document.getElementById('messages-container');
+        var messageElement = document.getElementById('message');
+
+        if (messageElement) {
+            setTimeout(function () {
+                messageElement.innerHTML = '';  // Remove the content of the message element
+            }, 1000);  // Adjust the delay as needed (5000 milliseconds = 5 seconds)
+        }
+    });
+
+    function validateForm() {
         var selectedValue = document.getElementById("selectCV").value;
         if (selectedValue == "0") {
             alert("Please select a valid Conveyor.");
@@ -49,11 +71,6 @@ function validateForm() {
             }
         }
     });
-
-
-
 </script>
-
-
 
 {% endblock %}
