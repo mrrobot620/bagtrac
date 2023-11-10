@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="padding">
+    <form method="post" action="{% url 'home' %}" onsubmit="return validateForm()">
+        {% csrf_token %}
+        <div class="hms_margin">
+            <select class="form-select hms_bg" aria-label="Default select example" name="CV" id="selectCV">
+                <option value="0" selected>Select Conveyor ...</option>
+                <option value="CV 1" {% if last_cv_value == "CV 1" %}selected{% endif %}>CV 1</option>
+                <option value="CV 2" {% if last_cv_value == "CV 2" %}selected{% endif %}>CV 2</option>
+                <option value="CV 3" {% if last_cv_value == "CV 3" %}selected{% endif %}>CV 3</option>
+                <option value="CV 4" {% if last_cv_value == "CV 4" %}selected{% endif %}>CV 4</option>
+                <option value="CV 5" {% if last_cv_value == "CV 5" %}selected{% endif %}>CV 5</option>
+                <option value="CV M 1" {% if last_cv_value == "CV M 1" %}selected{% endif %}>CV M 1</option>
+                <option value="CV M 2" {% if last_cv_value == "CV M 2" %}selected{% endif %}>CV M 2</option>
+            </select>
+        </div>
+        <div>
+            <label for="bag_seal" class="form-label">Bag/Seal ID</label>
+            <input type="text" class="form-control hms_bg_color hms_margin" id="bag_seal" name="Bag/Seal_ID">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Cage ID</label>
+            <input type="text" class="form-control hms_bg_color" name="Cage_ID" id="cage">
+        </div>
+        <button type="submit" class="btn hms_bg">Submit</button>
+    </form>
+</div>
+
+<script>
+
+function validateForm() {
+        var selectedValue = document.getElementById("selectCV").value;
+        if (selectedValue == "0") {
+            alert("Please select a valid Conveyor.");
+            return false; // Prevent form submission
+        }
+        return true;
+    }
+
+    document.getElementById("bag_seal").addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            event.preventDefault(); 
+            var nextInput = document.getElementById("cage");
+            if (nextInput) {
+                nextInput.focus();
+            }
+        }
+    });
+
+
+
+</script>
+
+
+
+{% endblock %}

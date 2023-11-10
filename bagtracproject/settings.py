@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-yc)-uh(n&*6+j1+b#%bqp#pv3_m@gwie68k#t6(05v&d$%=ptj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["10.244.18.110" , "localhost"]
 
 
 # Application definition
@@ -82,7 +82,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'bagtrac',
-        'USER': 'abhi',
+        'USER': 'abhishek',
         'PASSWORD': 'abhi',
         'HOST': '127.0.0.1',
         'PORT': '3306'

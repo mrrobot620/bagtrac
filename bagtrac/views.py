@@ -2,35 +2,40 @@ from django.shortcuts import render , HttpResponse , redirect
 from django.contrib.auth import authenticate , login , logout
 from django.contrib import messages
 from django.views.decorators.csrf import csrf_exempt
-from .models import *
+from .models import Data
+from django.utils import timezone
 
-# Create your views here.
 @csrf_exempt
 def home(request):
+    last_cv = Data.objects.last()  
+    last_cv_value = last_cv.cv if last_cv else "" 
+
     if request.method == 'POST':
-        username = request.POST['username']
-        password = request.POST['password']
-        # Authenticate the user
-        user = authenticate(request , username=username , password=password)
-        if user is not None:
-            login(request , user)
-            messages.success(request , "You have been Logged IN")
-            return redirect('home')
-        else:
-            messages.success(request , "There was an Error Loggin In , Try Again . . .")
-            return redirect('home')
-    else:
-        return render(request , 'home.html' )
+        cv = request.POST['CV']
+        bag_seal_id = request.POST['Bag/Seal_ID']
+        cage_id = request.POST['Cage_ID']
+        time1 = timezone.now()
+
+     
+        data_instance = Data(cv=cv, bag_seal_id=bag_seal_id, cage_id=cage_id, time1=time1)
+        data_instance.save()
+
+        last_cv_value = cv
+
+    return render(request, 'home.html', {'last_cv_value': last_cv_value})
+
+
+        
+
+
     
 
-def to_sql(request):
-    pass
 
 
-def logout_user(request):
-    logout(request)
-    messages.success(request , "You Have Been Logged Out.... ")
-    return redirect('home')
+       
+
+    
+
 
 
     
