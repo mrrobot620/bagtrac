@@ -27,7 +27,7 @@ def home(request):
                 data_instance = Data(cv=cv, bag_seal_id=bag_seal_id, cage_id=cage_id, time1=time1, user=user.username)
                 data_instance.save()
             except IntegrityError as E:
-                messages.error(request, "Bag Already Added")
+                messages.error(request, {f'Error': {E}})
                 print(f"IntegrityError: Bag Already Added" , {E})
             last_cv_value = cv
         return render(request, 'home.html', {'last_cv_value': last_cv_value})
