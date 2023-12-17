@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.contrib.auth.models import User
 
 class Cvs(models.Model):
     cv = models.CharField(max_length=10)
@@ -11,6 +11,7 @@ class Data(models.Model):
     cv = models.CharField(max_length=20)
     bag_seal_id = models.CharField(max_length=20 , unique=True)
     cage_id = models.CharField(max_length=20)
+    user = models.CharField(max_length=255)
 
     def __str__(self):
         return self.bag_seal_id
