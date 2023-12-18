@@ -9,7 +9,7 @@ class Cvs(models.Model):
 class Data(models.Model):
     time1 = models.DateTimeField(auto_now_add=True)
     cv = models.CharField(max_length=20)
-    bag_seal_id = models.CharField(max_length=20 , unique=True)
+    bag_seal_id = models.CharField(max_length=255 , unique=True)
     cage_id = models.CharField(max_length=20)
     user = models.CharField(max_length=255)
 
