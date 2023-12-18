@@ -10,6 +10,10 @@ from django.utils import timezone
 from django.db import IntegrityError
 import pytz
 import csv
+from pytz import timezone as pytz_timezone
+
+
+IST = pytz_timezone('Asia/Kolkata') 
 
 
 @login_required
@@ -41,10 +45,10 @@ def search(request):
     search_results = Data.objects.filter(bag_seal_id=bag_id)
     
     if search_results:
-        ist = pytz.timezone('Asia/Kolkata')  # Set the timezone to IST
         for result in search_results:
             # Convert time from UTC to IST
-            result.time1 = result.time1.astimezone(ist)
+            result.time1 = result.time1.astimezone(IST)
+            result.time1_str = result.time1.strftime("%b. %d, %Y, %I:%M %p")
     if not search_results and bag_id:
         return render(request, 'search.html', {'search_results': search_results, 'bag_id': bag_id, 'not_found': True})
     return render(request, 'search.html', {'search_results': search_results , 'bag_id':bag_id})
@@ -56,7 +60,8 @@ def cage_search(request):
     if search_results:
         ist = pytz.timezone('Asia/Kolkata')
         for result in search_results:
-            result.time11 = result.time1.astimezone(ist)
+            result.time1 = result.time1.astimezone(IST)
+            result.time1_str = result.time1.strftime("%b. %d, %Y, %I:%M %p")
     if not search_results and cage_id:
         return render(request , 'cage_search.html' , {'search_results': search_results , "cage_id": cage_id , "not_found": True})
     return render(request , 'cage_search.html' , {"search_results": search_results , 'cage_id':cage_id})
