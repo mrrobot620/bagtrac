@@ -82,8 +82,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'bagtrac',
-        'USER': 'abhi',
-        'PASSWORD': 'abhi',
+        'USER': 'abhishek',
+        'PASSWORD': 'abhishek',
         'HOST': '127.0.0.1',
         'PORT': '3306'
     }
