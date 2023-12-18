@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ["192.168.192.156" , "localhost" , "127.0.0.1" , "15.207.115.205
 INSTALLED_APPS = [
     'django.contrib.admin',
     'bagtrac',
+    'sslserver',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -134,3 +135,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+CERT_DIR = os.path.join(BASE_DIR, 'cert')
+
+SECURE_SSL_REDIRECT = True
+
+SECURE_SSL_CERT = os.path.join(CERT_DIR, 'cert.pem')
+SECURE_SSL_KEY = os.path.join(CERT_DIR, 'key.pem')
+
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
