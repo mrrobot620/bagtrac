@@ -77,9 +77,10 @@ def multi_search(request):
         writer = csv.writer(response)
         writer.writerow(['Bag ID', 'CV', 'Time', 'Cage ID', 'Username'])
         for result in search_results:
-            writer.writerow([result.bag_seal_id, result.cv, result.time1, result.cage_id, result.user])
+            ist_time = result.time1.astimezone(IST).strftime("%b. %d, %Y, %I:%M %p")
+            writer.writerow([result.bag_seal_id, result.cv, ist_time, result.cage_id, result.user])
         return response
-    return render(request  , 'search.html')
+    return render(request, 'search.html')
 
 
 def logout_view(request):
