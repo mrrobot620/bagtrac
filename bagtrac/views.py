@@ -9,6 +9,7 @@ from .models import Data
 from django.utils import timezone
 from django.db import IntegrityError
 import pytz
+import csv
 
 
 @login_required
@@ -47,6 +48,34 @@ def search(request):
     if not search_results and bag_id:
         return render(request, 'search.html', {'search_results': search_results, 'bag_id': bag_id, 'not_found': True})
     return render(request, 'search.html', {'search_results': search_results , 'bag_id':bag_id})
+
+@login_required
+def cage_search(request):
+    cage_id = request.GET.get('cage_id')
+    search_results = Data.objects.filter(cage_id=cage_id)
+    if search_results:
+        ist = pytz.timezone('Asia/Kolkata')
+        for result in search_results:
+            result.time11 = result.time1.astimezone(ist)
+    if not search_results and cage_id:
+        return render(request , 'cage_search.html' , {'search_results': search_results , "cage_id": cage_id , "not_found": True})
+    return render(request , 'cage_search.html' , {"search_results": search_results , 'cage_id':cage_id})
+
+@login_required
+def multi_search(request):
+    if request.method == "POST":
+        bag_ids_input = request.POST.get('bag_ids')
+        bag_ids = bag_ids_input.split()
+        search_results = Data.objects.filter(bag_seal_id__in=bag_ids)
+        response = HttpResponse(content_type='text/csv')
+        response['Content-Disposition'] = 'attachment; filename="search_results.csv"'
+        writer = csv.writer(response)
+        writer.writerow(['Bag ID', 'CV', 'Time', 'Cage ID', 'Username'])
+        for result in search_results:
+            writer.writerow([result.bag_seal_id, result.cv, result.time1, result.cage_id, result.user])
+        return response
+    return render(request  , 'search.html')
+
 
 def logout_view(request):
     logout(request)

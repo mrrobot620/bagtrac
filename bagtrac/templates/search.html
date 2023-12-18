@@ -47,12 +47,18 @@
             <button class="btn btn-primary hms_button_color" type="submit" id="search-btn">Search</button>
         </div>
     </form>
-    <form method="GET" action="{% url 'home' %}">
+    <form method="POST" action="{% url 'multi_search' %}">
+        {% csrf_token %}
         <div class="top_margin">
-            <textarea class="form-control" name="bag_ids" placeholder="Paste Bag IDs"></textarea>
+            <textarea class="form-control" name="bag_ids" placeholder="Paste Bag IDs" id="multiSearchInput"></textarea>
             <button class="btn btn-primary hms_button_color margin_10" type="submit">Multi Search</button>
         </div>
     </form>
 </div>
+
+<script>
+const userInput = document.getElementById('multiSearchInput').value;
+const bagIds = userInput.split(/[\n, ]/).filter(Boolean); 
+</script>
 
 {% endblock %}
