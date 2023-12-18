@@ -14,8 +14,6 @@ from pytz import timezone as pytz_timezone
 
 
 IST = pytz_timezone('Asia/Kolkata') 
-
-
 @login_required
 def home(request):
     if request.user.is_authenticated:
