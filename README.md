@@ -1,9 +1,9 @@
 A Project to Streamline the OB Process in YKB
 
 # Web App Images
-![App photo](https://github.com/mrrobot620/bagtrac/assets/89240367/720cf4e0-c669-438f-9f68-8e776374ba4b)
-![App photo](https://github.com/mrrobot620/bagtrac/assets/89240367/433e04b0-6c30-4827-9d69-d2a3932e22c8)
-![App photo](https://github.com/mrrobot620/bagtrac/assets/89240367/5ca79909-2629-442f-b9a5-2ef8e697e751)
+<img src="https://github.com/mrrobot620/bagtrac/assets/89240367/720cf4e0-c669-438f-9f68-8e776374ba4b" alt="App photo" width="300" height="200">
+<img src="https://github.com/mrrobot620/bagtrac/assets/89240367/433e04b0-6c30-4827-9d69-d2a3932e22c8" alt="App photo" width="300" height="200">
+<img src="https://github.com/mrrobot620/bagtrac/assets/89240367/5ca79909-2629-442f-b9a5-2ef8e697e751" alt="App photo" width="300" height="200">
 
 
 
