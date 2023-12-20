@@ -5,12 +5,31 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.views.decorators.csrf import csrf_exempt
-from .models import Data
+from django.views.decorators.csrf import csrf_protect
+from reportlab.lib.pagesizes import landscape
+from .models import Data , Cage
 from django.utils import timezone
 from django.db import IntegrityError
 import pytz
 import csv
 from pytz import timezone as pytz_timezone
+import os
+from io import BytesIO
+import qrcode
+from django.http import JsonResponse
+from django.core.exceptions import ObjectDoesNotExist
+from django.http import HttpResponse
+from .models import Cage, Data
+import uuid
+from reportlab.pdfgen import canvas
+from django.core.files.storage import default_storage
+from django.conf import settings
+import os
+from io import BytesIO
+import qrcode
+from PIL import ImageDraw
+from PIL import ImageFont
+from reportlab.pdfgen import canvas
 
 
 IST = pytz_timezone('Asia/Kolkata') 
@@ -97,3 +116,40 @@ def login_view(request):
         else:
             return render(request , 'login.html' , {'error': "Invalid Username or Password"})
     return render(request , 'login.html')
+
+@login_required
+def cage_generator(request):
+    return render(request , "cage_generator.html")
+
+def generate_cage(request):
+    if request.method == 'POST':
+        try:
+            new_cage_id = f"T{Cage.objects.count() + 1}"
+            cage_uuid = uuid.uuid4()
+            new_cage = Cage(cage_id=new_cage_id, uuid=cage_uuid)
+            new_cage.save() 
+            qr = qrcode.QRCode(
+                version=1,
+                error_correction=qrcode.constants.ERROR_CORRECT_L,
+                box_size=10,
+                border=1,
+            )
+            qr.add_data(str(cage_uuid))
+            qr.make(fit=True)
+            img = qr.make_image(fill_color="black", back_color="white")
+            pdf_buffer = BytesIO()
+            width, height = 33, 55
+            p = canvas.Canvas(pdf_buffer, pagesize=(width, height))
+            p.setFont("Helvetica-Bold", 12)  
+            p.drawString(10, height - 12, f"{new_cage_id}") 
+            img_width, img_height = 20, 20 
+            p.drawInlineImage(img, (width - img_width) / 2, (height - img_height) / 2, width=img_width, height=img_height)
+            p.save()
+            pdf_buffer.seek(0)
+            response = HttpResponse(pdf_buffer, content_type='application/pdf')
+            response['Content-Disposition'] = f'attachment; filename="{new_cage_id}.pdf"'
+            return response
+        except Exception as e:
+            return HttpResponse(f'Error occurred: {str(e)}')
+
+    return HttpResponse('Invalid request method')

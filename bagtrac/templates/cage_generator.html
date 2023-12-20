@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4 text-center">
+    <button class="btn btn-primary btn-lg hms_button_color" onclick=generateCage()>Generate Cage</button>
+</div>
+<div class="container mt-4">
+    <table class="table table-bordered mt-3">
+        <thead class="hms_color">
+            <tr>
+                <th scope="col">Cage ID</th>
+                <th scope="col">Number of Bags</th>
+                <th scope="col">Last Updated Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for cage in cages %}
+            <tr>
+                <td>{{ cage.cage_id }}</td>
+                <td>{{ cage.number_of_bags }}</td>
+                <td>{{ cage.last_updated }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+<script>
+    function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            // Search for the CSRF token cookie
+            if (cookie.startsWith(name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+
+function generateCage() {
+    const csrftoken = getCookie('csrftoken'); // Retrieve CSRF token
+    fetch('/generate_cage', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': csrftoken, // Include CSRF token in headers
+        },
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.blob();
+    })
+    .then(blob => {
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'cage_qr.png';
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+    })
+    .catch(error => {
+        console.error('There has been a problem with your fetch operation:', error);
+    });
+}
+
+</script>
+{% endblock %}
