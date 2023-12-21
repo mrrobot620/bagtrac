@@ -4,6 +4,7 @@ from django.contrib.auth import authenticate , login , logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.contrib import messages
+from django.db.models import Count
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.csrf import csrf_protect
 from reportlab.lib.pagesizes import landscape
@@ -41,15 +42,20 @@ def home(request):
         if request.method == 'POST':
             cv = request.POST.get('CV', '')
             bag_seal_id = request.POST.get('Bag/Seal_ID', '')
-            cage_id = request.POST.get('Cage_ID', '')
+            cage_id= request.POST.get('Cage_ID', '')
+            try:
+                cage_instance = Cage.objects.get(cage_name = cage_id)
+            except ObjectDoesNotExist as E:
+                messages.error(request , {f"Cage {cage_id} does not exist"})
+                return render(request, 'home.html', {'last_cv_value': last_cv_value})
             time1 = timezone.now()
             try:
                 current_user = request.user
                 user = User.objects.get(pk=current_user.id)
-                data_instance = Data(cv=cv, bag_seal_id=bag_seal_id, cage_id=cage_id, time1=time1, user=user.username)
+                data_instance = Data(cv=cv, bag_seal_id=bag_seal_id, cage_id=cage_instance, time1=time1, user=user.username)
                 data_instance.save()
             except IntegrityError as E:
-                messages.error(request, {f'Error': {E}})
+                messages.error(request, f"Bag {bag_seal_id} already exist")
                 print(f"IntegrityError: Bag Already Added" , {E})
             last_cv_value = cv
         return render(request, 'home.html', {'last_cv_value': last_cv_value})
@@ -73,15 +79,18 @@ def search(request):
 @login_required
 def cage_search(request):
     cage_id = request.GET.get('cage_id')
-    search_results = Data.objects.filter(cage_id=cage_id)
+    search_results = Data.objects.filter(cage_id_id__cage_name=cage_id)
+    bags_count = Data.objects.filter(cage_id_id__cage_name=cage_id).aggregate(total_bags=Count('id'))
+    total_bags_in_cage = bags_count['total_bags']
     if search_results:
         ist = pytz.timezone('Asia/Kolkata')
         for result in search_results:
+            # print(result.__dict__)
             result.time1 = result.time1.astimezone(IST)
             result.time1_str = result.time1.strftime("%b. %d, %Y, %I:%M %p")
     if not search_results and cage_id:
-        return render(request , 'cage_search.html' , {'search_results': search_results , "cage_id": cage_id , "not_found": True})
-    return render(request , 'cage_search.html' , {"search_results": search_results , 'cage_id':cage_id})
+        return render(request , 'cage_search.html' , {'search_results': search_results , "cage_id": cage_id , "not_found": True , })
+    return render(request , 'cage_search.html' , {"search_results": search_results , 'cage_id':cage_id , 'total_bags_in_cage': total_bags_in_cage})
 
 @login_required
 def multi_search(request):

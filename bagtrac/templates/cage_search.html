@@ -10,6 +10,7 @@
     </div>
 </div>
 {% endif %}
+
 <div class="container mt-4">
     <form method="GET">
         <div class="input-group mb-3">
@@ -18,17 +19,42 @@
         </div>
     </form>
 </div>
+
 {% if search_results %}
 <div class="container mt-4">
     <h2>Search Results:</h2>
-    <div class="table-responsive">
-        <table class="table table-bordered mt-3">
+    <br>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <div class="card shadow-sm">
+                    {% if search_results|length > 0 %}
+                    <div class="card-body d-flex align-items-center hms_bg_color">
+                        <h5 class="card-title me-auto">Cage ID</h5>
+                        <h1 class="card-title ms-auto">{{ search_results.0.cage_id.cage_name }}</h1>
+                    </div>
+                    {% endif %}
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card shadow-sm">
+                    {% if search_results|length > 0 %}
+                    <div class="card-body d-flex align-items-center hms_bg_color">
+                        <h5 class="card-title me-auto">Bag Count</h5>
+                        <h1 class="card-title ms-auto">{{ total_bags_in_cage }}</h1>
+                    </div>
+                    {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="table-responsive mt-3">
+        <table class="table table-bordered">
             <thead class="hms_color">
                 <tr>
                     <th scope="col">Bag ID</th>
                     <th scope="col">CV</th>
                     <th scope="col">Time</th>
                     <th scope="col">Cage ID</th>
+                    <th scope="col">Bag Count</th>
                     <th scope="col">Username</th>
                 </tr>
             </thead>
@@ -38,7 +64,8 @@
                     <td>{{ result.bag_seal_id }}</td>
                     <td>{{ result.cv }}</td>
                     <td>{{ result.time1_str }}</td>
-                    <td>{{ result.cage_id }}</td>
+                    <td>{{ result.cage_id.cage_name }}</td>
+                    <td>{{ total_bags_in_cage }}</td>
                     <td>{{ result.user }}</td>
                 </tr>
                 {% endfor %}
@@ -48,10 +75,9 @@
 </div>
 {% endif %}
 
-
 <script>
-const userInput = document.getElementById('multiSearchInput').value;
-const bagIds = userInput.split(/[\n, ]/).filter(Boolean); 
+    const userInput = document.getElementById('multiSearchInput').value;
+    const bagIds = userInput.split(/[\n, ]/).filter(Boolean); 
 </script>
 
 {% endblock %}
