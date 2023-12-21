@@ -135,7 +135,7 @@ def generate_cage(request):
         try:
             new_cage_id = f"T{Cage.objects.count() + 1}"
             cage_uuid = uuid.uuid4()
-            new_cage = Cage(cage_id=new_cage_id, uuid=cage_uuid)
+            new_cage = Cage(cage_name=new_cage_id, uuid=cage_uuid)
             new_cage.save() 
             qr = qrcode.QRCode(
                 version=1,
