@@ -104,7 +104,7 @@ def multi_search(request):
         writer.writerow(['Bag ID', 'CV', 'Time', 'Cage ID', 'Username'])
         for result in search_results:
             ist_time = result.time1.astimezone(IST).strftime("%b. %d, %Y, %I:%M %p")
-            writer.writerow([result.bag_seal_id, result.cv, ist_time, result.cage_id, result.user])
+            writer.writerow([result.bag_seal_id, result.cv, ist_time, result.cage_id.cage_name, result.user])
         return response
     return render(request, 'search.html')
 
@@ -149,8 +149,8 @@ def generate_cage(request):
             pdf_buffer = BytesIO()
             width, height = 33, 55
             p = canvas.Canvas(pdf_buffer, pagesize=(width, height))
-            p.setFont("Helvetica-Bold", 12)  
-            p.drawString(10, height - 12, f"{new_cage_id}") 
+            p.setFont("Helvetica-Bold", 9)  
+            p.drawString(7, height - 12, f"{new_cage_id}") 
             img_width, img_height = 20, 20 
             p.drawInlineImage(img, (width - img_width) / 2, (height - img_height) / 2, width=img_width, height=img_height)
             p.save()
