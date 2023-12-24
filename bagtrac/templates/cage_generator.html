@@ -14,13 +14,19 @@
             </tr>
         </thead>
         <tbody>
-            {% for cage in cages %}
-            <tr>
-                <td>{{ cage.cage_id }}</td>
-                <td>{{ cage.number_of_bags }}</td>
-                <td>{{ cage.last_updated }}</td>
-            </tr>
-            {% endfor %}
+            {% if active_cages %}
+                {% for cage in active_cages %}
+                    <tr>
+                        <td>{{ cage.cage_name }}</td>
+                        <td>{{ cage.data_set.count }}</td>
+                        <td>{{ cage.last_used }}</td>
+                    </tr>
+                {% endfor %}
+            {% else %}
+                <tr>
+                    <td colspan="3">No active cages found</td>
+                </tr>
+            {% endif %}
         </tbody>
     </table>
 </div>

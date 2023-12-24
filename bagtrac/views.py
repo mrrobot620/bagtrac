@@ -132,14 +132,18 @@ def login_view(request):
     return render(request , 'login.html')
 
 @login_required
+@login_required
 def cage_generator(request):
-    if request.method == "POST":
+    active_cages = None
+    if request.method == "GET":
         try:
-            active_cages = Cage.objects.filter(is_occupied = True)
-            print(active_cages)
+            active_cages = Cage.objects.filter(is_occupied=True)
+            print(active_cages)  # Add this line for debugging
         except Exception as e:
             print(e)
-    return render(request , "cage_generator.html")
+    return render(request, "cage_generator.html", {'active_cages': active_cages})
+
+
 
 def generate_cage(request):
     if request.method == 'POST':
