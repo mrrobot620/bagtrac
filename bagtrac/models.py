@@ -12,6 +12,7 @@ class Cage(models.Model):
     uuid = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
     is_occupied = models.BooleanField(default=False)
     last_used = models.DateTimeField(auto_now=True)
+    grid_code = models.CharField(max_length=10 , default=None)
 
     def __str__(self):
         return self.cage_name
@@ -22,6 +23,12 @@ class Data(models.Model):
     bag_seal_id = models.CharField(max_length=255 , unique=True)
     cage_id = models.ForeignKey(Cage , on_delete=models.CASCADE)
     user = models.CharField(max_length=255)
-
     def __str__(self):
         return self.bag_seal_id
+    
+class Bags(models.Model):
+    bag_id = models.CharField(max_length=255 , unique=True)
+    grid_code = models.CharField(max_length=10)
+    def __str__(self):
+        return self.bag_id
+    

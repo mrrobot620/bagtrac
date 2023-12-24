@@ -20,7 +20,7 @@ import qrcode
 from django.http import JsonResponse
 from django.core.exceptions import ObjectDoesNotExist
 from django.http import HttpResponse
-from .models import Cage, Data
+from .models import Cage, Data , Bags
 import uuid
 from reportlab.pdfgen import canvas
 from django.core.files.storage import default_storage
@@ -62,6 +62,10 @@ def home(request):
                 cage_instance.save()
             except Exception as e:
                 messages.error(request , e)
+            try:
+                assign_bag_to_cage(bag_seal_id)
+            except Exception as e:
+                print(e)   
             last_cv_value = cv
         return render(request, 'home.html', {'last_cv_value': last_cv_value})
     else:
@@ -132,17 +136,15 @@ def login_view(request):
     return render(request , 'login.html')
 
 @login_required
-@login_required
 def cage_generator(request):
     active_cages = None
     if request.method == "GET":
         try:
             active_cages = Cage.objects.filter(is_occupied=True)
-            print(active_cages)  # Add this line for debugging
+            print(active_cages) 
         except Exception as e:
             print(e)
     return render(request, "cage_generator.html", {'active_cages': active_cages})
-
 
 
 def generate_cage(request):
@@ -176,3 +178,22 @@ def generate_cage(request):
         except Exception as e:
             return HttpResponse(f'Error occurred: {str(e)}')
     return HttpResponse('Invalid request method')
+
+
+def assign_bag_to_cage(bag_id):
+    bag = Bags.objects.get(bag_id=bag_id)
+    bag_grid_code = bag.grid_code
+    cage_to_assign = None
+    cages = Cage.objects.filter(is_occupied=True)  # Assuming 'is_occupied' marks an occupied cage
+    for cage in cages:
+        assigned_bags = Bags.objects.filter(cage_id=cage.id)[:2]
+        if len(assigned_bags) == 2:
+            if assigned_bags[0].grid_code == assigned_bags[1].grid_code:
+                cage_to_assign = cage
+                break
+    if cage_to_assign:
+        bag.cage_id = cage_to_assign
+        bag.save()
+        return True
+    else:
+        return False
