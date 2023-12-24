@@ -14,7 +14,7 @@ class Cage(models.Model):
     last_used = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.cage_id
+        return self.cage_name
 
 class Data(models.Model):
     time1 = models.DateTimeField(auto_now_add=True)

@@ -57,6 +57,11 @@ def home(request):
             except IntegrityError as E:
                 messages.error(request, f"Bag {bag_seal_id} already exist")
                 print(f"IntegrityError: Bag Already Added" , {E})
+            try:
+                cage_instance.is_occupied = True
+                cage_instance.save()
+            except Exception as e:
+                messages.error(request , e)
             last_cv_value = cv
         return render(request, 'home.html', {'last_cv_value': last_cv_value})
     else:
@@ -128,6 +133,12 @@ def login_view(request):
 
 @login_required
 def cage_generator(request):
+    if request.method == "POST":
+        try:
+            active_cages = Cage.objects.filter(is_occupied = True)
+            print(active_cages)
+        except Exception as e:
+            print(e)
     return render(request , "cage_generator.html")
 
 def generate_cage(request):
@@ -160,5 +171,4 @@ def generate_cage(request):
             return response
         except Exception as e:
             return HttpResponse(f'Error occurred: {str(e)}')
-
     return HttpResponse('Invalid request method')
