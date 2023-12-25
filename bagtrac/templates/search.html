@@ -21,6 +21,7 @@
                     <th scope="col">CV</th>
                     <th scope="col">Time</th>
                     <th scope="col">Cage ID</th>
+                    <th scope="col">Grid</th>
                     <th scope="col">Username</th>
                 </tr>
             </thead>
@@ -31,6 +32,13 @@
                     <td>{{ result.cv }}</td>
                     <td>{{ result.time1_str }}</td>
                     <td>{{ result.cage_id.cage_name  }}</td>
+                    <td>
+                        {% for bag in bag_grid %}
+                            {% if bag.bag_id == result.bag_seal_id %}
+                                {{ bag.grid_code }}
+                            {% endif %}
+                        {% endfor %}
+                    </td>
                     <td>{{ result.user }}</td>
                 </tr>
                 {% endfor %}
