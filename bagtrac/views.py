@@ -44,28 +44,37 @@ def home(request):
             bag_seal_id = request.POST.get('Bag/Seal_ID', '')
             cage_id= request.POST.get('Cage_ID', '')
             try:
-                cage_instance = Cage.objects.get(cage_name = cage_id)
+                cage_instance = Cage.objects.get(cage_name=cage_id)
             except ObjectDoesNotExist as E:
-                messages.error(request , {f"Cage {cage_id} does not exist"})
+                messages.error(request, f"Cage {cage_id} does not exist")
                 return render(request, 'home.html', {'last_cv_value': last_cv_value})
+            
             time1 = timezone.now()
-            try:
-                current_user = request.user
-                user = User.objects.get(pk=current_user.id)
-                data_instance = Data(cv=cv, bag_seal_id=bag_seal_id, cage_id=cage_instance, time1=time1, user=user.username)
-                data_instance.save()
-            except IntegrityError as E:
-                messages.error(request, f"Bag {bag_seal_id} already exist")
-                print(f"IntegrityError: Bag Already Added" , {E})
             try:
                 cage_instance.is_occupied = True
                 cage_instance.save()
             except Exception as e:
-                messages.error(request , e)
+                messages.error(request, e)
+
             try:
-                assign_bag_to_cage(bag_seal_id)
+                assigned = assign_bag_to_cage(bag_seal_id)
+                if not assigned:
+                    messages.error(request, f"Bag {bag_seal_id} cannot be assigned to this cage.")
+                else:
+                    # Save the bag data if assignment was successful
+                    try:
+                        current_user = request.user
+                        user = User.objects.get(pk=current_user.id)
+                        data_instance = Data(cv=cv, bag_seal_id=bag_seal_id, cage_id=cage_instance, time1=time1, user=user.username)
+                        data_instance.save()
+                    except IntegrityError as E:
+                        messages.error(request, f"Bag {bag_seal_id} already exists")
+                        print(f"IntegrityError: Bag Already Added" , {E})
+                    # Perform necessary actions for an unassigned bag
             except Exception as e:
-                print(e)   
+                print(f"Error in assigning bag: {e}")
+                messages.error(request, f"Error in assigning bag: {e}")
+            
             last_cv_value = cv
         return render(request, 'home.html', {'last_cv_value': last_cv_value})
     else:
@@ -176,24 +185,35 @@ def generate_cage(request):
             response['Content-Disposition'] = f'attachment; filename="{new_cage_id}.pdf"'
             return response
         except Exception as e:
+            print(e)
             return HttpResponse(f'Error occurred: {str(e)}')
     return HttpResponse('Invalid request method')
 
 
 def assign_bag_to_cage(bag_id):
-    bag = Bags.objects.get(bag_id=bag_id)
-    bag_grid_code = bag.grid_code
-    cage_to_assign = None
-    cages = Cage.objects.filter(is_occupied=True)  # Assuming 'is_occupied' marks an occupied cage
-    for cage in cages:
-        assigned_bags = Bags.objects.filter(cage_id=cage.id)[:2]
-        if len(assigned_bags) == 2:
-            if assigned_bags[0].grid_code == assigned_bags[1].grid_code:
-                cage_to_assign = cage
-                break
-    if cage_to_assign:
-        bag.cage_id = cage_to_assign
-        bag.save()
-        return True
-    else:
-        return False
+    try:
+        bag = Bags.objects.get(bag_id=bag_id)
+        bag_grid_code = bag.grid_code
+        
+        # Fetch all occupied cages
+        occupied_cages = Cage.objects.filter(is_occupied=True)
+        
+        for cage in occupied_cages:
+            # Get bags associated with the cage
+            assigned_bags = Bags.objects.filter(cage=cage)
+            
+            # If the cage is empty, assign the bag directly
+            if not assigned_bags.exists():
+                bag.cage = cage
+                bag.save()
+                return True
+            else:
+                # Check the grid code if there are bags in the cage
+                cage_grid_code = assigned_bags[0].grid_code
+                if cage_grid_code == bag_grid_code:
+                    bag.cage = cage
+                    bag.save()
+                    return True
+    except Exception as e:
+        print(e)
+    return False
