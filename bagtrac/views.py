@@ -151,7 +151,8 @@ def cage_generator(request):
     if request.method == "GET":
         try:
             active_cages = Cage.objects.filter(is_occupied=True)
-            print(active_cages) 
+            for cages in active_cages:
+                cages.last_used = cages.last_used.astimezone(IST).strftime("%b. %d, %Y, %I:%M %p")
         except Exception as e:
             print(e)
     return render(request, "cage_generator.html", {'active_cages': active_cages})

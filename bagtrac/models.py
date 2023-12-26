@@ -13,7 +13,6 @@ class Cage(models.Model):
     is_occupied = models.BooleanField(default=False)
     last_used = models.DateTimeField(auto_now=True)
     grid_code = models.CharField(max_length=10 , default="NA")
-
     def __str__(self):
         return self.cage_name
 
@@ -32,4 +31,14 @@ class Bags(models.Model):
     cage = models.ForeignKey(Cage , on_delete=models.CASCADE , null=True , blank=True) 
     def __str__(self):
         return self.bag_id
+    
+class BagStatus(models.Model):
+    bag  = models.ForeignKey(Bags , on_delete=models.CASCADE)
+    bag_created =  models.BooleanField(default=True)
+    bag_label_generated = models.BooleanField(default=False)
+    recieved_at_cv = models.BooleanField(default=False)
+    put_in_grid = models.BooleanField(default=False)
+    put_out_grid = models.BooleanField(default=False)
+    def __str__(self):
+        return f"Status of Bag {self.bag.bag_id}"
     
