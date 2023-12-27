@@ -8,7 +8,7 @@ from django.db.models import Count
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.csrf import csrf_protect
 from reportlab.lib.pagesizes import landscape
-from .models import Data , Cage , Bags 
+from .models import Data , Cage , Bags , ibbags
 from django.utils import timezone
 from django.db import IntegrityError
 import pytz
@@ -237,23 +237,47 @@ def ib_bagtrac(request):
             bag_id = request.POST.get('Bag/Seal_ID', '')
             cage_id= request.POST.get('Cage_ID', '')
             time1 = timezone.now()
+            current_user = request.user
+            user = User.objects.get(pk=current_user.id)
+
+            data_instance = ibbags(bag_id=bag_id , cage_id=cage_id , time1=time1 , user=user )
             print(bag_id , cage_id)
             if "ZO" in bag_id or "zo" in bag_id:
+                data_instance.save()
                 messages.success(request, "ZO" , extra_tags='Success')
-                print("Yes ZO")
             elif "B5" in bag_id or "b5" in bag_id:
+                data_instance.save()
                 messages.success(request , "B5" , extra_tags='Success')
             elif "B1" in bag_id or "b1" in bag_id:
+                data_instance.save()
                 messages.success(request , "B1" , extra_tags='Success')
             elif "B2" in bag_id or "b2" in bag_id:
+                data_instance.save()
                 messages.success(request , "B2" , extra_tags='Success')
             elif "B3" in bag_id or "b3" in bag_id:
+                data_instance.save()
                 messages.success(request , "B3" , extra_tags='Success')
             elif "B4" in bag_id or "b4" in bag_id:
+                data_instance.save()
                 messages.success(request , "B3" , extra_tags='Success')
             elif "B6" in bag_id or "b6" in bag_id:
+                data_instance.save()
                 messages.success(request , "B6" , extra_tags='Success')
             else:
+                data_instance.save()
                 messages.error(request , "Error")
     return render(request , 'ib.html')
     
+@login_required
+def ib_search(request):
+    bag_id = request.GET.get('bag_id')
+    search_results = ibbags.objects.filter(bag_id=bag_id)
+    if search_results:
+        for result in search_results:
+            # Convert time from UTC to IST
+            result.time1 = result.time1.astimezone(IST)
+            result.time1_str = result.time1.strftime("%b. %d, %Y, %I:%M %p")
+        return render(request, 'ib_search.html', {'search_results': search_results})
+    if not search_results and bag_id:
+        return render(request, 'ib_search.html', {'search_results': search_results, 'bag_id': bag_id, 'not_found': True})
+    return render(request , 'ib_search.html')   

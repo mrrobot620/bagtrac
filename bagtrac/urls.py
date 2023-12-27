@@ -10,5 +10,6 @@ urlpatterns = [
     path('cage_search' , views.cage_search , name='cage_search'),
     path('cage_generator' , views.cage_generator , name="cage_generator"),
     path('generate_cage', views.generate_cage, name='generate_cage'),
-    path('ib' , views.ib_bagtrac , name="ib_bagtrac" )
+    path('ib' , views.ib_bagtrac , name="ib_bagtrac" ),
+    path('ib_search' , views.ib_search , name="ib_search")
 ]

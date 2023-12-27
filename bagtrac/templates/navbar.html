@@ -8,10 +8,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item navbar_items">
-                  <a class="nav-link navbar_items" href="{% url 'search' %}">Bag Search</a>
+                  <a class="nav-link navbar_items" href="{% url 'ib_bagtrac' %}">IB BagTrac</a>
               </li>
               <li class="nav-item navbar_items">
-                  <a class="nav-link navbar_items" href="{% url 'ib_bagtrac' %}">IB BagTrac</a>
+                <a class="nav-link navbar_items" href="{% url 'ib_search' %}">IB Search</a>
+            </li>
+                          <li class="nav-item navbar_items">
+                  <a class="nav-link navbar_items" href="{% url 'search' %}">Bag Search</a>
               </li>
               <li class="nav-item navbar_items">
                   <a class="nav-link navbar_items" href="{% url 'cage_search' %}">Cage Search</a>

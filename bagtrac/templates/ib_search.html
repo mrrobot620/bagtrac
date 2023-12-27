@@ -1,0 +1,67 @@
+{% extends 'base.html' %} {% block content %} {% if not_found %}
+<div class="container mt-4">
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    Bag ID '{{ bag_id }}' not found.
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="alert"
+      aria-label="Close"
+    ></button>
+  </div>
+</div>
+{% endif %} {% if search_results %}
+<div class="container mt-4">
+  <h2>Search Results:</h2>
+  <div class="table-responsive">
+    <table class="table table-bordered mt-3">
+      <thead class="hms_color">
+        <tr>
+          <th scope="col">Bag ID</th>
+          <th scope="col">Time</th>
+          <th scope="col">Cage ID</th>
+          <th scope="col">Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for result in search_results %}
+        <tr>
+          <td>{{ result.bag_id }}</td>
+          <td>{{ result.time1_str }}</td>
+          <td>{{ result.cage_id }}</td>
+          <td>{{ result.user }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endif %}
+
+<div class="container mt-4">
+  <form method="GET">
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        name="bag_id"
+        placeholder="Enter Bag ID"
+        aria-label="Enter Bag ID"
+        aria-describedby="search-btn"
+      />
+      <button
+        class="btn btn-primary hms_button_color"
+        type="submit"
+        id="search-btn"
+      >
+        Search
+      </button>
+    </div>
+  </form>
+
+<script>
+  const userInput = document.getElementById("multiSearchInput").value;
+  const bagIds = userInput.split(/[\n, ]/).filter(Boolean);
+</script>
+
+{% endblock %}
