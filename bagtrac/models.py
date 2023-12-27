@@ -29,16 +29,13 @@ class Bags(models.Model):
     bag_id = models.CharField(max_length=255 , unique=True)
     grid_code = models.CharField(max_length=10)
     cage = models.ForeignKey(Cage , on_delete=models.CASCADE , null=True , blank=True) 
-    def __str__(self):
-        return self.bag_id
-    
-class BagStatus(models.Model):
-    bag  = models.ForeignKey(Bags , on_delete=models.CASCADE)
     bag_created =  models.BooleanField(default=True)
     bag_label_generated = models.BooleanField(default=False)
     recieved_at_cv = models.BooleanField(default=False)
     put_in_grid = models.BooleanField(default=False)
     put_out_grid = models.BooleanField(default=False)
     def __str__(self):
-        return f"Status of Bag {self.bag.bag_id}"
+        return self.bag_id
+    
+
     

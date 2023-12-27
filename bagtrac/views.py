@@ -8,7 +8,7 @@ from django.db.models import Count
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.csrf import csrf_protect
 from reportlab.lib.pagesizes import landscape
-from .models import Data , Cage
+from .models import Data , Cage , Bags 
 from django.utils import timezone
 from django.db import IntegrityError
 import pytz
@@ -16,6 +16,7 @@ import csv
 from pytz import timezone as pytz_timezone
 import os
 from io import BytesIO
+from django.shortcuts import get_object_or_404
 import qrcode
 from django.http import JsonResponse
 from django.core.exceptions import ObjectDoesNotExist
@@ -57,12 +58,19 @@ def home(request):
             try:
                 assigned = assign_bag_to_cage(bag_seal_id)
                 if not assigned:
-                    messages.error(request, f"Error: Bag {bag_seal_id} cannot be assigned to this cage.")
+                    messages.error(request, f"Bag {bag_seal_id} cannot be assigned to this cage")
                 else:
                     try:
                         current_user = request.user
                         user = User.objects.get(pk=current_user.id)
                         data_instance = Data(cv=cv, bag_seal_id=bag_seal_id, cage_id=cage_instance, time1=time1, user=user.username)
+                        try:
+                            bag_instance = get_object_or_404(Bags, bag_id=bag_seal_id)
+                            bag_instance.recieved_at_cv = True
+                            bag_instance.save()
+                        except Exception as e:
+                            print(e)
+                            messages.error(request, f"Unable to update the Bag  {e}")
                         data_instance.save()
                     except IntegrityError as E:
                         messages.error(request, f"Bag {bag_seal_id} already exists")
@@ -81,16 +89,31 @@ def search(request):
     bag_id = request.GET.get('bag_id')
     search_results = Data.objects.filter(bag_seal_id=bag_id)
     bag_grid = []
+    bag_status = {}
     if search_results:
         for result in search_results:
             # Convert time from UTC to IST
             result.time1 = result.time1.astimezone(IST)
             result.time1_str = result.time1.strftime("%b. %d, %Y, %I:%M %p")
             bag_grid_data = Bags.objects.filter(bag_id=result.bag_seal_id)
+            for bag in bag_grid_data:
+                if bag is not None:
+                    try:
+                        bag.bag_label_generated = True
+                        bag.save()
+                        bag_status = {
+                                'Bag Created': Bags.objects.filter(bag_id=result.bag_seal_id, bag_created=True).exists(),
+                                'Label Pasted': Bags.objects.filter(bag_id=result.bag_seal_id, bag_label_generated=True).exists(),
+                                'Received at CV': Bags.objects.filter(bag_id=result.bag_seal_id, recieved_at_cv=True).exists(),
+                                'Grid Put In': Bags.objects.filter(bag_id=result.bag_seal_id, put_in_grid=True).exists(),
+                                'Grid Put Out': Bags.objects.filter(bag_id=result.bag_seal_id, put_out_grid=True).exists(),}
+                        print(bag_status)
+                    except Exception as e:
+                        print(e)
             bag_grid.extend(bag_grid_data)
     if not search_results and bag_id:
         return render(request, 'search.html', {'search_results': search_results, 'bag_id': bag_id, 'not_found': True})
-    return render(request, 'search.html', {'search_results': search_results , 'bag_id':bag_id , "bag_grid":bag_grid} )
+    return render(request, 'search.html', {'search_results': search_results , 'bag_id':bag_id , "bag_grid":bag_grid , "bag_status":bag_status} )
 
 @login_required
 def cage_search(request):
@@ -196,19 +219,13 @@ def assign_bag_to_cage(bag_id):
     try:
         bag = Bags.objects.get(bag_id=bag_id)
         bag_grid_code = bag.grid_code
-        occupied_cages = Cage.objects.filter(is_occupied=True)
-        for cage in occupied_cages:
+        assigned_cages = Cage.objects.filter(is_occupied=True)
+        for cage in assigned_cages:
             assigned_bags = Bags.objects.filter(cage=cage)
-            if not assigned_bags.exists():
+            if not assigned_bags.exists() or any(assigned_bag.grid_code == bag_grid_code for assigned_bag in assigned_bags):
                 bag.cage = cage
                 bag.save()
                 return True
-            else:
-                cage_grid_code = assigned_bags[0].grid_code
-                if cage_grid_code == bag_grid_code:
-                    bag.cage = cage
-                    bag.save()
-                    return True
     except Exception as e:
         print(e)
     return False
