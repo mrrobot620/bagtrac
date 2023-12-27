@@ -1,34 +1,29 @@
 <nav class="navbar navbar-expand-lg navbar_color">
-    <div class="container-fluid">
+  <div class="container-fluid">
       <a class="navbar-brand navbar_items" href="{% url 'home' %}"><strong>BagTrac</strong></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
       </button>
-       {% if user.is_authenticated %}
+      {% if user.is_authenticated %}
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item navbar_items">
-            <a class="nav-link navbar_items" href="{% url 'search' %}">Bag Search</a>
-          </li>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item navbar_items">
-                <a class="nav-link navbar_items" href="{% url 'cage_search' %}">Cage Search</a>
+                  <a class="nav-link navbar_items" href="{% url 'search' %}">Bag Search</a>
               </li>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item navbar_items">
-                <a class="nav-link navbar_items" href="{% url 'cage_generator' %}">Cage Generator</a>
+                  <a class="nav-link navbar_items" href="{% url 'ib_bagtrac' %}">IB BagTrac</a>
               </li>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item navbar_items">
-                <a class="nav-link navbar_items" href="{% url 'logout' %}">Log Out</a>
+                  <a class="nav-link navbar_items" href="{% url 'cage_search' %}">Cage Search</a>
               </li>
-              {% endif %}
-          </div>
+              <li class="nav-item navbar_items">
+                  <a class="nav-link navbar_items" href="{% url 'cage_generator' %}">Cage Generator</a>
+              </li>
+              <li class="nav-item navbar_items">
+                  <a class="nav-link navbar_items" href="{% url 'logout' %}">Log Out</a>
+              </li>
+          </ul>
       </div>
-    </div>
-  </nav>
+      {% endif %}
+  </div>
+</nav>
