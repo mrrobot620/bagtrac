@@ -44,3 +44,4 @@ class ibbags(models.Model):
     user = models.CharField(max_length=255)
     def __str__(self):
         return self.bag_id
+    
