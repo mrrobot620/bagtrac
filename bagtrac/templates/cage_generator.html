@@ -48,7 +48,7 @@
 }
 
 function generateCage() {
-    const csrftoken = getCookie('csrftoken'); // Retrieve CSRF token
+    const csrftoken = getCookie('csrftoken');
     fetch('/generate_cage', {
         method: 'POST',
         headers: {
