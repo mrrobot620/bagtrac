@@ -230,43 +230,31 @@ def assign_bag_to_cage(bag_id):
         print(e)
     return False
 
-
 @login_required
 def ib_bagtrac(request):
     if request.method == 'POST':
-            bag_id = request.POST.get('Bag/Seal_ID', '')
-            cage_id= request.POST.get('Cage_ID', '')
-            time1 = timezone.now()
-            current_user = request.user
-            user = User.objects.get(pk=current_user.id)
+        bag_id = request.POST.get('Bag/Seal_ID', '')
+        cage_id = request.POST.get('Cage_ID', '')
+        time1 = timezone.now()
+        current_user = request.user
+        user = User.objects.get(pk=current_user.id)
+        data_instance = ibbags(bag_id=bag_id, cage_id=cage_id, time1=time1, user=user)
+        print(bag_id, cage_id)
+        identifiers = ["ZO", "B5", "B1", "B2", "B3", "B4", "B6"]
+        tags = ["Success"] * len(identifiers) 
+        for index, identifier in enumerate(identifiers):
+            if identifier.lower() in bag_id.lower():
+                try:
+                    data_instance.save()
+                except IntegrityError as e:
+                    messages.success(request, f"Bag Already Scanned {bag_id}")
+                messages.success(request, identifier, extra_tags=tags[index])
+                break 
+        else:
+            data_instance.save()
+            messages.error(request, "Unrecognized Bag or Cage")
 
-            data_instance = ibbags(bag_id=bag_id , cage_id=cage_id , time1=time1 , user=user )
-            print(bag_id , cage_id)
-            if "ZO" in bag_id or "zo" in bag_id:
-                data_instance.save()
-                messages.success(request, "ZO" , extra_tags='Success')
-            elif "B5" in bag_id or "b5" in bag_id:
-                data_instance.save()
-                messages.success(request , "B5" , extra_tags='Success')
-            elif "B1" in bag_id or "b1" in bag_id:
-                data_instance.save()
-                messages.success(request , "B1" , extra_tags='Success')
-            elif "B2" in bag_id or "b2" in bag_id:
-                data_instance.save()
-                messages.success(request , "B2" , extra_tags='Success')
-            elif "B3" in bag_id or "b3" in bag_id:
-                data_instance.save()
-                messages.success(request , "B3" , extra_tags='Success')
-            elif "B4" in bag_id or "b4" in bag_id:
-                data_instance.save()
-                messages.success(request , "B3" , extra_tags='Success')
-            elif "B6" in bag_id or "b6" in bag_id:
-                data_instance.save()
-                messages.success(request , "B6" , extra_tags='Success')
-            else:
-                data_instance.save()
-                messages.error(request , "Error")
-    return render(request , 'ib.html')
+    return render(request, 'ib.html')
     
 @login_required
 def ib_search(request):
@@ -281,3 +269,4 @@ def ib_search(request):
     if not search_results and bag_id:
         return render(request, 'ib_search.html', {'search_results': search_results, 'bag_id': bag_id, 'not_found': True})
     return render(request , 'ib_search.html')   
+
