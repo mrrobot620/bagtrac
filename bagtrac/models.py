@@ -11,9 +11,7 @@ class GridArea(models.Model):
     grid_code = models.CharField(max_length=10)
     label = models.CharField(max_length=10)
     uuid = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
-    is_assigned = models.BooleanField(default=False)
-    # Other fields or metadata related to the grid area
-    
+    is_assigned = models.BooleanField(default=False)   
     def __str__(self):
         return f"Grid {self.grid_code}"
 
