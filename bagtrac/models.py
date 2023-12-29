@@ -39,7 +39,7 @@ class Bags(models.Model):
     
 class ibbags(models.Model):
     time1 = models.DateTimeField(auto_now_add=True)
-    bag_id = models.CharField(max_length=255 , unique=True)
+    bag_id = models.CharField(max_length=255)
     cage_id = models.CharField(max_length=255)
     user = models.CharField(max_length=255)
     def __str__(self):

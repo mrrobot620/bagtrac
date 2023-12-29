@@ -163,7 +163,7 @@ def login_view(request):
 
         if user is not None:
             login(request , user)
-            return redirect('home')
+            return redirect('ib_bagtrac')
         else:
             return render(request , 'login.html' , {'error': "Invalid Username or Password"})
     return render(request , 'login.html')
@@ -232,6 +232,9 @@ def assign_bag_to_cage(bag_id):
 
 @login_required
 def ib_bagtrac(request):
+    last_cage = ibbags.objects.filter(user=request.user).last()
+    last_cage_1 = last_cage.cage_id if last_cage else ""  
+    
     if request.method == 'POST':
         bag_id = request.POST.get('Bag/Seal_ID', '')
         cage_id = request.POST.get('Cage_ID', '')
@@ -239,22 +242,45 @@ def ib_bagtrac(request):
         current_user = request.user
         user = User.objects.get(pk=current_user.id)
         data_instance = ibbags(bag_id=bag_id, cage_id=cage_id, time1=time1, user=user)
-        print(bag_id, cage_id)
+        
         identifiers = ["ZO", "B5", "B1", "B2", "B3", "B4", "B6"]
         tags = ["Success"] * len(identifiers) 
+        cage_updated = False  # Flag to check if cage ID was updated
         for index, identifier in enumerate(identifiers):
             if identifier.lower() in bag_id.lower():
                 try:
                     data_instance.save()
                 except IntegrityError as e:
                     messages.success(request, f"Bag Already Scanned {bag_id}")
-                messages.success(request, identifier, extra_tags=tags[index])
-                break 
+                    break
+                else:
+                    messages.success(request, f"{identifier}", extra_tags=tags[index])
+                    last_cage_1 = cage_id  # Update last_cage_1 to the new cage_id
+                    cage_updated = True  # Set flag to indicate cage update
+                    break 
         else:
             data_instance.save()
-            messages.error(request, "Unrecognized Bag or Cage")
+            if not cage_updated:  # Update only if cage was not updated in the loop
+                last_cage_1 = cage_id
+    return render(request, 'ib.html', {"last_cage": last_cage_1})
 
-    return render(request, 'ib.html')
+
+@login_required
+def ib_multi_search(request):
+    if request.method == "POST":
+        bag_ids_input = request.POST.get('bag_ids')
+        bag_ids = bag_ids_input.split()
+        search_results = ibbags.objects.filter(bag_id__in=bag_ids)
+        response = HttpResponse(content_type='text/csv')
+        response['Content-Disposition'] = 'attachment; filename="search_results.csv"'
+        writer = csv.writer(response)
+        writer.writerow(['Bag ID', 'Time', 'Cage ID', 'Username'])
+        for result in search_results:
+            ist_time = result.time1.astimezone(IST).strftime("%b. %d, %Y, %I:%M %p")
+            writer.writerow([result.bag_id, ist_time, result.cage_id, result.user])
+        return response
+    return render(request, 'search.html')
+
     
 @login_required
 def ib_search(request):
@@ -270,3 +296,21 @@ def ib_search(request):
         return render(request, 'ib_search.html', {'search_results': search_results, 'bag_id': bag_id, 'not_found': True})
     return render(request , 'ib_search.html')   
 
+
+@login_required
+
+@login_required
+def download_all_data(request):
+    # Fetch all data from your model
+    all_data = ibbags.objects.all()
+    
+    if all_data:
+        response = HttpResponse(content_type='text/csv')
+        response['Content-Disposition'] = 'attachment; filename="all_data.csv"'
+        writer = csv.writer(response)
+        writer.writerow(['Bag ID', 'Cage ID', 'Time' , "User"])  # Adjust headers as needed
+        for result in all_data:
+            writer.writerow([result.bag_id, result.cage_id, result.time1 , result.user])  # Adjust fields based on your model
+        return response
+    # If no data found
+    return HttpResponse("No data available to download.")
