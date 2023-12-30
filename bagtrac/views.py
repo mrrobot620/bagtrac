@@ -8,7 +8,7 @@ from django.db.models import Count
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.csrf import csrf_protect
 from reportlab.lib.pagesizes import landscape
-from .models import Data , Cage , Bags , ibbags
+from .models import Data , Cage , Bags , ibbags , GridArea
 from django.utils import timezone
 from django.db import IntegrityError
 import pytz
@@ -38,7 +38,7 @@ IST = pytz_timezone('Asia/Kolkata')
 @login_required
 def home(request):
     if request.user.is_authenticated:
-        last_cv = Data.objects.last()  
+        last_cv = Data.objects.filter(user=request.user).last() 
         last_cv_value = last_cv.cv if last_cv else "" 
         if request.method == 'POST':
             cv = request.POST.get('CV', '')
@@ -56,7 +56,7 @@ def home(request):
             except Exception as e:
                 messages.error(request, e)
             try:
-                assigned = assign_bag_to_cage(bag_seal_id)
+                assigned = assign_bag_to_cage(bag_seal_id , cage_id)
                 if not assigned:
                     messages.error(request, f"Bag {bag_seal_id} cannot be assigned to this cage")
                 else:
@@ -215,17 +215,23 @@ def generate_cage(request):
     return HttpResponse('Invalid request method')
 
 
-def assign_bag_to_cage(bag_id):
+def assign_bag_to_cage(bag_id , cage_id):
     try:
         bag = Bags.objects.get(bag_id=bag_id)
         bag_grid_code = bag.grid_code
         assigned_cages = Cage.objects.filter(is_occupied=True)
+        cage1 = Cage.objects.get(cage_name = cage_id )
         for cage in assigned_cages:
             assigned_bags = Bags.objects.filter(cage=cage)
             if not assigned_bags.exists() or any(assigned_bag.grid_code == bag_grid_code for assigned_bag in assigned_bags):
                 bag.cage = cage
                 bag.save()
+                cage1.grid_code = bag_grid_code
+                cage1.save()
+                print("Cage Assigned")
                 return True
+            else:
+                print("cage_not_assigned")
     except Exception as e:
         print(e)
     return False
@@ -296,9 +302,6 @@ def ib_search(request):
         return render(request, 'ib_search.html', {'search_results': search_results, 'bag_id': bag_id, 'not_found': True})
     return render(request , 'ib_search.html')   
 
-
-@login_required
-
 @login_required
 def download_all_data(request):
     # Fetch all data from your model
@@ -310,7 +313,50 @@ def download_all_data(request):
         writer = csv.writer(response)
         writer.writerow(['Bag ID', 'Cage ID', 'Time' , "User"])  # Adjust headers as needed
         for result in all_data:
+            result.time1 = result.time1.astimezone(IST)
+            result.time1_str = result.time1.strftime("%b. %d, %Y, %I:%M %p")
             writer.writerow([result.bag_id, result.cage_id, result.time1 , result.user])  # Adjust fields based on your model
         return response
-    # If no data found
-    return HttpResponse("No data available to download.")
+    messages.error(request , F'Error No Data Available')
+
+@login_required
+def assign_cage_to_grid(request, grid_code, cage_id):
+    try:
+        grid_area = GridArea.objects.get(grid_code=grid_code, label=cage_id)
+        cage_instance = Cage.objects.get(cage_name=cage_id)
+        cage_instance.grid_area = grid_area
+        grid_area.is_assigned = True
+        grid_area.save()
+        cage_instance.save()
+        messages.success(request , f"Cage {cage_id} assigned to grid {grid_code}{cage_id}")
+    except GridArea.DoesNotExist:
+        messages.success(request , f"Grid area {grid_code}{cage_id} does not exist")
+    except Cage.DoesNotExist:
+        messages.error(request , f"Cage {cage_id} does not exist")
+    except Exception as e:
+        messages.error(request , f"Error assigning cage to grid: {e}")
+
+
+def put_in(request):
+    if request.method == 'POST':
+        cage_id = request.POST.get('cage')
+        grid_area_id = request.POST.get('grid_area')
+        try:
+            cage = Cage.objects.get(cage_name=cage_id)
+            grid_area = GridArea.objects.get(grid_code=grid_area_id)
+            print(cage.grid_code)
+            print(grid_area.grid_code)
+            if cage.grid_code == grid_area.grid_code:   
+                cage.grid_area = grid_area
+                grid_area.is_assigned = True
+                grid_area.cage_id = cage
+                cage.save()
+                grid_area.save()
+                messages.success(request, f"Cage {cage_id} assigned to Grid Area {grid_area_id}")
+            else:
+                messages.error(request, "Cage ID and Grid Area ID do not match!")
+        except Cage.DoesNotExist:
+            messages.error(request, f"Cage {cage_id} does not exist")
+        except GridArea.DoesNotExist:
+            messages.error(request, f"Grid Area {grid_area_id} does not exist")
+    return render(request, 'put_in.html')
