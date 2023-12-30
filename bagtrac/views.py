@@ -310,6 +310,8 @@ def download_all_data(request):
         writer = csv.writer(response)
         writer.writerow(['Bag ID', 'Cage ID', 'Time' , "User"])  # Adjust headers as needed
         for result in all_data:
+            result.time1 = result.time1.astimezone(IST)
+            result.time1_str = result.time1.strftime("%b. %d, %Y, %I:%M %p")
             writer.writerow([result.bag_id, result.cage_id, result.time1 , result.user])  # Adjust fields based on your model
         return response
     # If no data found
