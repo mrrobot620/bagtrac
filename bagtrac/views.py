@@ -161,7 +161,6 @@ def login_view(request):
         username = request.POST['username']
         password = request.POST['password']
         user = authenticate(request , username=username , password=password)
-
         if user is not None:
             login(request , user)
             return redirect('ib_bagtrac')
@@ -241,7 +240,6 @@ def assign_bag_to_cage(bag_id , cage_id):
 def ib_bagtrac(request):
     last_cage = ibbags.objects.filter(user=request.user).last()
     last_cage_1 = last_cage.cage_id if last_cage else ""  
-    
     if request.method == 'POST':
         bag_id = request.POST.get('Bag/Seal_ID', '')
         cage_id = request.POST.get('Cage_ID', '')
@@ -249,7 +247,6 @@ def ib_bagtrac(request):
         current_user = request.user
         user = User.objects.get(pk=current_user.id)
         data_instance = ibbags(bag_id=bag_id, cage_id=cage_id, time1=time1, user=user)
-        
         identifiers = ["ZO", "B5", "B1", "B2", "B3", "B4", "B6"]
         tags = ["Success"] * len(identifiers) 
         cage_updated = False  # Flag to check if cage ID was updated
@@ -262,12 +259,12 @@ def ib_bagtrac(request):
                     break
                 else:
                     messages.success(request, f"{identifier}", extra_tags=tags[index])
-                    last_cage_1 = cage_id  # Update last_cage_1 to the new cage_id
-                    cage_updated = True  # Set flag to indicate cage update
+                    last_cage_1 = cage_id
+                    cage_updated = True 
                     break 
         else:
             data_instance.save()
-            if not cage_updated:  # Update only if cage was not updated in the loop
+            if not cage_updated: 
                 last_cage_1 = cage_id
     return render(request, 'ib.html', {"last_cage": last_cage_1})
 
@@ -372,7 +369,6 @@ def put_in(request):
 @login_required
 def put_out(request):
     if request.method == "POST":
-        cage_id = request.POST.get('cage_id')
         grid_area = request.POST.get('grid_area')
         try:
             grid_area_instance = GridArea.objects.get(grid_code=grid_area)
@@ -387,7 +383,6 @@ def put_out(request):
                     bag.save()
                 messages.success(request, "Cage successfully removed from the grid area")
                 datas  = Data.objects.filter(cage_id=assigned_cage)
-                print(datas.__dict__)
                 for data in datas:
                     data.cage_id= None
                     data.save()
@@ -398,4 +393,7 @@ def put_out(request):
         except Exception as e:
             messages.error(request, f"Error: {e}")
     return render(request, 'put_out.html')
+
+
+
 
