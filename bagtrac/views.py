@@ -195,7 +195,7 @@ def generate_cage(request):
                 box_size=10,
                 border=1,
             )
-            qr.add_data(str(cage_uuid))
+            qr.add_data(str(new_cage_id))
             qr.make(fit=True)
             img = qr.make_image(fill_color="black", back_color="white")
             pdf_buffer = BytesIO()
@@ -346,21 +346,18 @@ def put_in(request):
             cage = Cage.objects.get(cage_name=cage_id)
             grid_area = GridArea.objects.get(grid_code=grid_area_id)
             bags  = Bags.objects.filter(cage__cage_name=cage_id)
-            print(bags)
-            print(cage.grid_code)
-            print(grid_area.grid_code)
             grid_area.grid_code1  = re.sub(r'\D' , "" , grid_area.grid_code)
             print(grid_area.grid_code)
-            if cage.grid_code == grid_area.grid_code1:   
+            if cage.grid_code == grid_area.grid_code1:
                 cage.grid_area = grid_area
                 grid_area.is_assigned = True
                 grid_area.cage_id = cage
                 for bag in bags:
                     if bag is not None:
                         bag.put_in_grid = True
+                        bag.save()
                     else:
                         messages.error(request , f"Empty Cage")
-                bag.save()
                 cage.save()
                 grid_area.save()
                 messages.success(request, f"Cage {cage_id} assigned to Grid Area {grid_area_id}" , extra_tags="Success")
@@ -375,22 +372,30 @@ def put_in(request):
 @login_required
 def put_out(request):
     if request.method == "POST":
-        cage_id  = request.POST.get('cage_id')
+        cage_id = request.POST.get('cage_id')
         grid_area = request.POST.get('grid_area')
-    try:
-        grid_area_instance = GridArea.objects.get(grid_code=grid_area)
-        cage_instance = Cage.objects.get(grid_area=grid_area)
-        grid_area_instance.is_assigned = False
-        cage_instance.grid_area = "NA"
-        put_out_instance  = Bags.objects.filter(cage__cage_name=cage_id)
-        for bag in put_out_instance:
-            if bag is not None:
-                bag.put_out_grid = True
+        try:
+            grid_area_instance = GridArea.objects.get(grid_code=grid_area)
+            assigned_cage = grid_area_instance.cage
+            if assigned_cage:
+                grid_area_instance.is_assigned = False
+                grid_area_instance.save()
+                bags = Bags.objects.filter(cage=assigned_cage)
+                for bag in bags:
+                    bag.put_out_grid = True
+                    bag.cage = None
+                    bag.save()
+                messages.success(request, "Cage successfully removed from the grid area")
+                datas  = Data.objects.filter(cage_id=assigned_cage)
+                print(datas.__dict__)
+                for data in datas:
+                    data.cage_id= None
+                    data.save()
             else:
-                messages.error(request , "Empty Cage")
-        bag.save()
-        grid_area_instance.save()
-        cage_instance.save()
-    except:
-        print("error")
-    return render(request , 'put_out.html')
+                messages.error(request, f"No cage assigned to grid area {grid_area}")
+        except GridArea.DoesNotExist:
+            messages.error(request, f"Grid area {grid_area} does not exist")
+        except Exception as e:
+            messages.error(request, f"Error: {e}")
+    return render(request, 'put_out.html')
+
