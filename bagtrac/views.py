@@ -32,6 +32,7 @@ import qrcode
 from PIL import ImageDraw
 from PIL import ImageFont
 from reportlab.pdfgen import canvas
+import re
 
 
 IST = pytz_timezone('Asia/Kolkata') 
@@ -344,15 +345,25 @@ def put_in(request):
         try:
             cage = Cage.objects.get(cage_name=cage_id)
             grid_area = GridArea.objects.get(grid_code=grid_area_id)
+            bags  = Bags.objects.filter(cage__cage_name=cage_id)
+            print(bags)
             print(cage.grid_code)
             print(grid_area.grid_code)
-            if cage.grid_code == grid_area.grid_code:   
+            grid_area.grid_code1  = re.sub(r'\D' , "" , grid_area.grid_code)
+            print(grid_area.grid_code)
+            if cage.grid_code == grid_area.grid_code1:   
                 cage.grid_area = grid_area
                 grid_area.is_assigned = True
                 grid_area.cage_id = cage
+                for bag in bags:
+                    if bag is not None:
+                        bag.put_in_grid = True
+                    else:
+                        messages.error(request , f"Empty Cage")
+                bag.save()
                 cage.save()
                 grid_area.save()
-                messages.success(request, f"Cage {cage_id} assigned to Grid Area {grid_area_id}")
+                messages.success(request, f"Cage {cage_id} assigned to Grid Area {grid_area_id}" , extra_tags="Success")
             else:
                 messages.error(request, "Cage ID and Grid Area ID do not match!")
         except Cage.DoesNotExist:
@@ -360,3 +371,26 @@ def put_in(request):
         except GridArea.DoesNotExist:
             messages.error(request, f"Grid Area {grid_area_id} does not exist")
     return render(request, 'put_in.html')
+
+@login_required
+def put_out(request):
+    if request.method == "POST":
+        cage_id  = request.POST.get('cage_id')
+        grid_area = request.POST.get('grid_area')
+    try:
+        grid_area_instance = GridArea.objects.get(grid_code=grid_area)
+        cage_instance = Cage.objects.get(grid_area=grid_area)
+        grid_area_instance.is_assigned = False
+        cage_instance.grid_area = "NA"
+        put_out_instance  = Bags.objects.filter(cage__cage_name=cage_id)
+        for bag in put_out_instance:
+            if bag is not None:
+                bag.put_out_grid = True
+            else:
+                messages.error(request , "Empty Cage")
+        bag.save()
+        grid_area_instance.save()
+        cage_instance.save()
+    except:
+        print("error")
+    return render(request , 'put_out.html')
