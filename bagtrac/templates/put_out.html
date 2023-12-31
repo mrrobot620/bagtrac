@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="padding">
-    <form method="post" action="{% url 'ib_bagtrac' %}">
+    <form method="post" action="{% url 'put_out' %}">
         {% if messages %}
         <div class="container mt-4">
             {% for message in messages %}
@@ -22,17 +22,11 @@
         {% endif %}
         {% csrf_token %}
         <div class="hms_margin"></div>
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Cage ID</label>
-            <input type="text" class="form-control hms_bg_color" name="Cage_ID" id="cage" value="{{ last_cage }}">
-            
-        </div>
         <div>
-            <label for="bag_seal" class="form-label">Bag ID</label>
-            <input type="text" class="form-control hms_bg_color hms_margin" id="bag_seal" name="Bag/Seal_ID">
+            <label for="bag_seal" class="form-label">Grid ID</label>
+            <input type="text" class="form-control hms_bg_color hms_margin" id="grid_area" name="grid_area">
         </div>
-        <button type="submit" class="btn hms_bg hms_margin">Submit</button><br>
-        <button type="button" class="btn error_style" onclick="clearCage()">Next Cage</button>
+        <button type="submit" class="btn hms_bg hms_margin">Pick</button><br>
     </form>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
@@ -40,7 +34,7 @@
     document.getElementById("cage").addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
             event.preventDefault(); 
-            var nextInput = document.getElementById("bag_seal");
+            var nextInput = document.getElementById("grid_area");
             if (nextInput) {
                 nextInput.focus();
             }
@@ -53,7 +47,6 @@
 </script>
 
 <style>
-    /* CSS for vertically centering the messages in alerts */
     .alert {
         display: flex;
         align-items: center;

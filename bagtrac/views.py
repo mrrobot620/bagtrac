@@ -8,7 +8,7 @@ from django.db.models import Count
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.csrf import csrf_protect
 from reportlab.lib.pagesizes import landscape
-from .models import Data , Cage , Bags , ibbags
+from .models import Data , Cage , Bags , ibbags , GridArea
 from django.utils import timezone
 from django.db import IntegrityError
 import pytz
@@ -32,13 +32,14 @@ import qrcode
 from PIL import ImageDraw
 from PIL import ImageFont
 from reportlab.pdfgen import canvas
+import re
 
 
 IST = pytz_timezone('Asia/Kolkata') 
 @login_required
 def home(request):
     if request.user.is_authenticated:
-        last_cv = Data.objects.last()  
+        last_cv = Data.objects.filter(user=request.user).last() 
         last_cv_value = last_cv.cv if last_cv else "" 
         if request.method == 'POST':
             cv = request.POST.get('CV', '')
@@ -56,7 +57,7 @@ def home(request):
             except Exception as e:
                 messages.error(request, e)
             try:
-                assigned = assign_bag_to_cage(bag_seal_id)
+                assigned = assign_bag_to_cage(bag_seal_id , cage_id)
                 if not assigned:
                     messages.error(request, f"Bag {bag_seal_id} cannot be assigned to this cage")
                 else:
@@ -163,7 +164,7 @@ def login_view(request):
 
         if user is not None:
             login(request , user)
-            return redirect('home')
+            return redirect('ib_bagtrac')
         else:
             return render(request , 'login.html' , {'error': "Invalid Username or Password"})
     return render(request , 'login.html')
@@ -194,7 +195,7 @@ def generate_cage(request):
                 box_size=10,
                 border=1,
             )
-            qr.add_data(str(cage_uuid))
+            qr.add_data(str(new_cage_id))
             qr.make(fit=True)
             img = qr.make_image(fill_color="black", back_color="white")
             pdf_buffer = BytesIO()
@@ -215,58 +216,78 @@ def generate_cage(request):
     return HttpResponse('Invalid request method')
 
 
-def assign_bag_to_cage(bag_id):
+def assign_bag_to_cage(bag_id , cage_id):
     try:
         bag = Bags.objects.get(bag_id=bag_id)
         bag_grid_code = bag.grid_code
         assigned_cages = Cage.objects.filter(is_occupied=True)
+        cage1 = Cage.objects.get(cage_name = cage_id )
         for cage in assigned_cages:
             assigned_bags = Bags.objects.filter(cage=cage)
             if not assigned_bags.exists() or any(assigned_bag.grid_code == bag_grid_code for assigned_bag in assigned_bags):
                 bag.cage = cage
                 bag.save()
+                cage1.grid_code = bag_grid_code
+                cage1.save()
+                print("Cage Assigned")
                 return True
+            else:
+                print("cage_not_assigned")
     except Exception as e:
         print(e)
     return False
 
-
 @login_required
 def ib_bagtrac(request):
+    last_cage = ibbags.objects.filter(user=request.user).last()
+    last_cage_1 = last_cage.cage_id if last_cage else ""  
+    
     if request.method == 'POST':
-            bag_id = request.POST.get('Bag/Seal_ID', '')
-            cage_id= request.POST.get('Cage_ID', '')
-            time1 = timezone.now()
-            current_user = request.user
-            user = User.objects.get(pk=current_user.id)
+        bag_id = request.POST.get('Bag/Seal_ID', '')
+        cage_id = request.POST.get('Cage_ID', '')
+        time1 = timezone.now()
+        current_user = request.user
+        user = User.objects.get(pk=current_user.id)
+        data_instance = ibbags(bag_id=bag_id, cage_id=cage_id, time1=time1, user=user)
+        
+        identifiers = ["ZO", "B5", "B1", "B2", "B3", "B4", "B6"]
+        tags = ["Success"] * len(identifiers) 
+        cage_updated = False  # Flag to check if cage ID was updated
+        for index, identifier in enumerate(identifiers):
+            if identifier.lower() in bag_id.lower():
+                try:
+                    data_instance.save()
+                except IntegrityError as e:
+                    messages.success(request, f"Bag Already Scanned {bag_id}")
+                    break
+                else:
+                    messages.success(request, f"{identifier}", extra_tags=tags[index])
+                    last_cage_1 = cage_id  # Update last_cage_1 to the new cage_id
+                    cage_updated = True  # Set flag to indicate cage update
+                    break 
+        else:
+            data_instance.save()
+            if not cage_updated:  # Update only if cage was not updated in the loop
+                last_cage_1 = cage_id
+    return render(request, 'ib.html', {"last_cage": last_cage_1})
 
-            data_instance = ibbags(bag_id=bag_id , cage_id=cage_id , time1=time1 , user=user )
-            print(bag_id , cage_id)
-            if "ZO" in bag_id or "zo" in bag_id:
-                data_instance.save()
-                messages.success(request, "ZO" , extra_tags='Success')
-            elif "B5" in bag_id or "b5" in bag_id:
-                data_instance.save()
-                messages.success(request , "B5" , extra_tags='Success')
-            elif "B1" in bag_id or "b1" in bag_id:
-                data_instance.save()
-                messages.success(request , "B1" , extra_tags='Success')
-            elif "B2" in bag_id or "b2" in bag_id:
-                data_instance.save()
-                messages.success(request , "B2" , extra_tags='Success')
-            elif "B3" in bag_id or "b3" in bag_id:
-                data_instance.save()
-                messages.success(request , "B3" , extra_tags='Success')
-            elif "B4" in bag_id or "b4" in bag_id:
-                data_instance.save()
-                messages.success(request , "B3" , extra_tags='Success')
-            elif "B6" in bag_id or "b6" in bag_id:
-                data_instance.save()
-                messages.success(request , "B6" , extra_tags='Success')
-            else:
-                data_instance.save()
-                messages.error(request , "Error")
-    return render(request , 'ib.html')
+
+@login_required
+def ib_multi_search(request):
+    if request.method == "POST":
+        bag_ids_input = request.POST.get('bag_ids')
+        bag_ids = bag_ids_input.split()
+        search_results = ibbags.objects.filter(bag_id__in=bag_ids)
+        response = HttpResponse(content_type='text/csv')
+        response['Content-Disposition'] = 'attachment; filename="search_results.csv"'
+        writer = csv.writer(response)
+        writer.writerow(['Bag ID', 'Time', 'Cage ID', 'Username'])
+        for result in search_results:
+            ist_time = result.time1.astimezone(IST).strftime("%b. %d, %Y, %I:%M %p")
+            writer.writerow([result.bag_id, ist_time, result.cage_id, result.user])
+        return response
+    return render(request, 'search.html')
+
     
 @login_required
 def ib_search(request):
@@ -281,3 +302,100 @@ def ib_search(request):
     if not search_results and bag_id:
         return render(request, 'ib_search.html', {'search_results': search_results, 'bag_id': bag_id, 'not_found': True})
     return render(request , 'ib_search.html')   
+
+@login_required
+def download_all_data(request):
+    # Fetch all data from your model
+    all_data = ibbags.objects.all()
+    
+    if all_data:
+        response = HttpResponse(content_type='text/csv')
+        response['Content-Disposition'] = 'attachment; filename="all_data.csv"'
+        writer = csv.writer(response)
+        writer.writerow(['Bag ID', 'Cage ID', 'Time' , "User"])  # Adjust headers as needed
+        for result in all_data:
+            result.time1 = result.time1.astimezone(IST)
+            result.time1_str = result.time1.strftime("%b. %d, %Y, %I:%M %p")
+            writer.writerow([result.bag_id, result.cage_id, result.time1 , result.user])  # Adjust fields based on your model
+        return response
+    messages.error(request , F'Error No Data Available')
+
+@login_required
+def assign_cage_to_grid(request, grid_code, cage_id):
+    try:
+        grid_area = GridArea.objects.get(grid_code=grid_code, label=cage_id)
+        cage_instance = Cage.objects.get(cage_name=cage_id)
+        cage_instance.grid_area = grid_area
+        grid_area.is_assigned = True
+        grid_area.save()
+        cage_instance.save()
+        messages.success(request , f"Cage {cage_id} assigned to grid {grid_code}{cage_id}")
+    except GridArea.DoesNotExist:
+        messages.success(request , f"Grid area {grid_code}{cage_id} does not exist")
+    except Cage.DoesNotExist:
+        messages.error(request , f"Cage {cage_id} does not exist")
+    except Exception as e:
+        messages.error(request , f"Error assigning cage to grid: {e}")
+
+
+def put_in(request):
+    if request.method == 'POST':
+        cage_id = request.POST.get('cage')
+        grid_area_id = request.POST.get('grid_area')
+        try:
+            cage = Cage.objects.get(cage_name=cage_id)
+            grid_area = GridArea.objects.get(grid_code=grid_area_id)
+            bags  = Bags.objects.filter(cage__cage_name=cage_id)
+            grid_area.grid_code1  = re.sub(r'\D' , "" , grid_area.grid_code)
+            print(grid_area.grid_code)
+            if cage.grid_code == grid_area.grid_code1:
+                cage.grid_area = grid_area
+                grid_area.is_assigned = True
+                grid_area.cage_id = cage
+                for bag in bags:
+                    if bag is not None:
+                        bag.put_in_grid = True
+                        bag.save()
+                    else:
+                        messages.error(request , f"Empty Cage")
+                cage.save()
+                grid_area.save()
+                messages.success(request, f"Cage {cage_id} assigned to Grid Area {grid_area_id}" , extra_tags="Success")
+            else:
+                messages.error(request, "Cage ID and Grid Area ID do not match!")
+        except Cage.DoesNotExist:
+            messages.error(request, f"Cage {cage_id} does not exist")
+        except GridArea.DoesNotExist:
+            messages.error(request, f"Grid Area {grid_area_id} does not exist")
+    return render(request, 'put_in.html')
+
+@login_required
+def put_out(request):
+    if request.method == "POST":
+        cage_id = request.POST.get('cage_id')
+        grid_area = request.POST.get('grid_area')
+        try:
+            grid_area_instance = GridArea.objects.get(grid_code=grid_area)
+            assigned_cage = grid_area_instance.cage
+            if assigned_cage:
+                grid_area_instance.is_assigned = False
+                grid_area_instance.save()
+                bags = Bags.objects.filter(cage=assigned_cage)
+                for bag in bags:
+                    bag.put_out_grid = True
+                    bag.cage = None
+                    bag.save()
+                messages.success(request, "Cage successfully removed from the grid area")
+                datas  = Data.objects.filter(cage_id=assigned_cage)
+                print(datas.__dict__)
+                for data in datas:
+                    data.cage_id= None
+                    data.save()
+            else:
+                messages.error(request, f"No cage assigned to grid area {grid_area}")
+        except GridArea.DoesNotExist:
+            messages.error(request, f"Grid area {grid_area} does not exist")
+        except Exception as e:
+            messages.error(request, f"Error: {e}")
+    return render(request, 'put_out.html')
+
