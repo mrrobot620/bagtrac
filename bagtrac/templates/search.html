@@ -1,4 +1,7 @@
-{% extends 'base.html' %} {% block content %} {% if not_found %}
+{% extends 'base.html' %} 
+{% block content %}
+<h1 class="mt-4"> OB Search </h1>
+{% if not_found %}
 <div class="container mt-4">
   <div class="alert alert-danger alert-dismissible fade show" role="alert">
     Bag ID '{{ bag_id }}' not found.
@@ -52,7 +55,6 @@
   </div>
 </div>
 {% endif %}
-
 <div class="container mt-4">
   <form method="GET">
     <div class="input-group mb-3">
@@ -65,7 +67,8 @@
         aria-describedby="search-btn"
       />
       <button
-        class="btn btn-primary hms_button_color"
+        class="btn"
+        style="background-color: rgb(0, 150, 136); color: white;"
         type="submit"
         id="search-btn"
       >
@@ -82,7 +85,7 @@
         placeholder="Paste Bag IDs"
         id="multiSearchInput"
       ></textarea>
-      <button class="btn btn-primary hms_button_color margin_10" type="submit">
+      <button class="btn mt-3" style="background-color: rgb(0, 150, 136); color: white;" type="submit">
         Multi Search
       </button>
     </div>
