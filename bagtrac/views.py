@@ -345,7 +345,7 @@ def put_in(request):
         try:
             cage = Cage.objects.get(cage_name=cage_id)
             grid_area = GridArea.objects.get(grid_code=grid_area_id)
-            bags  = Bags.objects.filter(cage__cage_name=cage_id)
+            bags  = Bags.objects.filter(cage_id_id__cage_name=cage_id)
             grid_area.grid_code1  = re.sub(r'\D' , "" , grid_area.grid_code)
             print(grid_area.grid_code)
             if cage.grid_code == grid_area.grid_code1:
@@ -385,11 +385,12 @@ def put_out(request):
                     bag.cage = None
                     bag.save()
                 messages.success(request, "Cage successfully removed from the grid area"  , extra_tags="Success")
-                datas  = Data.objects.filter(cage_id=assigned_cage)
+                datas  = Data.objects.filter(cage_id_id=assigned_cage)
                 for data in datas:
                     data.cage_id= None
+                    print("here")
                     data.save()
-                cage = Cage.objects.get(cage_id=assigned_cage)
+                cage = Cage.objects.get(cage_name=assigned_cage)
                 cage.grid_code = "NA"
                 cage.grid_area = None
                 cage.is_occupied = False
