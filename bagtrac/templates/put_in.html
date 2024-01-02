@@ -22,6 +22,7 @@
         {% endif %}
         {% csrf_token %}
         <div class="hms_margin"></div>
+        <h1 class="mb-4">Grid Put-In</h1>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Cage ID</label>
             <input type="text" class="form-control hms_bg_color" name="cage" id="cage" value="{{ last_cage }}">
@@ -31,7 +32,7 @@
             <label for="bag_seal" class="form-label">Grid ID</label>
             <input type="text" class="form-control hms_bg_color hms_margin" id="grid_area" name="grid_area">
         </div>
-        <button type="submit" class="btn hms_bg hms_margin">Put</button><br>
+        <button type="submit" style="background-color: rgb(0, 150, 136); color: white;" class="btn">Put</button><br>
     </form>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 

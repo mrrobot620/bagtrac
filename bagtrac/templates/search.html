@@ -1,8 +1,8 @@
 {% extends 'base.html' %} 
 {% block content %}
+<div class="container mt-4"><h1 class="mt-4 mb-2"> OB Search </h1></div>
 {% if not_found %}
 <div class="container mt-4">
-  <h1 class="mt-4 mb-2"> OB Search </h1>
   <div class="alert alert-danger alert-dismissible fade show" role="alert">
     Bag ID '{{ bag_id }}' not found.
     <button
