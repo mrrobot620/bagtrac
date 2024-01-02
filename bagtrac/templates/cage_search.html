@@ -2,20 +2,23 @@
 
 {% block content %}
 
+<div class="container mt-4">    
+
+    <h1 class="mt-4 mb-2">
+        Cage Search
+    </h1>
 {% if not_found %}
-<div class="container mt-4">
+
     <div class="alert alert-danger alert-dismissible fade show" role="alert">
         Cage '{{ cage_id }}' not found.
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
-</div>
 {% endif %}
 
-<div class="container mt-4">
     <form method="GET">
-        <div class="input-group mb-3">
+        <div class="input-group mb-3 mt-4">
             <input type="text" class="form-control" name="cage_id" placeholder="Enter Cage ID" aria-label="Enter Bag ID" aria-describedby="search-btn">
-            <button class="btn btn-primary hms_button_color" type="submit" id="search-btn">Search</button>
+            <button class="btn hms_button_color" style="background-color: rgb(0, 150, 136); color: white;" type="submit" id="search-btn">Search</button>
         </div>
     </form>
 </div>
@@ -28,7 +31,7 @@
         <div class="col-md-6 mb-3">
             <div class="card shadow-sm">
                     {% if search_results|length > 0 %}
-                    <div class="card-body d-flex align-items-center hms_bg_color">
+                    <div class="card-body d-flex align-items-center" style="background-color: rgb(0, 150, 136); color: white;">
                         <h5 class="card-title me-auto">Cage ID</h5>
                         <h1 class="card-title ms-auto">{{ search_results.0.cage_id.cage_name }}</h1>
                     </div>
@@ -38,7 +41,7 @@
         <div class="col-md-6 mb-3">
             <div class="card shadow-sm">
                     {% if search_results|length > 0 %}
-                    <div class="card-body d-flex align-items-center hms_bg_color">
+                    <div class="card-body d-flex align-items-center" style="background-color: rgb(0, 150, 136); color: white;">
                         <h5 class="card-title me-auto">Bag Count</h5>
                         <h1 class="card-title ms-auto">{{ total_bags_in_cage }}</h1>
                     </div>
@@ -48,7 +51,7 @@
     </div>
     <div class="table-responsive mt-3">
         <table class="table table-bordered">
-            <thead class="hms_color">
+            <thead>
                 <tr>
                     <th scope="col">Bag ID</th>
                     <th scope="col">CV</th>

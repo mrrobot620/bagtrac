@@ -274,6 +274,11 @@
     color:rgb(0, 150, 136);
 }
 
+@media screen and (max-width: 767px) {
+  .nav_link:nth-child(n+3):nth-child(-n+5) {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 768px) {
     body {
@@ -301,7 +306,6 @@
     .body-pd {
       padding-left: calc(var(--nav-width) + 188px);
     }
-    
     
     }
   
@@ -338,16 +342,24 @@
         </a>
         <div class="nav_list">
           <a href="{% url 'home' %}" class="nav_link">
-            <i class="bx bx-package nav_icon"></i>
+            <i class="bx bx-up-arrow-circle nav_icon"></i>
             <span class="nav_name">OB BagTrac</span>
           </a>
+          <a href="{% url 'ib_bagtrac' %}" class="nav_link">
+            <i class="bx bx-down-arrow-circle nav_icon"></i>
+            <span class="nav_name">IB Bagtrac</span>
+          </a>  
           <a href="{% url 'search' %}" class="nav_link">
             <i class="bx bx-search nav_icon"></i>
-            <span class="nav_name">Search</span>
+            <span class="nav_name">OB Search</span>
           </a>
-          <a href="#" class="nav_link">
-            <i class="bx bx-message-square-detail nav_icon"></i>
-            <span class="nav_name">Messages</span>
+          <a href="{% url 'cage_search' %}" class="nav_link">
+            <i class="bx bx-cube nav_icon"></i>
+            <span class="nav_name">Cage Search</span>
+          </a>
+          <a href="{% url 'cage_generator' %}" class="nav_link">
+            <i class="bx bx-barcode nav_icon"></i>
+            <span class="nav_name">Cage Generate</span>
           </a>
           <a href="#" class="nav_link">
             <i class="bx bx-bookmark nav_icon"></i>
