@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-<div class="padding">
+<h1 class="mt-4"> OB BagTrac </h1>
+<div class="padding hms_margin">
     <form method="post" action="{% url 'home' %}" onsubmit="return validateForm()">
 
         {% if messages %}
-<div class="container mt-4">
+<div class="mt-4">
     {% for message in messages %}
     <div class="alert alert-danger alert-dismissible fade show" role="alert">
         <strong>Error:</strong> {{ message }}
@@ -16,8 +16,8 @@
 </div>
 {% endif %}
         {% csrf_token %}
-        <div class="hms_margin">
-            <select class="form-select hms_bg" aria-label="Default select example" name="CV" id="selectCV">
+        <div class="mt-5">
+            <select class="form-select" aria-label="Default select example" name="CV" id="selectCV">
                 <option value="0" selected>Select Conveyor ...</option>
                 <option value="CV 1" {% if last_cv_value == "CV 1" %}selected{% endif %}>CV 1</option>
                 <option value="CV 2" {% if last_cv_value == "CV 2" %}selected{% endif %}>CV 2</option>
@@ -29,14 +29,14 @@
             </select>
         </div>
         <div>
-            <label for="bag_seal" class="form-label">Bag/Seal ID</label>
+            <label for="bag_seal" class="form-label mt-3">Bag/Seal ID</label>
             <input type="text" class="form-control hms_bg_color hms_margin" id="bag_seal" name="Bag/Seal_ID">
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Cage ID</label>
             <input type="text" class="form-control hms_bg_color" name="Cage_ID" id="cage">
         </div>
-        <button type="submit" class="btn hms_bg">Submit</button>
+        <button type="submit" class="btn" style="background-color: rgb(0, 150, 136); color: white;" >Submit</button>
     </form>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
