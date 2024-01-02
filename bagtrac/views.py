@@ -60,7 +60,7 @@ def home(request):
                 assigned = assign_bag_to_cage(bag_seal_id , cage_id)
                 print("Assignement Succesfull")
                 if not assigned:
-                    messages.error(request, f"Bag {bag_seal_id} cannot be assigned to this {cage_id}")
+                    messages.error(request, f"Bag '{bag_seal_id}' cannot be assigned to Cage: {cage_id}")
                 else:
                     try:
                         current_user = request.user
@@ -384,11 +384,16 @@ def put_out(request):
                     bag.put_out_grid = True
                     bag.cage = None
                     bag.save()
-                messages.success(request, "Cage successfully removed from the grid area")
+                messages.success(request, "Cage successfully removed from the grid area"  , extra_tags="Success")
                 datas  = Data.objects.filter(cage_id=assigned_cage)
                 for data in datas:
                     data.cage_id= None
                     data.save()
+                cage = Cage.objects.get(cage_id=assigned_cage)
+                cage.grid_code = "NA"
+                cage.grid_area = None
+                cage.is_occupied = False
+                cage.save()
             else:
                 messages.error(request, f"No cage assigned to grid area {grid_area}")
         except GridArea.DoesNotExist:
@@ -396,7 +401,3 @@ def put_out(request):
         except Exception as e:
             messages.error(request, f"Error: {e}")
     return render(request, 'put_out.html')
-
-
-
-
