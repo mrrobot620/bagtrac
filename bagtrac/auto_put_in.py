@@ -18,7 +18,7 @@ from datetime import datetime, timedelta
 import logging
 import shutil
 
-
+bags = []
 
 logging.basicConfig(format='%(asctime)s %(message)s' , datefmt='%m/%d/%Y %I:%M:%S %p' , filename='auto_pendency.logs' , level=logging.DEBUG )
 
@@ -67,6 +67,9 @@ def hubSystem():
         print("error at Put screen")
         print(e)
 
+
+def auto_bag_puts():
+    pass
 
 login()
 hubSystem()
