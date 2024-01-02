@@ -1,22 +1,21 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-<div class="container mt-4">    
-
-    <h1 class="mt-4 mb-2">
-        Cage Search
-    </h1>
+<div class="container mt-4">
+    <h1 class="mt-3">Cage Search</h1>
+</div>
 {% if not_found %}
-
+<div class="container mt-4">
     <div class="alert alert-danger alert-dismissible fade show" role="alert">
         Cage '{{ cage_id }}' not found.
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
+</div>
 {% endif %}
 
+<div class="container mt-4">
     <form method="GET">
-        <div class="input-group mb-3 mt-4">
+        <div class="input-group mb-3">
             <input type="text" class="form-control" name="cage_id" placeholder="Enter Cage ID" aria-label="Enter Bag ID" aria-describedby="search-btn">
             <button class="btn hms_button_color" style="background-color: rgb(0, 150, 136); color: white;" type="submit" id="search-btn">Search</button>
         </div>
@@ -51,7 +50,7 @@
     </div>
     <div class="table-responsive mt-3">
         <table class="table table-bordered">
-            <thead>
+            <thead class="hms_color">
                 <tr>
                     <th scope="col">Bag ID</th>
                     <th scope="col">CV</th>

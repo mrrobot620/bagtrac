@@ -58,8 +58,9 @@ def home(request):
                 messages.error(request, e)
             try:
                 assigned = assign_bag_to_cage(bag_seal_id , cage_id)
+                print("Assignement Succesfull")
                 if not assigned:
-                    messages.error(request, f"Bag {bag_seal_id} cannot be assigned to this cage")
+                    messages.error(request, f"Bag {bag_seal_id} cannot be assigned to this {cage_id}")
                 else:
                     try:
                         current_user = request.user
@@ -214,13 +215,15 @@ def generate_cage(request):
             return HttpResponse(f'Error occurred: {str(e)}')
     return HttpResponse('Invalid request method')
 
-
 def assign_bag_to_cage(bag_id , cage_id):
     try:
         bag = Bags.objects.get(bag_id=bag_id)
         bag_grid_code = bag.grid_code
-        assigned_cages = Cage.objects.filter(is_occupied=True)
+        print(bag_grid_code)
+        assigned_cages = Cage.objects.filter(is_occupied=True, cage_name=cage_id)
+        print(assigned_cages.__dict__)
         cage1 = Cage.objects.get(cage_name = cage_id )
+        print(cage1)
         for cage in assigned_cages:
             assigned_bags = Bags.objects.filter(cage=cage)
             if not assigned_bags.exists() or any(assigned_bag.grid_code == bag_grid_code for assigned_bag in assigned_bags):
@@ -232,9 +235,9 @@ def assign_bag_to_cage(bag_id , cage_id):
                 return True
             else:
                 print("cage_not_assigned")
+                return False
     except Exception as e:
         print(e)
-    return False
 
 @login_required
 def ib_bagtrac(request):
@@ -249,7 +252,7 @@ def ib_bagtrac(request):
         data_instance = ibbags(bag_id=bag_id, cage_id=cage_id, time1=time1, user=user)
         identifiers = ["ZO", "B5", "B1", "B2", "B3", "B4", "B6"]
         tags = ["Success"] * len(identifiers) 
-        cage_updated = False  # Flag to check if cage ID was updated
+        cage_updated = False
         for index, identifier in enumerate(identifiers):
             if identifier.lower() in bag_id.lower():
                 try:
