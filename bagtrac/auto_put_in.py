@@ -88,6 +88,9 @@ def auto_bag_put(bag_id, ptc):
                 bag_input.send_keys(Keys.RETURN)
                 print("Putting Done")
                 return True
+            elif "Already" in put_status:
+                print("Bag is Already Staged")
+                return True
             else:
                 print(put_status)
                 print("Put is not Present")
