@@ -33,6 +33,7 @@ from PIL import ImageDraw
 from PIL import ImageFont
 from reportlab.pdfgen import canvas
 import re
+from .auto_put_in import hms_login , hubSystem , auto_bag_put
 
 
 IST = pytz_timezone('Asia/Kolkata') 
@@ -345,7 +346,7 @@ def put_in(request):
         try:
             cage = Cage.objects.get(cage_name=cage_id)
             grid_area = GridArea.objects.get(grid_code=grid_area_id)
-            bags  = Bags.objects.filter(cage_id_id__cage_name=cage_id)
+            bags  = Bags.objects.filter(cage_id__cage_name=cage_id)
             grid_area.grid_code1  = re.sub(r'\D' , "" , grid_area.grid_code)
             print(grid_area.grid_code)
             if cage.grid_code == grid_area.grid_code1:
@@ -355,6 +356,9 @@ def put_in(request):
                 for bag in bags:
                     if bag is not None:
                         bag.put_in_grid = True
+                        hms_login()
+                        hubSystem()
+                        auto_bag_put(bag , "36b93e66-2cdb-4859-8ed9-e2796bd522dd")
                         bag.save()
                     else:
                         messages.error(request , f"Empty Cage")
