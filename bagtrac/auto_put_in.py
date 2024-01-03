@@ -23,7 +23,7 @@ bags = []
 logging.basicConfig(format='%(asctime)s %(message)s' , datefmt='%m/%d/%Y %I:%M:%S %p' , filename='auto_pendency.logs' , level=logging.DEBUG )
 
 op = webdriver.ChromeOptions()
-# op.add_argument('--headless=new')
+op.add_argument('--headless=new')
 prefs = {
     'profile.default_content_settings.popups': 0,
     'download.default_directory' : r"/home/administrator/cbs_bag_hold/data",
@@ -69,10 +69,10 @@ def hubSystem():
 
 #EKOJKOJ-660865526
         
-bag_ids = ["EPATBLL-1374339"]
-ptc = "36b93e66-2cdb-4859-8ed9-e2796bd522dd"
+# bag_ids = ["EPATBLL-1374339"]
+# ptc = "36b93e66-2cdb-4859-8ed9-e2796bd522dd"
 
-def auto_bag_put(bag, ptc):
+def auto_bag_put(bag_id, ptc):
     def put_bag(bag):
         try:
             print(f"Sucessful:   The bag = {bag} & ptc = {ptc}")
@@ -96,11 +96,10 @@ def auto_bag_put(bag, ptc):
             print(f"The bag = {bag} & ptc = {ptc}")
             print(f"Error putting bag {bag}: {e}")
             return False
-    
     time.sleep(2)
-    success = put_bag(bag)
+    success = put_bag(bag_id)
     if not success:
-        success = put_bag(bag)
+        success = put_bag(bag_id)
         if not success:
-            print(f"Failed to put bag {bag} even after retry.")
+            print(f"Failed to put bag {bag_id} even after retry.")
         

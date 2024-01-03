@@ -2105,3 +2105,1144 @@ Stacktrace:
 #17 0x563d4d1b4773 <unknown>
 #18 0x7ffaf9827609 start_thread
 
+01/03/2024 12:02:31 PM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/03/2024 12:02:31 PM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/03/2024 12:02:32 PM chromedriver not found in PATH
+01/03/2024 12:02:32 PM chrome detected at /usr/bin/google-chrome
+01/03/2024 12:02:32 PM Running command: /usr/bin/google-chrome --version
+01/03/2024 12:02:32 PM Output: "Google Chrome 119.0.6045.159 "
+01/03/2024 12:02:32 PM Detected browser: chrome 119.0.6045.159
+01/03/2024 12:02:32 PM Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+01/03/2024 12:02:32 PM Required driver: chromedriver 119.0.6045.105
+01/03/2024 12:02:32 PM chromedriver 119.0.6045.105 already in the cache
+01/03/2024 12:02:32 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:02:32 PM Browser path: /usr/bin/google-chrome
+01/03/2024 12:02:32 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:02:32 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 37354
+01/03/2024 12:02:32 PM POST http://localhost:42533/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": []}}}}
+01/03/2024 12:02:32 PM Starting new HTTP connection (1): localhost:42533
+01/03/2024 12:02:33 PM http://localhost:42533 "POST /session HTTP/1.1" 200 0
+01/03/2024 12:02:33 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.Rba94K"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:43647"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"5bcc2b307944e5a90d2f2a997a62ae73"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:02:33 PM Finished Request
+01/03/2024 12:02:54 PM Not Found: /
+01/03/2024 12:02:54 PM Not Found: /favicon.ico
+01/03/2024 12:07:59 PM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/03/2024 12:08:00 PM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/03/2024 12:08:00 PM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/03/2024 12:08:00 PM chromedriver not found in PATH
+01/03/2024 12:08:00 PM chrome detected at /usr/bin/google-chrome
+01/03/2024 12:08:00 PM Running command: /usr/bin/google-chrome --version
+01/03/2024 12:08:00 PM Output: "Google Chrome 119.0.6045.159 "
+01/03/2024 12:08:00 PM Detected browser: chrome 119.0.6045.159
+01/03/2024 12:08:00 PM Required driver: chromedriver 119.0.6045.105
+01/03/2024 12:08:00 PM chromedriver 119.0.6045.105 already in the cache
+01/03/2024 12:08:00 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:08:00 PM Browser path: /usr/bin/google-chrome
+01/03/2024 12:08:00 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:08:00 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 42017
+01/03/2024 12:08:00 PM POST http://localhost:54671/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": []}}}}
+01/03/2024 12:08:00 PM Starting new HTTP connection (1): localhost:54671
+01/03/2024 12:08:01 PM http://localhost:54671 "POST /session HTTP/1.1" 200 0
+01/03/2024 12:08:01 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.WvXnVi"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:39549"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"fb784ebe35dba84ab1a6f5658bc9c2ba"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:08:01 PM Finished Request
+01/03/2024 12:08:12 PM /home/flipkart/projects/bagtrac/bagtrac/auto_put_in.py changed, reloading.
+01/03/2024 12:08:13 PM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/03/2024 12:08:13 PM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/03/2024 12:08:13 PM chromedriver not found in PATH
+01/03/2024 12:08:13 PM chrome detected at /usr/bin/google-chrome
+01/03/2024 12:08:13 PM Running command: /usr/bin/google-chrome --version
+01/03/2024 12:08:13 PM Output: "Google Chrome 119.0.6045.159 "
+01/03/2024 12:08:13 PM Detected browser: chrome 119.0.6045.159
+01/03/2024 12:08:13 PM Required driver: chromedriver 119.0.6045.105
+01/03/2024 12:08:13 PM chromedriver 119.0.6045.105 already in the cache
+01/03/2024 12:08:13 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:08:13 PM Browser path: /usr/bin/google-chrome
+01/03/2024 12:08:13 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:08:13 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 42278
+01/03/2024 12:08:13 PM POST http://localhost:55557/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/03/2024 12:08:13 PM Starting new HTTP connection (1): localhost:55557
+01/03/2024 12:08:13 PM http://localhost:55557 "POST /session HTTP/1.1" 200 0
+01/03/2024 12:08:13 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.t1cD83"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:41155"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"359495d48645763d4398d6186a320adb"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:08:13 PM Finished Request
+01/03/2024 12:08:17 PM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/03/2024 12:08:17 PM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/03/2024 12:08:17 PM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/03/2024 12:08:17 PM chromedriver not found in PATH
+01/03/2024 12:08:17 PM chrome detected at /usr/bin/google-chrome
+01/03/2024 12:08:17 PM Running command: /usr/bin/google-chrome --version
+01/03/2024 12:08:17 PM Output: "Google Chrome 119.0.6045.159 "
+01/03/2024 12:08:17 PM Detected browser: chrome 119.0.6045.159
+01/03/2024 12:08:17 PM Required driver: chromedriver 119.0.6045.105
+01/03/2024 12:08:17 PM chromedriver 119.0.6045.105 already in the cache
+01/03/2024 12:08:17 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:08:17 PM Browser path: /usr/bin/google-chrome
+01/03/2024 12:08:17 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:08:17 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 42483
+01/03/2024 12:08:18 PM POST http://localhost:44877/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/03/2024 12:08:18 PM Starting new HTTP connection (1): localhost:44877
+01/03/2024 12:08:18 PM http://localhost:44877 "POST /session HTTP/1.1" 200 0
+01/03/2024 12:08:18 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.YcUZsx"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:35727"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"023acd38d901bd61a97f87bd617455f4"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:08:18 PM Finished Request
+01/03/2024 12:10:25 PM POST http://localhost:44877/session/023acd38d901bd61a97f87bd617455f4/url {"url": "http://10.24.0.157/"}
+01/03/2024 12:10:27 PM http://localhost:44877 "POST /session/023acd38d901bd61a97f87bd617455f4/url HTTP/1.1" 200 0
+01/03/2024 12:10:27 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:10:27 PM Finished Request
+01/03/2024 12:10:32 PM GET http://localhost:44877/session/023acd38d901bd61a97f87bd617455f4/title {}
+01/03/2024 12:10:32 PM http://localhost:44877 "GET /session/023acd38d901bd61a97f87bd617455f4/title HTTP/1.1" 200 0
+01/03/2024 12:10:32 PM Remote response: status=200 | data={"value":"Login (AuthN)"} | headers=HTTPHeaderDict({'Content-Length': '25', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:10:32 PM Finished Request
+01/03/2024 12:10:32 PM POST http://localhost:44877/session/023acd38d901bd61a97f87bd617455f4/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]"}
+01/03/2024 12:10:32 PM http://localhost:44877 "POST /session/023acd38d901bd61a97f87bd617455f4/element HTTP/1.1" 200 0
+01/03/2024 12:10:32 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"95D9DB226B9E3414E68FB7EC3ED0B085_element_6"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:10:32 PM Finished Request
+01/03/2024 12:10:32 PM POST http://localhost:44877/session/023acd38d901bd61a97f87bd617455f4/element/95D9DB226B9E3414E68FB7EC3ED0B085_element_6/value {"text": "ca.2670054", "value": ["c", "a", ".", "2", "6", "7", "0", "0", "5", "4"]}
+01/03/2024 12:10:32 PM http://localhost:44877 "POST /session/023acd38d901bd61a97f87bd617455f4/element/95D9DB226B9E3414E68FB7EC3ED0B085_element_6/value HTTP/1.1" 200 0
+01/03/2024 12:10:32 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:10:32 PM Finished Request
+01/03/2024 12:10:32 PM POST http://localhost:44877/session/023acd38d901bd61a97f87bd617455f4/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[2]"}
+01/03/2024 12:10:32 PM http://localhost:44877 "POST /session/023acd38d901bd61a97f87bd617455f4/element HTTP/1.1" 200 0
+01/03/2024 12:10:32 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"95D9DB226B9E3414E68FB7EC3ED0B085_element_10"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:10:32 PM Finished Request
+01/03/2024 12:10:32 PM POST http://localhost:44877/session/023acd38d901bd61a97f87bd617455f4/element/95D9DB226B9E3414E68FB7EC3ED0B085_element_10/value {"text": "Chauhan@8091", "value": ["C", "h", "a", "u", "h", "a", "n", "@", "8", "0", "9", "1"]}
+01/03/2024 12:10:32 PM http://localhost:44877 "POST /session/023acd38d901bd61a97f87bd617455f4/element/95D9DB226B9E3414E68FB7EC3ED0B085_element_10/value HTTP/1.1" 200 0
+01/03/2024 12:10:32 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:10:32 PM Finished Request
+01/03/2024 12:10:35 PM POST http://localhost:44877/session/023acd38d901bd61a97f87bd617455f4/element/95D9DB226B9E3414E68FB7EC3ED0B085_element_10/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:10:38 PM http://localhost:44877 "POST /session/023acd38d901bd61a97f87bd617455f4/element/95D9DB226B9E3414E68FB7EC3ED0B085_element_10/value HTTP/1.1" 200 0
+01/03/2024 12:10:38 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:10:38 PM Finished Request
+01/03/2024 12:10:38 PM POST http://localhost:44877/session/023acd38d901bd61a97f87bd617455f4/element {"using": "css selector", "value": "[id=\"selectFacility\"]"}
+01/03/2024 12:10:38 PM http://localhost:44877 "POST /session/023acd38d901bd61a97f87bd617455f4/element HTTP/1.1" 200 0
+01/03/2024 12:10:38 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"FDFDC5C3BF4C65D1CDAA33C2B3B5ACB9_element_8"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:10:38 PM Finished Request
+01/03/2024 12:10:38 PM POST http://localhost:44877/session/023acd38d901bd61a97f87bd617455f4/element/FDFDC5C3BF4C65D1CDAA33C2B3B5ACB9_element_8/click {}
+01/03/2024 12:10:38 PM http://localhost:44877 "POST /session/023acd38d901bd61a97f87bd617455f4/element/FDFDC5C3BF4C65D1CDAA33C2B3B5ACB9_element_8/click HTTP/1.1" 200 0
+01/03/2024 12:10:38 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:10:38 PM Finished Request
+01/03/2024 12:10:38 PM POST http://localhost:44877/session/023acd38d901bd61a97f87bd617455f4/element/FDFDC5C3BF4C65D1CDAA33C2B3B5ACB9_element_8/value {"text": "MotherHub_YKB", "value": ["M", "o", "t", "h", "e", "r", "H", "u", "b", "_", "Y", "K", "B"]}
+01/03/2024 12:10:38 PM http://localhost:44877 "POST /session/023acd38d901bd61a97f87bd617455f4/element/FDFDC5C3BF4C65D1CDAA33C2B3B5ACB9_element_8/value HTTP/1.1" 200 0
+01/03/2024 12:10:38 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:10:38 PM Finished Request
+01/03/2024 12:10:38 PM POST http://localhost:44877/session/023acd38d901bd61a97f87bd617455f4/element/FDFDC5C3BF4C65D1CDAA33C2B3B5ACB9_element_8/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:10:38 PM http://localhost:44877 "POST /session/023acd38d901bd61a97f87bd617455f4/element/FDFDC5C3BF4C65D1CDAA33C2B3B5ACB9_element_8/value HTTP/1.1" 200 0
+01/03/2024 12:10:38 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:10:38 PM Finished Request
+01/03/2024 12:10:58 PM POST http://localhost:44877/session/023acd38d901bd61a97f87bd617455f4/element {"using": "css selector", "value": ".humberger"}
+01/03/2024 12:10:58 PM http://localhost:44877 "POST /session/023acd38d901bd61a97f87bd617455f4/element HTTP/1.1" 200 0
+01/03/2024 12:10:58 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"FDFDC5C3BF4C65D1CDAA33C2B3B5ACB9_element_3"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:10:58 PM Finished Request
+01/03/2024 12:10:58 PM POST http://localhost:44877/session/023acd38d901bd61a97f87bd617455f4/element/FDFDC5C3BF4C65D1CDAA33C2B3B5ACB9_element_3/click {}
+01/03/2024 12:10:58 PM http://localhost:44877 "POST /session/023acd38d901bd61a97f87bd617455f4/element/FDFDC5C3BF4C65D1CDAA33C2B3B5ACB9_element_3/click HTTP/1.1" 200 0
+01/03/2024 12:10:58 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:10:58 PM Finished Request
+01/03/2024 12:11:01 PM POST http://localhost:44877/session/023acd38d901bd61a97f87bd617455f4/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/sidebar-main/div[2]/div[1]/ul[7]/li[1]"}
+01/03/2024 12:11:02 PM http://localhost:44877 "POST /session/023acd38d901bd61a97f87bd617455f4/element HTTP/1.1" 200 0
+01/03/2024 12:11:02 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"FDFDC5C3BF4C65D1CDAA33C2B3B5ACB9_element_20"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:11:02 PM Finished Request
+01/03/2024 12:11:02 PM POST http://localhost:44877/session/023acd38d901bd61a97f87bd617455f4/element/FDFDC5C3BF4C65D1CDAA33C2B3B5ACB9_element_20/click {}
+01/03/2024 12:11:02 PM http://localhost:44877 "POST /session/023acd38d901bd61a97f87bd617455f4/element/FDFDC5C3BF4C65D1CDAA33C2B3B5ACB9_element_20/click HTTP/1.1" 200 0
+01/03/2024 12:11:02 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:11:02 PM Finished Request
+01/03/2024 12:11:04 PM POST http://localhost:44877/session/023acd38d901bd61a97f87bd617455f4/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/03/2024 12:11:04 PM http://localhost:44877 "POST /session/023acd38d901bd61a97f87bd617455f4/element HTTP/1.1" 200 0
+01/03/2024 12:11:04 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"FDFDC5C3BF4C65D1CDAA33C2B3B5ACB9_element_26"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:11:04 PM Finished Request
+01/03/2024 12:11:04 PM POST http://localhost:44877/session/023acd38d901bd61a97f87bd617455f4/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/03/2024 12:11:04 PM http://localhost:44877 "POST /session/023acd38d901bd61a97f87bd617455f4/element HTTP/1.1" 200 0
+01/03/2024 12:11:04 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"FDFDC5C3BF4C65D1CDAA33C2B3B5ACB9_element_26"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:11:04 PM Finished Request
+01/03/2024 12:11:04 PM POST http://localhost:44877/session/023acd38d901bd61a97f87bd617455f4/url {"url": "http://10.24.0.157/"}
+01/03/2024 12:11:04 PM http://localhost:44877 "POST /session/023acd38d901bd61a97f87bd617455f4/url HTTP/1.1" 200 0
+01/03/2024 12:11:04 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:11:04 PM Finished Request
+01/03/2024 12:11:09 PM GET http://localhost:44877/session/023acd38d901bd61a97f87bd617455f4/title {}
+01/03/2024 12:11:09 PM http://localhost:44877 "GET /session/023acd38d901bd61a97f87bd617455f4/title HTTP/1.1" 200 0
+01/03/2024 12:11:09 PM Remote response: status=200 | data={"value":"Hub Management System"} | headers=HTTPHeaderDict({'Content-Length': '33', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:11:09 PM Finished Request
+01/03/2024 12:11:09 PM POST http://localhost:44877/session/023acd38d901bd61a97f87bd617455f4/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]"}
+01/03/2024 12:11:09 PM http://localhost:44877 "POST /session/023acd38d901bd61a97f87bd617455f4/element HTTP/1.1" 404 0
+01/03/2024 12:11:09 PM Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]\"}\n  (Session info: chrome=119.0.6045.159)","stacktrace":"#0 0x555689bb35e3 \u003Cunknown>\n#1 0x5556898760b7 \u003Cunknown>\n#2 0x5556898c3f53 \u003Cunknown>\n#3 0x5556898c4051 \u003Cunknown>\n#4 0x5556899099c4 \u003Cunknown>\n#5 0x5556898eaf1d \u003Cunknown>\n#6 0x555689906b3d \u003Cunknown>\n#7 0x5556898eacc3 \u003Cunknown>\n#8 0x5556898b60e4 \u003Cunknown>\n#9 0x5556898b70ae \u003Cunknown>\n#10 0x555689b79ce1 \u003Cunknown>\n#11 0x555689b7db7e \u003Cunknown>\n#12 0x555689b674b5 \u003Cunknown>\n#13 0x555689b7e7d6 \u003Cunknown>\n#14 0x555689b4adbf \u003Cunknown>\n#15 0x555689ba1748 \u003Cunknown>\n#16 0x555689ba1917 \u003Cunknown>\n#17 0x555689bb2773 \u003Cunknown>\n#18 0x7f31a1274609 start_thread\n"}} | headers=HTTPHeaderDict({'Content-Length': '900', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:11:09 PM Finished Request
+01/03/2024 12:11:09 PM Internal Server Error: /put_in
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/flipkart/projects/bagtrac/bagtrac/views.py", line 359, in put_in
+    hms_login()
+  File "/home/flipkart/projects/bagtrac/bagtrac/auto_put_in.py", line 40, in hms_login
+    username = driver.find_element(By.XPATH , "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]")
+  File "/home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 738, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "/home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]"}
+  (Session info: chrome=119.0.6045.159); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x555689bb35e3 <unknown>
+#1 0x5556898760b7 <unknown>
+#2 0x5556898c3f53 <unknown>
+#3 0x5556898c4051 <unknown>
+#4 0x5556899099c4 <unknown>
+#5 0x5556898eaf1d <unknown>
+#6 0x555689906b3d <unknown>
+#7 0x5556898eacc3 <unknown>
+#8 0x5556898b60e4 <unknown>
+#9 0x5556898b70ae <unknown>
+#10 0x555689b79ce1 <unknown>
+#11 0x555689b7db7e <unknown>
+#12 0x555689b674b5 <unknown>
+#13 0x555689b7e7d6 <unknown>
+#14 0x555689b4adbf <unknown>
+#15 0x555689ba1748 <unknown>
+#16 0x555689ba1917 <unknown>
+#17 0x555689bb2773 <unknown>
+#18 0x7f31a1274609 start_thread
+
+01/03/2024 12:12:10 PM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/03/2024 12:12:11 PM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/03/2024 12:12:11 PM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/03/2024 12:12:11 PM chromedriver not found in PATH
+01/03/2024 12:12:11 PM chrome detected at /usr/bin/google-chrome
+01/03/2024 12:12:11 PM Running command: /usr/bin/google-chrome --version
+01/03/2024 12:12:11 PM Output: "Google Chrome 119.0.6045.159 "
+01/03/2024 12:12:11 PM Detected browser: chrome 119.0.6045.159
+01/03/2024 12:12:11 PM Required driver: chromedriver 119.0.6045.105
+01/03/2024 12:12:11 PM chromedriver 119.0.6045.105 already in the cache
+01/03/2024 12:12:11 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:12:11 PM Browser path: /usr/bin/google-chrome
+01/03/2024 12:12:11 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:12:11 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 46133
+01/03/2024 12:12:11 PM POST http://localhost:33399/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/03/2024 12:12:11 PM Starting new HTTP connection (1): localhost:33399
+01/03/2024 12:12:12 PM http://localhost:33399 "POST /session HTTP/1.1" 200 0
+01/03/2024 12:12:12 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.Kh9rsA"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:45167"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"d349fd050c1391371808e722fd1cf9ec"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:12:12 PM Finished Request
+01/03/2024 12:18:15 PM POST http://localhost:33399/session/d349fd050c1391371808e722fd1cf9ec/url {"url": "http://10.24.0.157/"}
+01/03/2024 12:18:17 PM http://localhost:33399 "POST /session/d349fd050c1391371808e722fd1cf9ec/url HTTP/1.1" 200 0
+01/03/2024 12:18:17 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:18:17 PM Finished Request
+01/03/2024 12:18:22 PM GET http://localhost:33399/session/d349fd050c1391371808e722fd1cf9ec/title {}
+01/03/2024 12:18:22 PM http://localhost:33399 "GET /session/d349fd050c1391371808e722fd1cf9ec/title HTTP/1.1" 200 0
+01/03/2024 12:18:22 PM Remote response: status=200 | data={"value":"Login (AuthN)"} | headers=HTTPHeaderDict({'Content-Length': '25', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:18:22 PM Finished Request
+01/03/2024 12:18:22 PM POST http://localhost:33399/session/d349fd050c1391371808e722fd1cf9ec/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]"}
+01/03/2024 12:18:22 PM http://localhost:33399 "POST /session/d349fd050c1391371808e722fd1cf9ec/element HTTP/1.1" 200 0
+01/03/2024 12:18:22 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"F0A2E9BB6130A1D8A614D88173824FB2_element_7"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:18:22 PM Finished Request
+01/03/2024 12:18:22 PM POST http://localhost:33399/session/d349fd050c1391371808e722fd1cf9ec/element/F0A2E9BB6130A1D8A614D88173824FB2_element_7/value {"text": "ca.2670054", "value": ["c", "a", ".", "2", "6", "7", "0", "0", "5", "4"]}
+01/03/2024 12:18:22 PM http://localhost:33399 "POST /session/d349fd050c1391371808e722fd1cf9ec/element/F0A2E9BB6130A1D8A614D88173824FB2_element_7/value HTTP/1.1" 200 0
+01/03/2024 12:18:22 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:18:22 PM Finished Request
+01/03/2024 12:18:22 PM POST http://localhost:33399/session/d349fd050c1391371808e722fd1cf9ec/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[2]"}
+01/03/2024 12:18:22 PM http://localhost:33399 "POST /session/d349fd050c1391371808e722fd1cf9ec/element HTTP/1.1" 200 0
+01/03/2024 12:18:22 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"F0A2E9BB6130A1D8A614D88173824FB2_element_11"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:18:22 PM Finished Request
+01/03/2024 12:18:22 PM POST http://localhost:33399/session/d349fd050c1391371808e722fd1cf9ec/element/F0A2E9BB6130A1D8A614D88173824FB2_element_11/value {"text": "Chauhan@8091", "value": ["C", "h", "a", "u", "h", "a", "n", "@", "8", "0", "9", "1"]}
+01/03/2024 12:18:22 PM http://localhost:33399 "POST /session/d349fd050c1391371808e722fd1cf9ec/element/F0A2E9BB6130A1D8A614D88173824FB2_element_11/value HTTP/1.1" 200 0
+01/03/2024 12:18:22 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:18:22 PM Finished Request
+01/03/2024 12:18:25 PM POST http://localhost:33399/session/d349fd050c1391371808e722fd1cf9ec/element/F0A2E9BB6130A1D8A614D88173824FB2_element_11/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:18:28 PM http://localhost:33399 "POST /session/d349fd050c1391371808e722fd1cf9ec/element/F0A2E9BB6130A1D8A614D88173824FB2_element_11/value HTTP/1.1" 200 0
+01/03/2024 12:18:28 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:18:28 PM Finished Request
+01/03/2024 12:18:28 PM POST http://localhost:33399/session/d349fd050c1391371808e722fd1cf9ec/element {"using": "css selector", "value": "[id=\"selectFacility\"]"}
+01/03/2024 12:18:28 PM http://localhost:33399 "POST /session/d349fd050c1391371808e722fd1cf9ec/element HTTP/1.1" 200 0
+01/03/2024 12:18:28 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"9C1C60DAD0ADDF9C79E7DE57F04F7DF5_element_8"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:18:28 PM Finished Request
+01/03/2024 12:18:28 PM POST http://localhost:33399/session/d349fd050c1391371808e722fd1cf9ec/element/9C1C60DAD0ADDF9C79E7DE57F04F7DF5_element_8/click {}
+01/03/2024 12:18:29 PM http://localhost:33399 "POST /session/d349fd050c1391371808e722fd1cf9ec/element/9C1C60DAD0ADDF9C79E7DE57F04F7DF5_element_8/click HTTP/1.1" 200 0
+01/03/2024 12:18:29 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:18:29 PM Finished Request
+01/03/2024 12:18:29 PM POST http://localhost:33399/session/d349fd050c1391371808e722fd1cf9ec/element/9C1C60DAD0ADDF9C79E7DE57F04F7DF5_element_8/value {"text": "MotherHub_YKB", "value": ["M", "o", "t", "h", "e", "r", "H", "u", "b", "_", "Y", "K", "B"]}
+01/03/2024 12:18:29 PM http://localhost:33399 "POST /session/d349fd050c1391371808e722fd1cf9ec/element/9C1C60DAD0ADDF9C79E7DE57F04F7DF5_element_8/value HTTP/1.1" 200 0
+01/03/2024 12:18:29 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:18:29 PM Finished Request
+01/03/2024 12:18:29 PM POST http://localhost:33399/session/d349fd050c1391371808e722fd1cf9ec/element/9C1C60DAD0ADDF9C79E7DE57F04F7DF5_element_8/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:18:29 PM http://localhost:33399 "POST /session/d349fd050c1391371808e722fd1cf9ec/element/9C1C60DAD0ADDF9C79E7DE57F04F7DF5_element_8/value HTTP/1.1" 200 0
+01/03/2024 12:18:29 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:18:29 PM Finished Request
+01/03/2024 12:18:49 PM POST http://localhost:33399/session/d349fd050c1391371808e722fd1cf9ec/element {"using": "css selector", "value": ".humberger"}
+01/03/2024 12:18:49 PM http://localhost:33399 "POST /session/d349fd050c1391371808e722fd1cf9ec/element HTTP/1.1" 200 0
+01/03/2024 12:18:49 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"9C1C60DAD0ADDF9C79E7DE57F04F7DF5_element_3"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:18:49 PM Finished Request
+01/03/2024 12:18:49 PM POST http://localhost:33399/session/d349fd050c1391371808e722fd1cf9ec/element/9C1C60DAD0ADDF9C79E7DE57F04F7DF5_element_3/click {}
+01/03/2024 12:18:49 PM http://localhost:33399 "POST /session/d349fd050c1391371808e722fd1cf9ec/element/9C1C60DAD0ADDF9C79E7DE57F04F7DF5_element_3/click HTTP/1.1" 200 0
+01/03/2024 12:18:49 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:18:49 PM Finished Request
+01/03/2024 12:18:52 PM POST http://localhost:33399/session/d349fd050c1391371808e722fd1cf9ec/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/sidebar-main/div[2]/div[1]/ul[7]/li[1]"}
+01/03/2024 12:18:52 PM http://localhost:33399 "POST /session/d349fd050c1391371808e722fd1cf9ec/element HTTP/1.1" 200 0
+01/03/2024 12:18:52 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"9C1C60DAD0ADDF9C79E7DE57F04F7DF5_element_20"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:18:52 PM Finished Request
+01/03/2024 12:18:52 PM POST http://localhost:33399/session/d349fd050c1391371808e722fd1cf9ec/element/9C1C60DAD0ADDF9C79E7DE57F04F7DF5_element_20/click {}
+01/03/2024 12:18:52 PM http://localhost:33399 "POST /session/d349fd050c1391371808e722fd1cf9ec/element/9C1C60DAD0ADDF9C79E7DE57F04F7DF5_element_20/click HTTP/1.1" 200 0
+01/03/2024 12:18:52 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:18:52 PM Finished Request
+01/03/2024 12:18:54 PM POST http://localhost:33399/session/d349fd050c1391371808e722fd1cf9ec/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/03/2024 12:18:54 PM http://localhost:33399 "POST /session/d349fd050c1391371808e722fd1cf9ec/element HTTP/1.1" 200 0
+01/03/2024 12:18:54 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"9C1C60DAD0ADDF9C79E7DE57F04F7DF5_element_26"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:18:54 PM Finished Request
+01/03/2024 12:18:54 PM POST http://localhost:33399/session/d349fd050c1391371808e722fd1cf9ec/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/03/2024 12:18:54 PM http://localhost:33399 "POST /session/d349fd050c1391371808e722fd1cf9ec/element HTTP/1.1" 200 0
+01/03/2024 12:18:54 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"9C1C60DAD0ADDF9C79E7DE57F04F7DF5_element_26"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:18:54 PM Finished Request
+01/03/2024 12:18:54 PM POST http://localhost:33399/session/d349fd050c1391371808e722fd1cf9ec/url {"url": "http://10.24.0.157/"}
+01/03/2024 12:18:54 PM http://localhost:33399 "POST /session/d349fd050c1391371808e722fd1cf9ec/url HTTP/1.1" 200 0
+01/03/2024 12:18:54 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:18:54 PM Finished Request
+01/03/2024 12:18:59 PM GET http://localhost:33399/session/d349fd050c1391371808e722fd1cf9ec/title {}
+01/03/2024 12:18:59 PM http://localhost:33399 "GET /session/d349fd050c1391371808e722fd1cf9ec/title HTTP/1.1" 200 0
+01/03/2024 12:18:59 PM Remote response: status=200 | data={"value":"Hub Management System"} | headers=HTTPHeaderDict({'Content-Length': '33', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:18:59 PM Finished Request
+01/03/2024 12:18:59 PM POST http://localhost:33399/session/d349fd050c1391371808e722fd1cf9ec/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]"}
+01/03/2024 12:18:59 PM http://localhost:33399 "POST /session/d349fd050c1391371808e722fd1cf9ec/element HTTP/1.1" 404 0
+01/03/2024 12:18:59 PM Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]\"}\n  (Session info: chrome=119.0.6045.159)","stacktrace":"#0 0x56396579c5e3 \u003Cunknown>\n#1 0x56396545f0b7 \u003Cunknown>\n#2 0x5639654acf53 \u003Cunknown>\n#3 0x5639654ad051 \u003Cunknown>\n#4 0x5639654f29c4 \u003Cunknown>\n#5 0x5639654d3f1d \u003Cunknown>\n#6 0x5639654efb3d \u003Cunknown>\n#7 0x5639654d3cc3 \u003Cunknown>\n#8 0x56396549f0e4 \u003Cunknown>\n#9 0x5639654a00ae \u003Cunknown>\n#10 0x563965762ce1 \u003Cunknown>\n#11 0x563965766b7e \u003Cunknown>\n#12 0x5639657504b5 \u003Cunknown>\n#13 0x5639657677d6 \u003Cunknown>\n#14 0x563965733dbf \u003Cunknown>\n#15 0x56396578a748 \u003Cunknown>\n#16 0x56396578a917 \u003Cunknown>\n#17 0x56396579b773 \u003Cunknown>\n#18 0x7f9e7f243609 start_thread\n"}} | headers=HTTPHeaderDict({'Content-Length': '900', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:18:59 PM Finished Request
+01/03/2024 12:19:00 PM Internal Server Error: /put_in
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/flipkart/projects/bagtrac/bagtrac/views.py", line 360, in put_in
+    hms_login()
+  File "/home/flipkart/projects/bagtrac/bagtrac/auto_put_in.py", line 40, in hms_login
+    username = driver.find_element(By.XPATH , "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]")
+  File "/home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 738, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "/home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]"}
+  (Session info: chrome=119.0.6045.159); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x56396579c5e3 <unknown>
+#1 0x56396545f0b7 <unknown>
+#2 0x5639654acf53 <unknown>
+#3 0x5639654ad051 <unknown>
+#4 0x5639654f29c4 <unknown>
+#5 0x5639654d3f1d <unknown>
+#6 0x5639654efb3d <unknown>
+#7 0x5639654d3cc3 <unknown>
+#8 0x56396549f0e4 <unknown>
+#9 0x5639654a00ae <unknown>
+#10 0x563965762ce1 <unknown>
+#11 0x563965766b7e <unknown>
+#12 0x5639657504b5 <unknown>
+#13 0x5639657677d6 <unknown>
+#14 0x563965733dbf <unknown>
+#15 0x56396578a748 <unknown>
+#16 0x56396578a917 <unknown>
+#17 0x56396579b773 <unknown>
+#18 0x7f9e7f243609 start_thread
+
+01/03/2024 12:21:39 PM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/03/2024 12:21:39 PM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/03/2024 12:21:39 PM chromedriver not found in PATH
+01/03/2024 12:21:39 PM chrome detected at /usr/bin/google-chrome
+01/03/2024 12:21:39 PM Running command: /usr/bin/google-chrome --version
+01/03/2024 12:21:39 PM Output: "Google Chrome 119.0.6045.159 "
+01/03/2024 12:21:39 PM Detected browser: chrome 119.0.6045.159
+01/03/2024 12:21:39 PM Required driver: chromedriver 119.0.6045.105
+01/03/2024 12:21:39 PM chromedriver 119.0.6045.105 already in the cache
+01/03/2024 12:21:39 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:21:39 PM Browser path: /usr/bin/google-chrome
+01/03/2024 12:21:39 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:21:39 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 51443
+01/03/2024 12:21:39 PM POST http://localhost:40279/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/03/2024 12:21:39 PM Starting new HTTP connection (1): localhost:40279
+01/03/2024 12:21:40 PM http://localhost:40279 "POST /session HTTP/1.1" 200 0
+01/03/2024 12:21:40 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.yy7Ux5"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:36949"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"f171c885f7254f267f5cfb009a1e6f07"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:21:40 PM Finished Request
+01/03/2024 12:21:43 PM POST http://localhost:40279/session/f171c885f7254f267f5cfb009a1e6f07/url {"url": "http://10.24.0.157/"}
+01/03/2024 12:21:45 PM http://localhost:40279 "POST /session/f171c885f7254f267f5cfb009a1e6f07/url HTTP/1.1" 200 0
+01/03/2024 12:21:45 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:21:45 PM Finished Request
+01/03/2024 12:21:50 PM GET http://localhost:40279/session/f171c885f7254f267f5cfb009a1e6f07/title {}
+01/03/2024 12:21:50 PM http://localhost:40279 "GET /session/f171c885f7254f267f5cfb009a1e6f07/title HTTP/1.1" 200 0
+01/03/2024 12:21:50 PM Remote response: status=200 | data={"value":"Login (AuthN)"} | headers=HTTPHeaderDict({'Content-Length': '25', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:21:50 PM Finished Request
+01/03/2024 12:21:50 PM POST http://localhost:40279/session/f171c885f7254f267f5cfb009a1e6f07/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]"}
+01/03/2024 12:21:50 PM http://localhost:40279 "POST /session/f171c885f7254f267f5cfb009a1e6f07/element HTTP/1.1" 200 0
+01/03/2024 12:21:50 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"C60911439F9B48E20E9C4ABE3D41B904_element_7"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:21:50 PM Finished Request
+01/03/2024 12:21:50 PM POST http://localhost:40279/session/f171c885f7254f267f5cfb009a1e6f07/element/C60911439F9B48E20E9C4ABE3D41B904_element_7/value {"text": "ca.2670054", "value": ["c", "a", ".", "2", "6", "7", "0", "0", "5", "4"]}
+01/03/2024 12:21:50 PM http://localhost:40279 "POST /session/f171c885f7254f267f5cfb009a1e6f07/element/C60911439F9B48E20E9C4ABE3D41B904_element_7/value HTTP/1.1" 200 0
+01/03/2024 12:21:50 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:21:50 PM Finished Request
+01/03/2024 12:21:50 PM POST http://localhost:40279/session/f171c885f7254f267f5cfb009a1e6f07/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[2]"}
+01/03/2024 12:21:50 PM http://localhost:40279 "POST /session/f171c885f7254f267f5cfb009a1e6f07/element HTTP/1.1" 200 0
+01/03/2024 12:21:50 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"C60911439F9B48E20E9C4ABE3D41B904_element_10"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:21:50 PM Finished Request
+01/03/2024 12:21:50 PM POST http://localhost:40279/session/f171c885f7254f267f5cfb009a1e6f07/element/C60911439F9B48E20E9C4ABE3D41B904_element_10/value {"text": "Chauhan@8091", "value": ["C", "h", "a", "u", "h", "a", "n", "@", "8", "0", "9", "1"]}
+01/03/2024 12:21:50 PM http://localhost:40279 "POST /session/f171c885f7254f267f5cfb009a1e6f07/element/C60911439F9B48E20E9C4ABE3D41B904_element_10/value HTTP/1.1" 200 0
+01/03/2024 12:21:50 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:21:50 PM Finished Request
+01/03/2024 12:21:53 PM POST http://localhost:40279/session/f171c885f7254f267f5cfb009a1e6f07/element/C60911439F9B48E20E9C4ABE3D41B904_element_10/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:21:57 PM http://localhost:40279 "POST /session/f171c885f7254f267f5cfb009a1e6f07/element/C60911439F9B48E20E9C4ABE3D41B904_element_10/value HTTP/1.1" 200 0
+01/03/2024 12:21:57 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:21:57 PM Finished Request
+01/03/2024 12:21:57 PM POST http://localhost:40279/session/f171c885f7254f267f5cfb009a1e6f07/element {"using": "css selector", "value": "[id=\"selectFacility\"]"}
+01/03/2024 12:21:57 PM http://localhost:40279 "POST /session/f171c885f7254f267f5cfb009a1e6f07/element HTTP/1.1" 200 0
+01/03/2024 12:21:57 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"3BA151D78D5EBFD48C6D747BE10D2E8A_element_8"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:21:57 PM Finished Request
+01/03/2024 12:21:57 PM POST http://localhost:40279/session/f171c885f7254f267f5cfb009a1e6f07/element/3BA151D78D5EBFD48C6D747BE10D2E8A_element_8/click {}
+01/03/2024 12:21:57 PM http://localhost:40279 "POST /session/f171c885f7254f267f5cfb009a1e6f07/element/3BA151D78D5EBFD48C6D747BE10D2E8A_element_8/click HTTP/1.1" 200 0
+01/03/2024 12:21:57 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:21:57 PM Finished Request
+01/03/2024 12:21:57 PM POST http://localhost:40279/session/f171c885f7254f267f5cfb009a1e6f07/element/3BA151D78D5EBFD48C6D747BE10D2E8A_element_8/value {"text": "MotherHub_YKB", "value": ["M", "o", "t", "h", "e", "r", "H", "u", "b", "_", "Y", "K", "B"]}
+01/03/2024 12:21:57 PM http://localhost:40279 "POST /session/f171c885f7254f267f5cfb009a1e6f07/element/3BA151D78D5EBFD48C6D747BE10D2E8A_element_8/value HTTP/1.1" 200 0
+01/03/2024 12:21:57 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:21:57 PM Finished Request
+01/03/2024 12:21:57 PM POST http://localhost:40279/session/f171c885f7254f267f5cfb009a1e6f07/element/3BA151D78D5EBFD48C6D747BE10D2E8A_element_8/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:21:57 PM http://localhost:40279 "POST /session/f171c885f7254f267f5cfb009a1e6f07/element/3BA151D78D5EBFD48C6D747BE10D2E8A_element_8/value HTTP/1.1" 200 0
+01/03/2024 12:21:57 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:21:57 PM Finished Request
+01/03/2024 12:22:17 PM POST http://localhost:40279/session/f171c885f7254f267f5cfb009a1e6f07/element {"using": "css selector", "value": ".humberger"}
+01/03/2024 12:22:17 PM http://localhost:40279 "POST /session/f171c885f7254f267f5cfb009a1e6f07/element HTTP/1.1" 200 0
+01/03/2024 12:22:17 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"3BA151D78D5EBFD48C6D747BE10D2E8A_element_3"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:22:17 PM Finished Request
+01/03/2024 12:22:17 PM POST http://localhost:40279/session/f171c885f7254f267f5cfb009a1e6f07/element/3BA151D78D5EBFD48C6D747BE10D2E8A_element_3/click {}
+01/03/2024 12:22:17 PM http://localhost:40279 "POST /session/f171c885f7254f267f5cfb009a1e6f07/element/3BA151D78D5EBFD48C6D747BE10D2E8A_element_3/click HTTP/1.1" 200 0
+01/03/2024 12:22:17 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:22:17 PM Finished Request
+01/03/2024 12:22:20 PM POST http://localhost:40279/session/f171c885f7254f267f5cfb009a1e6f07/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/sidebar-main/div[2]/div[1]/ul[7]/li[1]"}
+01/03/2024 12:22:20 PM http://localhost:40279 "POST /session/f171c885f7254f267f5cfb009a1e6f07/element HTTP/1.1" 200 0
+01/03/2024 12:22:20 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"3BA151D78D5EBFD48C6D747BE10D2E8A_element_19"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:22:20 PM Finished Request
+01/03/2024 12:22:20 PM POST http://localhost:40279/session/f171c885f7254f267f5cfb009a1e6f07/element/3BA151D78D5EBFD48C6D747BE10D2E8A_element_19/click {}
+01/03/2024 12:22:20 PM http://localhost:40279 "POST /session/f171c885f7254f267f5cfb009a1e6f07/element/3BA151D78D5EBFD48C6D747BE10D2E8A_element_19/click HTTP/1.1" 200 0
+01/03/2024 12:22:20 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:22:20 PM Finished Request
+01/03/2024 12:22:22 PM POST http://localhost:40279/session/f171c885f7254f267f5cfb009a1e6f07/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/03/2024 12:22:22 PM http://localhost:40279 "POST /session/f171c885f7254f267f5cfb009a1e6f07/element HTTP/1.1" 200 0
+01/03/2024 12:22:22 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"3BA151D78D5EBFD48C6D747BE10D2E8A_element_26"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:22:22 PM Finished Request
+01/03/2024 12:22:22 PM POST http://localhost:40279/session/f171c885f7254f267f5cfb009a1e6f07/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/03/2024 12:22:23 PM http://localhost:40279 "POST /session/f171c885f7254f267f5cfb009a1e6f07/element HTTP/1.1" 200 0
+01/03/2024 12:22:23 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"3BA151D78D5EBFD48C6D747BE10D2E8A_element_26"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:22:23 PM Finished Request
+01/03/2024 12:22:23 PM POST http://localhost:40279/session/f171c885f7254f267f5cfb009a1e6f07/url {"url": "http://10.24.0.157/"}
+01/03/2024 12:22:23 PM http://localhost:40279 "POST /session/f171c885f7254f267f5cfb009a1e6f07/url HTTP/1.1" 200 0
+01/03/2024 12:22:23 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:22:23 PM Finished Request
+01/03/2024 12:22:28 PM GET http://localhost:40279/session/f171c885f7254f267f5cfb009a1e6f07/title {}
+01/03/2024 12:22:28 PM http://localhost:40279 "GET /session/f171c885f7254f267f5cfb009a1e6f07/title HTTP/1.1" 200 0
+01/03/2024 12:22:28 PM Remote response: status=200 | data={"value":"Hub Management System"} | headers=HTTPHeaderDict({'Content-Length': '33', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:22:28 PM Finished Request
+01/03/2024 12:22:28 PM POST http://localhost:40279/session/f171c885f7254f267f5cfb009a1e6f07/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]"}
+01/03/2024 12:22:28 PM http://localhost:40279 "POST /session/f171c885f7254f267f5cfb009a1e6f07/element HTTP/1.1" 404 0
+01/03/2024 12:22:28 PM Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]\"}\n  (Session info: chrome=119.0.6045.159)","stacktrace":"#0 0x55ebffab85e3 \u003Cunknown>\n#1 0x55ebff77b0b7 \u003Cunknown>\n#2 0x55ebff7c8f53 \u003Cunknown>\n#3 0x55ebff7c9051 \u003Cunknown>\n#4 0x55ebff80e9c4 \u003Cunknown>\n#5 0x55ebff7eff1d \u003Cunknown>\n#6 0x55ebff80bb3d \u003Cunknown>\n#7 0x55ebff7efcc3 \u003Cunknown>\n#8 0x55ebff7bb0e4 \u003Cunknown>\n#9 0x55ebff7bc0ae \u003Cunknown>\n#10 0x55ebffa7ece1 \u003Cunknown>\n#11 0x55ebffa82b7e \u003Cunknown>\n#12 0x55ebffa6c4b5 \u003Cunknown>\n#13 0x55ebffa837d6 \u003Cunknown>\n#14 0x55ebffa4fdbf \u003Cunknown>\n#15 0x55ebffaa6748 \u003Cunknown>\n#16 0x55ebffaa6917 \u003Cunknown>\n#17 0x55ebffab7773 \u003Cunknown>\n#18 0x7f5e5083e609 start_thread\n"}} | headers=HTTPHeaderDict({'Content-Length': '900', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:22:28 PM Finished Request
+01/03/2024 12:22:28 PM Internal Server Error: /put_in
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/flipkart/projects/bagtrac/bagtrac/views.py", line 360, in put_in
+    hms_login()
+  File "/home/flipkart/projects/bagtrac/bagtrac/auto_put_in.py", line 40, in hms_login
+    username = driver.find_element(By.XPATH , "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]")
+  File "/home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 738, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "/home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]"}
+  (Session info: chrome=119.0.6045.159); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55ebffab85e3 <unknown>
+#1 0x55ebff77b0b7 <unknown>
+#2 0x55ebff7c8f53 <unknown>
+#3 0x55ebff7c9051 <unknown>
+#4 0x55ebff80e9c4 <unknown>
+#5 0x55ebff7eff1d <unknown>
+#6 0x55ebff80bb3d <unknown>
+#7 0x55ebff7efcc3 <unknown>
+#8 0x55ebff7bb0e4 <unknown>
+#9 0x55ebff7bc0ae <unknown>
+#10 0x55ebffa7ece1 <unknown>
+#11 0x55ebffa82b7e <unknown>
+#12 0x55ebffa6c4b5 <unknown>
+#13 0x55ebffa837d6 <unknown>
+#14 0x55ebffa4fdbf <unknown>
+#15 0x55ebffaa6748 <unknown>
+#16 0x55ebffaa6917 <unknown>
+#17 0x55ebffab7773 <unknown>
+#18 0x7f5e5083e609 start_thread
+
+01/03/2024 12:22:44 PM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/03/2024 12:22:44 PM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/03/2024 12:22:44 PM chromedriver not found in PATH
+01/03/2024 12:22:44 PM chrome detected at /usr/bin/google-chrome
+01/03/2024 12:22:44 PM Running command: /usr/bin/google-chrome --version
+01/03/2024 12:22:44 PM Output: "Google Chrome 119.0.6045.159 "
+01/03/2024 12:22:44 PM Detected browser: chrome 119.0.6045.159
+01/03/2024 12:22:44 PM Required driver: chromedriver 119.0.6045.105
+01/03/2024 12:22:44 PM chromedriver 119.0.6045.105 already in the cache
+01/03/2024 12:22:44 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:22:44 PM Browser path: /usr/bin/google-chrome
+01/03/2024 12:22:44 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:22:44 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 52529
+01/03/2024 12:22:44 PM POST http://localhost:42191/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/03/2024 12:22:44 PM Starting new HTTP connection (1): localhost:42191
+01/03/2024 12:22:45 PM http://localhost:42191 "POST /session HTTP/1.1" 200 0
+01/03/2024 12:22:45 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.RoLkfd"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:33483"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"b5fa922581b62fee891137af9940ced7"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:22:45 PM Finished Request
+01/03/2024 12:22:51 PM /home/flipkart/projects/bagtrac/bagtrac/auto_put_in.py changed, reloading.
+01/03/2024 12:22:52 PM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/03/2024 12:22:52 PM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/03/2024 12:22:52 PM chromedriver not found in PATH
+01/03/2024 12:22:52 PM chrome detected at /usr/bin/google-chrome
+01/03/2024 12:22:52 PM Running command: /usr/bin/google-chrome --version
+01/03/2024 12:22:52 PM Output: "Google Chrome 119.0.6045.159 "
+01/03/2024 12:22:52 PM Detected browser: chrome 119.0.6045.159
+01/03/2024 12:22:52 PM Required driver: chromedriver 119.0.6045.105
+01/03/2024 12:22:52 PM chromedriver 119.0.6045.105 already in the cache
+01/03/2024 12:22:52 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:22:52 PM Browser path: /usr/bin/google-chrome
+01/03/2024 12:22:52 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:22:52 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 52811
+01/03/2024 12:22:52 PM POST http://localhost:45925/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/03/2024 12:22:52 PM Starting new HTTP connection (1): localhost:45925
+01/03/2024 12:22:53 PM http://localhost:45925 "POST /session HTTP/1.1" 200 0
+01/03/2024 12:22:53 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.4ITEAw"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:42151"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"9f48f26cd9656a8856221d4fa85b01b6"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:22:53 PM Finished Request
+01/03/2024 12:22:56 PM POST http://localhost:45925/session/9f48f26cd9656a8856221d4fa85b01b6/url {"url": "http://10.24.0.157/"}
+01/03/2024 12:22:57 PM http://localhost:45925 "POST /session/9f48f26cd9656a8856221d4fa85b01b6/url HTTP/1.1" 200 0
+01/03/2024 12:22:57 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:22:57 PM Finished Request
+01/03/2024 12:23:02 PM GET http://localhost:45925/session/9f48f26cd9656a8856221d4fa85b01b6/title {}
+01/03/2024 12:23:02 PM http://localhost:45925 "GET /session/9f48f26cd9656a8856221d4fa85b01b6/title HTTP/1.1" 200 0
+01/03/2024 12:23:02 PM Remote response: status=200 | data={"value":"Login (AuthN)"} | headers=HTTPHeaderDict({'Content-Length': '25', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:23:02 PM Finished Request
+01/03/2024 12:23:02 PM POST http://localhost:45925/session/9f48f26cd9656a8856221d4fa85b01b6/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]"}
+01/03/2024 12:23:02 PM http://localhost:45925 "POST /session/9f48f26cd9656a8856221d4fa85b01b6/element HTTP/1.1" 200 0
+01/03/2024 12:23:02 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"0D073756DF56CF2CC043229EC0AF3CDC_element_7"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:23:02 PM Finished Request
+01/03/2024 12:23:02 PM POST http://localhost:45925/session/9f48f26cd9656a8856221d4fa85b01b6/element/0D073756DF56CF2CC043229EC0AF3CDC_element_7/value {"text": "ca.2670054", "value": ["c", "a", ".", "2", "6", "7", "0", "0", "5", "4"]}
+01/03/2024 12:23:02 PM http://localhost:45925 "POST /session/9f48f26cd9656a8856221d4fa85b01b6/element/0D073756DF56CF2CC043229EC0AF3CDC_element_7/value HTTP/1.1" 200 0
+01/03/2024 12:23:02 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:23:02 PM Finished Request
+01/03/2024 12:23:02 PM POST http://localhost:45925/session/9f48f26cd9656a8856221d4fa85b01b6/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[2]"}
+01/03/2024 12:23:02 PM http://localhost:45925 "POST /session/9f48f26cd9656a8856221d4fa85b01b6/element HTTP/1.1" 200 0
+01/03/2024 12:23:02 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"0D073756DF56CF2CC043229EC0AF3CDC_element_10"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:23:02 PM Finished Request
+01/03/2024 12:23:02 PM POST http://localhost:45925/session/9f48f26cd9656a8856221d4fa85b01b6/element/0D073756DF56CF2CC043229EC0AF3CDC_element_10/value {"text": "Chauhan@8091", "value": ["C", "h", "a", "u", "h", "a", "n", "@", "8", "0", "9", "1"]}
+01/03/2024 12:23:02 PM http://localhost:45925 "POST /session/9f48f26cd9656a8856221d4fa85b01b6/element/0D073756DF56CF2CC043229EC0AF3CDC_element_10/value HTTP/1.1" 200 0
+01/03/2024 12:23:02 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:23:02 PM Finished Request
+01/03/2024 12:23:05 PM POST http://localhost:45925/session/9f48f26cd9656a8856221d4fa85b01b6/element/0D073756DF56CF2CC043229EC0AF3CDC_element_10/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:23:09 PM http://localhost:45925 "POST /session/9f48f26cd9656a8856221d4fa85b01b6/element/0D073756DF56CF2CC043229EC0AF3CDC_element_10/value HTTP/1.1" 200 0
+01/03/2024 12:23:09 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:23:09 PM Finished Request
+01/03/2024 12:23:09 PM POST http://localhost:45925/session/9f48f26cd9656a8856221d4fa85b01b6/element {"using": "css selector", "value": "[id=\"selectFacility\"]"}
+01/03/2024 12:23:09 PM http://localhost:45925 "POST /session/9f48f26cd9656a8856221d4fa85b01b6/element HTTP/1.1" 200 0
+01/03/2024 12:23:09 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"D8581C751968A855DDEC96C7EFE94FC0_element_8"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:23:09 PM Finished Request
+01/03/2024 12:23:09 PM POST http://localhost:45925/session/9f48f26cd9656a8856221d4fa85b01b6/element/D8581C751968A855DDEC96C7EFE94FC0_element_8/click {}
+01/03/2024 12:23:09 PM http://localhost:45925 "POST /session/9f48f26cd9656a8856221d4fa85b01b6/element/D8581C751968A855DDEC96C7EFE94FC0_element_8/click HTTP/1.1" 200 0
+01/03/2024 12:23:09 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:23:09 PM Finished Request
+01/03/2024 12:23:09 PM POST http://localhost:45925/session/9f48f26cd9656a8856221d4fa85b01b6/element/D8581C751968A855DDEC96C7EFE94FC0_element_8/value {"text": "MotherHub_YKB", "value": ["M", "o", "t", "h", "e", "r", "H", "u", "b", "_", "Y", "K", "B"]}
+01/03/2024 12:23:09 PM http://localhost:45925 "POST /session/9f48f26cd9656a8856221d4fa85b01b6/element/D8581C751968A855DDEC96C7EFE94FC0_element_8/value HTTP/1.1" 200 0
+01/03/2024 12:23:09 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:23:09 PM Finished Request
+01/03/2024 12:23:09 PM POST http://localhost:45925/session/9f48f26cd9656a8856221d4fa85b01b6/element/D8581C751968A855DDEC96C7EFE94FC0_element_8/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:23:09 PM http://localhost:45925 "POST /session/9f48f26cd9656a8856221d4fa85b01b6/element/D8581C751968A855DDEC96C7EFE94FC0_element_8/value HTTP/1.1" 200 0
+01/03/2024 12:23:09 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:23:09 PM Finished Request
+01/03/2024 12:23:29 PM POST http://localhost:45925/session/9f48f26cd9656a8856221d4fa85b01b6/element {"using": "css selector", "value": ".humberger"}
+01/03/2024 12:23:29 PM http://localhost:45925 "POST /session/9f48f26cd9656a8856221d4fa85b01b6/element HTTP/1.1" 200 0
+01/03/2024 12:23:29 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"D8581C751968A855DDEC96C7EFE94FC0_element_3"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:23:29 PM Finished Request
+01/03/2024 12:23:29 PM POST http://localhost:45925/session/9f48f26cd9656a8856221d4fa85b01b6/element/D8581C751968A855DDEC96C7EFE94FC0_element_3/click {}
+01/03/2024 12:23:29 PM http://localhost:45925 "POST /session/9f48f26cd9656a8856221d4fa85b01b6/element/D8581C751968A855DDEC96C7EFE94FC0_element_3/click HTTP/1.1" 200 0
+01/03/2024 12:23:29 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:23:29 PM Finished Request
+01/03/2024 12:23:32 PM POST http://localhost:45925/session/9f48f26cd9656a8856221d4fa85b01b6/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/sidebar-main/div[2]/div[1]/ul[7]/li[1]"}
+01/03/2024 12:23:32 PM http://localhost:45925 "POST /session/9f48f26cd9656a8856221d4fa85b01b6/element HTTP/1.1" 200 0
+01/03/2024 12:23:32 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"D8581C751968A855DDEC96C7EFE94FC0_element_20"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:23:32 PM Finished Request
+01/03/2024 12:23:32 PM POST http://localhost:45925/session/9f48f26cd9656a8856221d4fa85b01b6/element/D8581C751968A855DDEC96C7EFE94FC0_element_20/click {}
+01/03/2024 12:23:32 PM http://localhost:45925 "POST /session/9f48f26cd9656a8856221d4fa85b01b6/element/D8581C751968A855DDEC96C7EFE94FC0_element_20/click HTTP/1.1" 200 0
+01/03/2024 12:23:32 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:23:32 PM Finished Request
+01/03/2024 12:23:34 PM POST http://localhost:45925/session/9f48f26cd9656a8856221d4fa85b01b6/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/03/2024 12:23:34 PM http://localhost:45925 "POST /session/9f48f26cd9656a8856221d4fa85b01b6/element HTTP/1.1" 200 0
+01/03/2024 12:23:34 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"D8581C751968A855DDEC96C7EFE94FC0_element_26"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:23:34 PM Finished Request
+01/03/2024 12:23:34 PM POST http://localhost:45925/session/9f48f26cd9656a8856221d4fa85b01b6/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/03/2024 12:23:34 PM http://localhost:45925 "POST /session/9f48f26cd9656a8856221d4fa85b01b6/element HTTP/1.1" 200 0
+01/03/2024 12:23:34 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"D8581C751968A855DDEC96C7EFE94FC0_element_26"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:23:34 PM Finished Request
+01/03/2024 12:23:34 PM POST http://localhost:45925/session/9f48f26cd9656a8856221d4fa85b01b6/url {"url": "http://10.24.0.157/"}
+01/03/2024 12:23:35 PM http://localhost:45925 "POST /session/9f48f26cd9656a8856221d4fa85b01b6/url HTTP/1.1" 200 0
+01/03/2024 12:23:35 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:23:35 PM Finished Request
+01/03/2024 12:23:40 PM GET http://localhost:45925/session/9f48f26cd9656a8856221d4fa85b01b6/title {}
+01/03/2024 12:23:40 PM http://localhost:45925 "GET /session/9f48f26cd9656a8856221d4fa85b01b6/title HTTP/1.1" 200 0
+01/03/2024 12:23:40 PM Remote response: status=200 | data={"value":"Hub Management System"} | headers=HTTPHeaderDict({'Content-Length': '33', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:23:40 PM Finished Request
+01/03/2024 12:23:40 PM POST http://localhost:45925/session/9f48f26cd9656a8856221d4fa85b01b6/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]"}
+01/03/2024 12:23:40 PM http://localhost:45925 "POST /session/9f48f26cd9656a8856221d4fa85b01b6/element HTTP/1.1" 404 0
+01/03/2024 12:23:40 PM Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]\"}\n  (Session info: chrome=119.0.6045.159)","stacktrace":"#0 0x55e294aae5e3 \u003Cunknown>\n#1 0x55e2947710b7 \u003Cunknown>\n#2 0x55e2947bef53 \u003Cunknown>\n#3 0x55e2947bf051 \u003Cunknown>\n#4 0x55e2948049c4 \u003Cunknown>\n#5 0x55e2947e5f1d \u003Cunknown>\n#6 0x55e294801b3d \u003Cunknown>\n#7 0x55e2947e5cc3 \u003Cunknown>\n#8 0x55e2947b10e4 \u003Cunknown>\n#9 0x55e2947b20ae \u003Cunknown>\n#10 0x55e294a74ce1 \u003Cunknown>\n#11 0x55e294a78b7e \u003Cunknown>\n#12 0x55e294a624b5 \u003Cunknown>\n#13 0x55e294a797d6 \u003Cunknown>\n#14 0x55e294a45dbf \u003Cunknown>\n#15 0x55e294a9c748 \u003Cunknown>\n#16 0x55e294a9c917 \u003Cunknown>\n#17 0x55e294aad773 \u003Cunknown>\n#18 0x7f3e84447609 start_thread\n"}} | headers=HTTPHeaderDict({'Content-Length': '900', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:23:40 PM Finished Request
+01/03/2024 12:23:40 PM Internal Server Error: /put_in
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/flipkart/projects/bagtrac/bagtrac/views.py", line 360, in put_in
+    hms_login()
+  File "/home/flipkart/projects/bagtrac/bagtrac/auto_put_in.py", line 40, in hms_login
+    username = driver.find_element(By.XPATH , "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]")
+  File "/home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 738, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "/home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]"}
+  (Session info: chrome=119.0.6045.159); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55e294aae5e3 <unknown>
+#1 0x55e2947710b7 <unknown>
+#2 0x55e2947bef53 <unknown>
+#3 0x55e2947bf051 <unknown>
+#4 0x55e2948049c4 <unknown>
+#5 0x55e2947e5f1d <unknown>
+#6 0x55e294801b3d <unknown>
+#7 0x55e2947e5cc3 <unknown>
+#8 0x55e2947b10e4 <unknown>
+#9 0x55e2947b20ae <unknown>
+#10 0x55e294a74ce1 <unknown>
+#11 0x55e294a78b7e <unknown>
+#12 0x55e294a624b5 <unknown>
+#13 0x55e294a797d6 <unknown>
+#14 0x55e294a45dbf <unknown>
+#15 0x55e294a9c748 <unknown>
+#16 0x55e294a9c917 <unknown>
+#17 0x55e294aad773 <unknown>
+#18 0x7f3e84447609 start_thread
+
+01/03/2024 12:23:56 PM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/03/2024 12:23:56 PM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/03/2024 12:23:56 PM chromedriver not found in PATH
+01/03/2024 12:23:56 PM chrome detected at /usr/bin/google-chrome
+01/03/2024 12:23:56 PM Running command: /usr/bin/google-chrome --version
+01/03/2024 12:23:56 PM Output: "Google Chrome 119.0.6045.159 "
+01/03/2024 12:23:56 PM Detected browser: chrome 119.0.6045.159
+01/03/2024 12:23:56 PM Required driver: chromedriver 119.0.6045.105
+01/03/2024 12:23:56 PM chromedriver 119.0.6045.105 already in the cache
+01/03/2024 12:23:56 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:23:56 PM Browser path: /usr/bin/google-chrome
+01/03/2024 12:23:56 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:23:56 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 53980
+01/03/2024 12:23:56 PM POST http://localhost:42973/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/03/2024 12:23:56 PM Starting new HTTP connection (1): localhost:42973
+01/03/2024 12:23:57 PM http://localhost:42973 "POST /session HTTP/1.1" 200 0
+01/03/2024 12:23:57 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.ZhOiTS"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:36617"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"be3ea93158a019b1d479f24b7092395c"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:23:57 PM Finished Request
+01/03/2024 12:25:17 PM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/03/2024 12:25:17 PM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/03/2024 12:25:17 PM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/03/2024 12:25:17 PM chromedriver not found in PATH
+01/03/2024 12:25:17 PM chrome detected at /usr/bin/google-chrome
+01/03/2024 12:25:17 PM Running command: /usr/bin/google-chrome --version
+01/03/2024 12:25:17 PM Output: "Google Chrome 119.0.6045.159 "
+01/03/2024 12:25:17 PM Detected browser: chrome 119.0.6045.159
+01/03/2024 12:25:17 PM Required driver: chromedriver 119.0.6045.105
+01/03/2024 12:25:17 PM chromedriver 119.0.6045.105 already in the cache
+01/03/2024 12:25:17 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:25:17 PM Browser path: /usr/bin/google-chrome
+01/03/2024 12:25:17 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:25:17 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 54884
+01/03/2024 12:25:18 PM POST http://localhost:49467/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/03/2024 12:25:18 PM Starting new HTTP connection (1): localhost:49467
+01/03/2024 12:25:18 PM http://localhost:49467 "POST /session HTTP/1.1" 200 0
+01/03/2024 12:25:18 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.ucL2Bf"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:33371"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"36bd6fd18374032522e5bed32c1585cb"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:25:18 PM Finished Request
+01/03/2024 12:25:34 PM POST http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/url {"url": "http://10.24.0.157/"}
+01/03/2024 12:25:36 PM http://localhost:49467 "POST /session/36bd6fd18374032522e5bed32c1585cb/url HTTP/1.1" 200 0
+01/03/2024 12:25:36 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:25:36 PM Finished Request
+01/03/2024 12:25:41 PM GET http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/title {}
+01/03/2024 12:25:41 PM http://localhost:49467 "GET /session/36bd6fd18374032522e5bed32c1585cb/title HTTP/1.1" 200 0
+01/03/2024 12:25:41 PM Remote response: status=200 | data={"value":"Login (AuthN)"} | headers=HTTPHeaderDict({'Content-Length': '25', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:25:41 PM Finished Request
+01/03/2024 12:25:41 PM POST http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]"}
+01/03/2024 12:25:41 PM http://localhost:49467 "POST /session/36bd6fd18374032522e5bed32c1585cb/element HTTP/1.1" 200 0
+01/03/2024 12:25:41 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"95ED58E16FEDC92218E98DFC0D0B56A7_element_7"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:25:41 PM Finished Request
+01/03/2024 12:25:41 PM POST http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/element/95ED58E16FEDC92218E98DFC0D0B56A7_element_7/value {"text": "ca.2670054", "value": ["c", "a", ".", "2", "6", "7", "0", "0", "5", "4"]}
+01/03/2024 12:25:41 PM http://localhost:49467 "POST /session/36bd6fd18374032522e5bed32c1585cb/element/95ED58E16FEDC92218E98DFC0D0B56A7_element_7/value HTTP/1.1" 200 0
+01/03/2024 12:25:41 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:25:41 PM Finished Request
+01/03/2024 12:25:41 PM POST http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[2]"}
+01/03/2024 12:25:41 PM http://localhost:49467 "POST /session/36bd6fd18374032522e5bed32c1585cb/element HTTP/1.1" 200 0
+01/03/2024 12:25:41 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"95ED58E16FEDC92218E98DFC0D0B56A7_element_10"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:25:41 PM Finished Request
+01/03/2024 12:25:41 PM POST http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/element/95ED58E16FEDC92218E98DFC0D0B56A7_element_10/value {"text": "Chauhan@8091", "value": ["C", "h", "a", "u", "h", "a", "n", "@", "8", "0", "9", "1"]}
+01/03/2024 12:25:41 PM http://localhost:49467 "POST /session/36bd6fd18374032522e5bed32c1585cb/element/95ED58E16FEDC92218E98DFC0D0B56A7_element_10/value HTTP/1.1" 200 0
+01/03/2024 12:25:41 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:25:41 PM Finished Request
+01/03/2024 12:25:44 PM POST http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/element/95ED58E16FEDC92218E98DFC0D0B56A7_element_10/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:25:47 PM http://localhost:49467 "POST /session/36bd6fd18374032522e5bed32c1585cb/element/95ED58E16FEDC92218E98DFC0D0B56A7_element_10/value HTTP/1.1" 200 0
+01/03/2024 12:25:47 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:25:47 PM Finished Request
+01/03/2024 12:25:47 PM POST http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/element {"using": "css selector", "value": "[id=\"selectFacility\"]"}
+01/03/2024 12:25:47 PM http://localhost:49467 "POST /session/36bd6fd18374032522e5bed32c1585cb/element HTTP/1.1" 200 0
+01/03/2024 12:25:47 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"9B9134DB82CB8862ABD22F93C1F1C112_element_8"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:25:47 PM Finished Request
+01/03/2024 12:25:47 PM POST http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/element/9B9134DB82CB8862ABD22F93C1F1C112_element_8/click {}
+01/03/2024 12:25:48 PM http://localhost:49467 "POST /session/36bd6fd18374032522e5bed32c1585cb/element/9B9134DB82CB8862ABD22F93C1F1C112_element_8/click HTTP/1.1" 200 0
+01/03/2024 12:25:48 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:25:48 PM Finished Request
+01/03/2024 12:25:48 PM POST http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/element/9B9134DB82CB8862ABD22F93C1F1C112_element_8/value {"text": "MotherHub_YKB", "value": ["M", "o", "t", "h", "e", "r", "H", "u", "b", "_", "Y", "K", "B"]}
+01/03/2024 12:25:48 PM http://localhost:49467 "POST /session/36bd6fd18374032522e5bed32c1585cb/element/9B9134DB82CB8862ABD22F93C1F1C112_element_8/value HTTP/1.1" 200 0
+01/03/2024 12:25:48 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:25:48 PM Finished Request
+01/03/2024 12:25:48 PM POST http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/element/9B9134DB82CB8862ABD22F93C1F1C112_element_8/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:25:48 PM http://localhost:49467 "POST /session/36bd6fd18374032522e5bed32c1585cb/element/9B9134DB82CB8862ABD22F93C1F1C112_element_8/value HTTP/1.1" 200 0
+01/03/2024 12:25:48 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:25:48 PM Finished Request
+01/03/2024 12:26:08 PM POST http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/element {"using": "css selector", "value": ".humberger"}
+01/03/2024 12:26:08 PM http://localhost:49467 "POST /session/36bd6fd18374032522e5bed32c1585cb/element HTTP/1.1" 200 0
+01/03/2024 12:26:08 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"9B9134DB82CB8862ABD22F93C1F1C112_element_3"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:26:08 PM Finished Request
+01/03/2024 12:26:08 PM POST http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/element/9B9134DB82CB8862ABD22F93C1F1C112_element_3/click {}
+01/03/2024 12:26:08 PM http://localhost:49467 "POST /session/36bd6fd18374032522e5bed32c1585cb/element/9B9134DB82CB8862ABD22F93C1F1C112_element_3/click HTTP/1.1" 200 0
+01/03/2024 12:26:08 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:26:08 PM Finished Request
+01/03/2024 12:26:11 PM POST http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/sidebar-main/div[2]/div[1]/ul[7]/li[1]"}
+01/03/2024 12:26:11 PM http://localhost:49467 "POST /session/36bd6fd18374032522e5bed32c1585cb/element HTTP/1.1" 200 0
+01/03/2024 12:26:11 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"9B9134DB82CB8862ABD22F93C1F1C112_element_19"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:26:11 PM Finished Request
+01/03/2024 12:26:11 PM POST http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/element/9B9134DB82CB8862ABD22F93C1F1C112_element_19/click {}
+01/03/2024 12:26:11 PM http://localhost:49467 "POST /session/36bd6fd18374032522e5bed32c1585cb/element/9B9134DB82CB8862ABD22F93C1F1C112_element_19/click HTTP/1.1" 200 0
+01/03/2024 12:26:11 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:26:11 PM Finished Request
+01/03/2024 12:26:13 PM POST http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/03/2024 12:26:13 PM http://localhost:49467 "POST /session/36bd6fd18374032522e5bed32c1585cb/element HTTP/1.1" 200 0
+01/03/2024 12:26:13 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"9B9134DB82CB8862ABD22F93C1F1C112_element_26"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:26:13 PM Finished Request
+01/03/2024 12:26:13 PM POST http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/element/9B9134DB82CB8862ABD22F93C1F1C112_element_26/value {"text": "EPNQPNQ-663533813-1372", "value": ["E", "P", "N", "Q", "P", "N", "Q", "-", "6", "6", "3", "5", "3", "3", "8", "1", "3", "-", "1", "3", "7", "2"]}
+01/03/2024 12:26:13 PM http://localhost:49467 "POST /session/36bd6fd18374032522e5bed32c1585cb/element/9B9134DB82CB8862ABD22F93C1F1C112_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:26:13 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:26:13 PM Finished Request
+01/03/2024 12:26:13 PM POST http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/element/9B9134DB82CB8862ABD22F93C1F1C112_element_26/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:26:13 PM http://localhost:49467 "POST /session/36bd6fd18374032522e5bed32c1585cb/element/9B9134DB82CB8862ABD22F93C1F1C112_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:26:13 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:26:13 PM Finished Request
+01/03/2024 12:26:14 PM POST http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[2]/div/label"}
+01/03/2024 12:26:14 PM http://localhost:49467 "POST /session/36bd6fd18374032522e5bed32c1585cb/element HTTP/1.1" 200 0
+01/03/2024 12:26:14 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"9B9134DB82CB8862ABD22F93C1F1C112_element_23"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:26:14 PM Finished Request
+01/03/2024 12:26:14 PM GET http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/element/9B9134DB82CB8862ABD22F93C1F1C112_element_23/text {}
+01/03/2024 12:26:14 PM http://localhost:49467 "GET /session/36bd6fd18374032522e5bed32c1585cb/element/9B9134DB82CB8862ABD22F93C1F1C112_element_23/text HTTP/1.1" 200 0
+01/03/2024 12:26:14 PM Remote response: status=200 | data={"value":"Put to 16 | MotherHub_PUNE and scan barcode"} | headers=HTTPHeaderDict({'Content-Length': '55', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:26:14 PM Finished Request
+01/03/2024 12:26:14 PM POST http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/element/9B9134DB82CB8862ABD22F93C1F1C112_element_26/value {"text": "2d076250-1255-4cd4-b415-c5023450bf48", "value": ["2", "d", "0", "7", "6", "2", "5", "0", "-", "1", "2", "5", "5", "-", "4", "c", "d", "4", "-", "b", "4", "1", "5", "-", "c", "5", "0", "2", "3", "4", "5", "0", "b", "f", "4", "8"]}
+01/03/2024 12:26:14 PM http://localhost:49467 "POST /session/36bd6fd18374032522e5bed32c1585cb/element/9B9134DB82CB8862ABD22F93C1F1C112_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:26:14 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:26:14 PM Finished Request
+01/03/2024 12:26:14 PM POST http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/element/9B9134DB82CB8862ABD22F93C1F1C112_element_26/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:26:14 PM http://localhost:49467 "POST /session/36bd6fd18374032522e5bed32c1585cb/element/9B9134DB82CB8862ABD22F93C1F1C112_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:26:14 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:26:14 PM Finished Request
+01/03/2024 12:26:14 PM POST http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/url {"url": "http://10.24.0.157/"}
+01/03/2024 12:26:15 PM http://localhost:49467 "POST /session/36bd6fd18374032522e5bed32c1585cb/url HTTP/1.1" 200 0
+01/03/2024 12:26:15 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:26:15 PM Finished Request
+01/03/2024 12:26:20 PM GET http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/title {}
+01/03/2024 12:26:20 PM http://localhost:49467 "GET /session/36bd6fd18374032522e5bed32c1585cb/title HTTP/1.1" 200 0
+01/03/2024 12:26:20 PM Remote response: status=200 | data={"value":"Hub Management System"} | headers=HTTPHeaderDict({'Content-Length': '33', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:26:20 PM Finished Request
+01/03/2024 12:26:20 PM POST http://localhost:49467/session/36bd6fd18374032522e5bed32c1585cb/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]"}
+01/03/2024 12:26:20 PM http://localhost:49467 "POST /session/36bd6fd18374032522e5bed32c1585cb/element HTTP/1.1" 404 0
+01/03/2024 12:26:20 PM Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]\"}\n  (Session info: chrome=119.0.6045.159)","stacktrace":"#0 0x562721e4c5e3 \u003Cunknown>\n#1 0x562721b0f0b7 \u003Cunknown>\n#2 0x562721b5cf53 \u003Cunknown>\n#3 0x562721b5d051 \u003Cunknown>\n#4 0x562721ba29c4 \u003Cunknown>\n#5 0x562721b83f1d \u003Cunknown>\n#6 0x562721b9fb3d \u003Cunknown>\n#7 0x562721b83cc3 \u003Cunknown>\n#8 0x562721b4f0e4 \u003Cunknown>\n#9 0x562721b500ae \u003Cunknown>\n#10 0x562721e12ce1 \u003Cunknown>\n#11 0x562721e16b7e \u003Cunknown>\n#12 0x562721e004b5 \u003Cunknown>\n#13 0x562721e177d6 \u003Cunknown>\n#14 0x562721de3dbf \u003Cunknown>\n#15 0x562721e3a748 \u003Cunknown>\n#16 0x562721e3a917 \u003Cunknown>\n#17 0x562721e4b773 \u003Cunknown>\n#18 0x7fbefddb4609 start_thread\n"}} | headers=HTTPHeaderDict({'Content-Length': '900', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:26:20 PM Finished Request
+01/03/2024 12:26:20 PM Internal Server Error: /put_in
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/flipkart/projects/bagtrac/bagtrac/views.py", line 360, in put_in
+    hms_login()
+  File "/home/flipkart/projects/bagtrac/bagtrac/auto_put_in.py", line 40, in hms_login
+    username = driver.find_element(By.XPATH , "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]")
+  File "/home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 738, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "/home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 344, in execute
+    self.error_handler.check_response(response)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]"}
+  (Session info: chrome=119.0.6045.159); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x562721e4c5e3 <unknown>
+#1 0x562721b0f0b7 <unknown>
+#2 0x562721b5cf53 <unknown>
+#3 0x562721b5d051 <unknown>
+#4 0x562721ba29c4 <unknown>
+#5 0x562721b83f1d <unknown>
+#6 0x562721b9fb3d <unknown>
+#7 0x562721b83cc3 <unknown>
+#8 0x562721b4f0e4 <unknown>
+#9 0x562721b500ae <unknown>
+#10 0x562721e12ce1 <unknown>
+#11 0x562721e16b7e <unknown>
+#12 0x562721e004b5 <unknown>
+#13 0x562721e177d6 <unknown>
+#14 0x562721de3dbf <unknown>
+#15 0x562721e3a748 <unknown>
+#16 0x562721e3a917 <unknown>
+#17 0x562721e4b773 <unknown>
+#18 0x7fbefddb4609 start_thread
+
+01/03/2024 12:30:50 PM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/03/2024 12:30:50 PM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/03/2024 12:30:50 PM chromedriver not found in PATH
+01/03/2024 12:30:50 PM chrome detected at /usr/bin/google-chrome
+01/03/2024 12:30:50 PM Running command: /usr/bin/google-chrome --version
+01/03/2024 12:30:50 PM Output: "Google Chrome 119.0.6045.159 "
+01/03/2024 12:30:50 PM Detected browser: chrome 119.0.6045.159
+01/03/2024 12:30:50 PM Required driver: chromedriver 119.0.6045.105
+01/03/2024 12:30:50 PM chromedriver 119.0.6045.105 already in the cache
+01/03/2024 12:30:50 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:30:50 PM Browser path: /usr/bin/google-chrome
+01/03/2024 12:30:50 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:30:50 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 58092
+01/03/2024 12:30:51 PM POST http://localhost:52789/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/03/2024 12:30:51 PM Starting new HTTP connection (1): localhost:52789
+01/03/2024 12:30:51 PM http://localhost:52789 "POST /session HTTP/1.1" 200 0
+01/03/2024 12:30:51 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.zCw3VQ"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:34643"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"f622263b298beedb95c8f0b7b95731a7"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:30:51 PM Finished Request
+01/03/2024 12:31:57 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/url {"url": "http://10.24.0.157/"}
+01/03/2024 12:31:58 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/url HTTP/1.1" 200 0
+01/03/2024 12:31:58 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:31:58 PM Finished Request
+01/03/2024 12:32:03 PM GET http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/title {}
+01/03/2024 12:32:03 PM http://localhost:52789 "GET /session/f622263b298beedb95c8f0b7b95731a7/title HTTP/1.1" 200 0
+01/03/2024 12:32:03 PM Remote response: status=200 | data={"value":"Login (AuthN)"} | headers=HTTPHeaderDict({'Content-Length': '25', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:03 PM Finished Request
+01/03/2024 12:32:03 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]"}
+01/03/2024 12:32:03 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element HTTP/1.1" 200 0
+01/03/2024 12:32:03 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EEBE65388A449C0F633C74B6BB6C9137_element_7"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:03 PM Finished Request
+01/03/2024 12:32:03 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/EEBE65388A449C0F633C74B6BB6C9137_element_7/value {"text": "ca.2670054", "value": ["c", "a", ".", "2", "6", "7", "0", "0", "5", "4"]}
+01/03/2024 12:32:03 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/EEBE65388A449C0F633C74B6BB6C9137_element_7/value HTTP/1.1" 200 0
+01/03/2024 12:32:03 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:03 PM Finished Request
+01/03/2024 12:32:03 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[2]"}
+01/03/2024 12:32:03 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element HTTP/1.1" 200 0
+01/03/2024 12:32:03 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EEBE65388A449C0F633C74B6BB6C9137_element_10"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:03 PM Finished Request
+01/03/2024 12:32:03 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/EEBE65388A449C0F633C74B6BB6C9137_element_10/value {"text": "Chauhan@8091", "value": ["C", "h", "a", "u", "h", "a", "n", "@", "8", "0", "9", "1"]}
+01/03/2024 12:32:03 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/EEBE65388A449C0F633C74B6BB6C9137_element_10/value HTTP/1.1" 200 0
+01/03/2024 12:32:03 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:03 PM Finished Request
+01/03/2024 12:32:06 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/EEBE65388A449C0F633C74B6BB6C9137_element_10/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:32:10 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/EEBE65388A449C0F633C74B6BB6C9137_element_10/value HTTP/1.1" 200 0
+01/03/2024 12:32:10 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:10 PM Finished Request
+01/03/2024 12:32:10 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element {"using": "css selector", "value": "[id=\"selectFacility\"]"}
+01/03/2024 12:32:10 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element HTTP/1.1" 200 0
+01/03/2024 12:32:10 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"B27897EC084DB16068D3CAF4658E0924_element_8"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:10 PM Finished Request
+01/03/2024 12:32:10 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_8/click {}
+01/03/2024 12:32:11 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_8/click HTTP/1.1" 200 0
+01/03/2024 12:32:11 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:11 PM Finished Request
+01/03/2024 12:32:11 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_8/value {"text": "MotherHub_YKB", "value": ["M", "o", "t", "h", "e", "r", "H", "u", "b", "_", "Y", "K", "B"]}
+01/03/2024 12:32:11 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_8/value HTTP/1.1" 200 0
+01/03/2024 12:32:11 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:11 PM Finished Request
+01/03/2024 12:32:11 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_8/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:32:11 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_8/value HTTP/1.1" 200 0
+01/03/2024 12:32:11 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:11 PM Finished Request
+01/03/2024 12:32:31 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element {"using": "css selector", "value": ".humberger"}
+01/03/2024 12:32:31 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element HTTP/1.1" 200 0
+01/03/2024 12:32:31 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"B27897EC084DB16068D3CAF4658E0924_element_3"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:31 PM Finished Request
+01/03/2024 12:32:31 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_3/click {}
+01/03/2024 12:32:31 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_3/click HTTP/1.1" 200 0
+01/03/2024 12:32:31 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:31 PM Finished Request
+01/03/2024 12:32:34 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/sidebar-main/div[2]/div[1]/ul[7]/li[1]"}
+01/03/2024 12:32:34 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element HTTP/1.1" 200 0
+01/03/2024 12:32:34 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"B27897EC084DB16068D3CAF4658E0924_element_19"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:34 PM Finished Request
+01/03/2024 12:32:34 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_19/click {}
+01/03/2024 12:32:34 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_19/click HTTP/1.1" 200 0
+01/03/2024 12:32:34 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:34 PM Finished Request
+01/03/2024 12:32:36 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/03/2024 12:32:36 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element HTTP/1.1" 200 0
+01/03/2024 12:32:36 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"B27897EC084DB16068D3CAF4658E0924_element_26"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:36 PM Finished Request
+01/03/2024 12:32:36 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value {"text": "EPNQPNQ-663533813-1372", "value": ["E", "P", "N", "Q", "P", "N", "Q", "-", "6", "6", "3", "5", "3", "3", "8", "1", "3", "-", "1", "3", "7", "2"]}
+01/03/2024 12:32:36 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:32:36 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:36 PM Finished Request
+01/03/2024 12:32:36 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:32:36 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:32:36 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:36 PM Finished Request
+01/03/2024 12:32:37 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[2]/div/label"}
+01/03/2024 12:32:37 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element HTTP/1.1" 200 0
+01/03/2024 12:32:37 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"B27897EC084DB16068D3CAF4658E0924_element_23"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:37 PM Finished Request
+01/03/2024 12:32:37 PM GET http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_23/text {}
+01/03/2024 12:32:38 PM http://localhost:52789 "GET /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_23/text HTTP/1.1" 200 0
+01/03/2024 12:32:38 PM Remote response: status=200 | data={"value":"Item already staged: EPNQPNQ-663533813-1372 in grid: 16"} | headers=HTTPHeaderDict({'Content-Length': '67', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:38 PM Finished Request
+01/03/2024 12:32:38 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/03/2024 12:32:38 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element HTTP/1.1" 200 0
+01/03/2024 12:32:38 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"B27897EC084DB16068D3CAF4658E0924_element_26"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:38 PM Finished Request
+01/03/2024 12:32:38 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value {"text": "EPNQPNQ-663533813-1372", "value": ["E", "P", "N", "Q", "P", "N", "Q", "-", "6", "6", "3", "5", "3", "3", "8", "1", "3", "-", "1", "3", "7", "2"]}
+01/03/2024 12:32:38 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:32:38 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:38 PM Finished Request
+01/03/2024 12:32:38 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:32:38 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:32:38 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:38 PM Finished Request
+01/03/2024 12:32:39 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[2]/div/label"}
+01/03/2024 12:32:39 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element HTTP/1.1" 200 0
+01/03/2024 12:32:39 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"B27897EC084DB16068D3CAF4658E0924_element_23"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:39 PM Finished Request
+01/03/2024 12:32:39 PM GET http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_23/text {}
+01/03/2024 12:32:39 PM http://localhost:52789 "GET /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_23/text HTTP/1.1" 200 0
+01/03/2024 12:32:39 PM Remote response: status=200 | data={"value":"Item already staged: EPNQPNQ-663533813-1372 in grid: 16"} | headers=HTTPHeaderDict({'Content-Length': '67', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:39 PM Finished Request
+01/03/2024 12:32:41 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/03/2024 12:32:41 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element HTTP/1.1" 200 0
+01/03/2024 12:32:41 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"B27897EC084DB16068D3CAF4658E0924_element_26"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:41 PM Finished Request
+01/03/2024 12:32:41 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value {"text": "ESGMSGM-660839496", "value": ["E", "S", "G", "M", "S", "G", "M", "-", "6", "6", "0", "8", "3", "9", "4", "9", "6"]}
+01/03/2024 12:32:41 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:32:41 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:41 PM Finished Request
+01/03/2024 12:32:41 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:32:41 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:32:41 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:41 PM Finished Request
+01/03/2024 12:32:42 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[2]/div/label"}
+01/03/2024 12:32:42 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element HTTP/1.1" 200 0
+01/03/2024 12:32:42 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"B27897EC084DB16068D3CAF4658E0924_element_23"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:42 PM Finished Request
+01/03/2024 12:32:42 PM GET http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_23/text {}
+01/03/2024 12:32:42 PM http://localhost:52789 "GET /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_23/text HTTP/1.1" 200 0
+01/03/2024 12:32:42 PM Remote response: status=200 | data={"value":"Put to 16 | MotherHub_PUNE and scan barcode"} | headers=HTTPHeaderDict({'Content-Length': '55', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:42 PM Finished Request
+01/03/2024 12:32:42 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value {"text": "2d076250-1255-4cd4-b415-c5023450bf48", "value": ["2", "d", "0", "7", "6", "2", "5", "0", "-", "1", "2", "5", "5", "-", "4", "c", "d", "4", "-", "b", "4", "1", "5", "-", "c", "5", "0", "2", "3", "4", "5", "0", "b", "f", "4", "8"]}
+01/03/2024 12:32:42 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:32:42 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:42 PM Finished Request
+01/03/2024 12:32:42 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:32:42 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:32:42 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:42 PM Finished Request
+01/03/2024 12:32:44 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/03/2024 12:32:44 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element HTTP/1.1" 200 0
+01/03/2024 12:32:44 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"B27897EC084DB16068D3CAF4658E0924_element_26"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:44 PM Finished Request
+01/03/2024 12:32:44 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value {"text": "EBOMJLN-660861538", "value": ["E", "B", "O", "M", "J", "L", "N", "-", "6", "6", "0", "8", "6", "1", "5", "3", "8"]}
+01/03/2024 12:32:44 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:32:44 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:44 PM Finished Request
+01/03/2024 12:32:44 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:32:44 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:32:44 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:44 PM Finished Request
+01/03/2024 12:32:45 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[2]/div/label"}
+01/03/2024 12:32:45 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element HTTP/1.1" 200 0
+01/03/2024 12:32:45 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"B27897EC084DB16068D3CAF4658E0924_element_23"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:45 PM Finished Request
+01/03/2024 12:32:45 PM GET http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_23/text {}
+01/03/2024 12:32:45 PM http://localhost:52789 "GET /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_23/text HTTP/1.1" 200 0
+01/03/2024 12:32:45 PM Remote response: status=200 | data={"value":"Put to 16 | MotherHub_PUNE and scan barcode"} | headers=HTTPHeaderDict({'Content-Length': '55', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:45 PM Finished Request
+01/03/2024 12:32:45 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value {"text": "2d076250-1255-4cd4-b415-c5023450bf48", "value": ["2", "d", "0", "7", "6", "2", "5", "0", "-", "1", "2", "5", "5", "-", "4", "c", "d", "4", "-", "b", "4", "1", "5", "-", "c", "5", "0", "2", "3", "4", "5", "0", "b", "f", "4", "8"]}
+01/03/2024 12:32:45 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:32:45 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:45 PM Finished Request
+01/03/2024 12:32:45 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:32:45 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:32:45 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:45 PM Finished Request
+01/03/2024 12:32:47 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/03/2024 12:32:47 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element HTTP/1.1" 200 0
+01/03/2024 12:32:47 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"B27897EC084DB16068D3CAF4658E0924_element_26"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:47 PM Finished Request
+01/03/2024 12:32:47 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value {"text": "EPNQPNQ-663533824-1372", "value": ["E", "P", "N", "Q", "P", "N", "Q", "-", "6", "6", "3", "5", "3", "3", "8", "2", "4", "-", "1", "3", "7", "2"]}
+01/03/2024 12:32:47 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:32:47 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:47 PM Finished Request
+01/03/2024 12:32:47 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:32:47 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:32:47 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:47 PM Finished Request
+01/03/2024 12:32:48 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[2]/div/label"}
+01/03/2024 12:32:48 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element HTTP/1.1" 200 0
+01/03/2024 12:32:48 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"B27897EC084DB16068D3CAF4658E0924_element_23"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:48 PM Finished Request
+01/03/2024 12:32:48 PM GET http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_23/text {}
+01/03/2024 12:32:48 PM http://localhost:52789 "GET /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_23/text HTTP/1.1" 200 0
+01/03/2024 12:32:48 PM Remote response: status=200 | data={"value":"Put to 16 | MotherHub_PUNE and scan barcode"} | headers=HTTPHeaderDict({'Content-Length': '55', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:48 PM Finished Request
+01/03/2024 12:32:48 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value {"text": "2d076250-1255-4cd4-b415-c5023450bf48", "value": ["2", "d", "0", "7", "6", "2", "5", "0", "-", "1", "2", "5", "5", "-", "4", "c", "d", "4", "-", "b", "4", "1", "5", "-", "c", "5", "0", "2", "3", "4", "5", "0", "b", "f", "4", "8"]}
+01/03/2024 12:32:49 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:32:49 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:49 PM Finished Request
+01/03/2024 12:32:49 PM POST http://localhost:52789/session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:32:49 PM http://localhost:52789 "POST /session/f622263b298beedb95c8f0b7b95731a7/element/B27897EC084DB16068D3CAF4658E0924_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:32:49 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:32:49 PM Finished Request
+01/03/2024 12:46:35 PM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/03/2024 12:46:36 PM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/03/2024 12:46:36 PM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/03/2024 12:46:36 PM chromedriver not found in PATH
+01/03/2024 12:46:36 PM chrome detected at /usr/bin/google-chrome
+01/03/2024 12:46:36 PM Running command: /usr/bin/google-chrome --version
+01/03/2024 12:46:36 PM Output: "Google Chrome 119.0.6045.159 "
+01/03/2024 12:46:36 PM Detected browser: chrome 119.0.6045.159
+01/03/2024 12:46:36 PM Required driver: chromedriver 119.0.6045.105
+01/03/2024 12:46:36 PM chromedriver 119.0.6045.105 already in the cache
+01/03/2024 12:46:36 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:46:36 PM Browser path: /usr/bin/google-chrome
+01/03/2024 12:46:36 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/03/2024 12:46:36 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 69285
+01/03/2024 12:46:36 PM POST http://localhost:35603/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/03/2024 12:46:36 PM Starting new HTTP connection (1): localhost:35603
+01/03/2024 12:46:36 PM http://localhost:35603 "POST /session HTTP/1.1" 200 0
+01/03/2024 12:46:36 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.0CeYPc"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:34873"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"21e11bac4ce4deeb186fedf761eea2ce"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:46:36 PM Finished Request
+01/03/2024 12:50:25 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/url {"url": "http://10.24.0.157/"}
+01/03/2024 12:50:26 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/url HTTP/1.1" 200 0
+01/03/2024 12:50:26 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:50:26 PM Finished Request
+01/03/2024 12:50:31 PM GET http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/title {}
+01/03/2024 12:50:31 PM http://localhost:35603 "GET /session/21e11bac4ce4deeb186fedf761eea2ce/title HTTP/1.1" 200 0
+01/03/2024 12:50:31 PM Remote response: status=200 | data={"value":"Login (AuthN)"} | headers=HTTPHeaderDict({'Content-Length': '25', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:50:31 PM Finished Request
+01/03/2024 12:50:31 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]"}
+01/03/2024 12:50:31 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element HTTP/1.1" 200 0
+01/03/2024 12:50:31 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"67D60EE8F69EE731A998287D72C6DD4B_element_7"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:50:31 PM Finished Request
+01/03/2024 12:50:31 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element/67D60EE8F69EE731A998287D72C6DD4B_element_7/value {"text": "ca.2670054", "value": ["c", "a", ".", "2", "6", "7", "0", "0", "5", "4"]}
+01/03/2024 12:50:31 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element/67D60EE8F69EE731A998287D72C6DD4B_element_7/value HTTP/1.1" 200 0
+01/03/2024 12:50:31 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:50:31 PM Finished Request
+01/03/2024 12:50:31 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[2]"}
+01/03/2024 12:50:31 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element HTTP/1.1" 200 0
+01/03/2024 12:50:31 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"67D60EE8F69EE731A998287D72C6DD4B_element_10"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:50:31 PM Finished Request
+01/03/2024 12:50:31 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element/67D60EE8F69EE731A998287D72C6DD4B_element_10/value {"text": "Chauhan@8091", "value": ["C", "h", "a", "u", "h", "a", "n", "@", "8", "0", "9", "1"]}
+01/03/2024 12:50:31 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element/67D60EE8F69EE731A998287D72C6DD4B_element_10/value HTTP/1.1" 200 0
+01/03/2024 12:50:31 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:50:31 PM Finished Request
+01/03/2024 12:50:34 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element/67D60EE8F69EE731A998287D72C6DD4B_element_10/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:50:38 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element/67D60EE8F69EE731A998287D72C6DD4B_element_10/value HTTP/1.1" 200 0
+01/03/2024 12:50:38 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:50:38 PM Finished Request
+01/03/2024 12:50:38 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element {"using": "css selector", "value": "[id=\"selectFacility\"]"}
+01/03/2024 12:50:38 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element HTTP/1.1" 200 0
+01/03/2024 12:50:38 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"01876FDACC3DF4072C9DFFABED3FDF6C_element_8"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:50:38 PM Finished Request
+01/03/2024 12:50:38 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_8/click {}
+01/03/2024 12:50:38 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_8/click HTTP/1.1" 200 0
+01/03/2024 12:50:38 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:50:38 PM Finished Request
+01/03/2024 12:50:38 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_8/value {"text": "MotherHub_YKB", "value": ["M", "o", "t", "h", "e", "r", "H", "u", "b", "_", "Y", "K", "B"]}
+01/03/2024 12:50:38 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_8/value HTTP/1.1" 200 0
+01/03/2024 12:50:38 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:50:38 PM Finished Request
+01/03/2024 12:50:38 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_8/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:50:38 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_8/value HTTP/1.1" 200 0
+01/03/2024 12:50:38 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:50:38 PM Finished Request
+01/03/2024 12:50:58 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element {"using": "css selector", "value": ".humberger"}
+01/03/2024 12:50:58 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element HTTP/1.1" 200 0
+01/03/2024 12:50:58 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"01876FDACC3DF4072C9DFFABED3FDF6C_element_3"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:50:58 PM Finished Request
+01/03/2024 12:50:58 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_3/click {}
+01/03/2024 12:50:58 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_3/click HTTP/1.1" 200 0
+01/03/2024 12:50:58 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:50:58 PM Finished Request
+01/03/2024 12:51:01 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/sidebar-main/div[2]/div[1]/ul[7]/li[1]"}
+01/03/2024 12:51:01 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element HTTP/1.1" 200 0
+01/03/2024 12:51:01 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"01876FDACC3DF4072C9DFFABED3FDF6C_element_19"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:51:01 PM Finished Request
+01/03/2024 12:51:01 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_19/click {}
+01/03/2024 12:51:01 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_19/click HTTP/1.1" 200 0
+01/03/2024 12:51:01 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:51:01 PM Finished Request
+01/03/2024 12:51:03 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/03/2024 12:51:03 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element HTTP/1.1" 200 0
+01/03/2024 12:51:03 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"01876FDACC3DF4072C9DFFABED3FDF6C_element_26"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:51:03 PM Finished Request
+01/03/2024 12:51:03 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_26/value {"text": "SLC50854195-23", "value": ["S", "L", "C", "5", "0", "8", "5", "4", "1", "9", "5", "-", "2", "3"]}
+01/03/2024 12:51:04 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:51:04 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:51:04 PM Finished Request
+01/03/2024 12:51:04 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_26/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:51:04 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:51:04 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:51:04 PM Finished Request
+01/03/2024 12:51:05 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[2]/div/label"}
+01/03/2024 12:51:05 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element HTTP/1.1" 200 0
+01/03/2024 12:51:05 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"01876FDACC3DF4072C9DFFABED3FDF6C_element_23"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:51:05 PM Finished Request
+01/03/2024 12:51:05 PM GET http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_23/text {}
+01/03/2024 12:51:05 PM http://localhost:35603 "GET /session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_23/text HTTP/1.1" 200 0
+01/03/2024 12:51:05 PM Remote response: status=200 | data={"value":"Put to 27 | MotherHub_HJR and scan barcode"} | headers=HTTPHeaderDict({'Content-Length': '54', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:51:05 PM Finished Request
+01/03/2024 12:51:05 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_26/value {"text": "36b93e66-2cdb-4859-8ed9-e2796bd522dd", "value": ["3", "6", "b", "9", "3", "e", "6", "6", "-", "2", "c", "d", "b", "-", "4", "8", "5", "9", "-", "8", "e", "d", "9", "-", "e", "2", "7", "9", "6", "b", "d", "5", "2", "2", "d", "d"]}
+01/03/2024 12:51:05 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:51:05 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:51:05 PM Finished Request
+01/03/2024 12:51:05 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_26/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:51:05 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:51:05 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:51:05 PM Finished Request
+01/03/2024 12:51:07 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/03/2024 12:51:07 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element HTTP/1.1" 200 0
+01/03/2024 12:51:07 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"01876FDACC3DF4072C9DFFABED3FDF6C_element_26"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:51:07 PM Finished Request
+01/03/2024 12:51:07 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_26/value {"text": "SLC50854183-23", "value": ["S", "L", "C", "5", "0", "8", "5", "4", "1", "8", "3", "-", "2", "3"]}
+01/03/2024 12:51:07 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:51:07 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:51:07 PM Finished Request
+01/03/2024 12:51:07 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_26/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:51:07 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:51:07 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:51:07 PM Finished Request
+01/03/2024 12:51:08 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[2]/div/label"}
+01/03/2024 12:51:08 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element HTTP/1.1" 200 0
+01/03/2024 12:51:08 PM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"01876FDACC3DF4072C9DFFABED3FDF6C_element_23"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:51:08 PM Finished Request
+01/03/2024 12:51:08 PM GET http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_23/text {}
+01/03/2024 12:51:08 PM http://localhost:35603 "GET /session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_23/text HTTP/1.1" 200 0
+01/03/2024 12:51:08 PM Remote response: status=200 | data={"value":"Put to 27 | MotherHub_HJR and scan barcode"} | headers=HTTPHeaderDict({'Content-Length': '54', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:51:08 PM Finished Request
+01/03/2024 12:51:08 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_26/value {"text": "36b93e66-2cdb-4859-8ed9-e2796bd522dd", "value": ["3", "6", "b", "9", "3", "e", "6", "6", "-", "2", "c", "d", "b", "-", "4", "8", "5", "9", "-", "8", "e", "d", "9", "-", "e", "2", "7", "9", "6", "b", "d", "5", "2", "2", "d", "d"]}
+01/03/2024 12:51:08 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:51:08 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:51:08 PM Finished Request
+01/03/2024 12:51:08 PM POST http://localhost:35603/session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_26/value {"text": "\ue006", "value": ["\ue006"]}
+01/03/2024 12:51:08 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_26/value HTTP/1.1" 200 0
+01/03/2024 12:51:08 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/03/2024 12:51:08 PM Finished Request

@@ -353,12 +353,13 @@ def put_in(request):
                 cage.grid_area = grid_area
                 grid_area.is_assigned = True
                 grid_area.cage_id = cage
+                hms_login()
+                hubSystem()
                 for bag in bags:
+                    print(bag)
                     if bag is not None:
                         bag.put_in_grid = True
-                        hms_login()
-                        hubSystem()
-                        auto_bag_put(bag , "36b93e66-2cdb-4859-8ed9-e2796bd522dd")
+                        auto_bag_put(bag.bag_id , "36b93e66-2cdb-4859-8ed9-e2796bd522dd")
                         bag.save()
                     else:
                         messages.error(request , f"Empty Cage")
