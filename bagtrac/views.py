@@ -434,18 +434,14 @@ def add_bnr_bags(request):
 @login_required
 def download_bnr(request):
     if request.method == 'POST':
-        user = request.user
         bag_ids = request.POST.get('download_bnr', '').split()  
         bnr_data = BNRBag.objects.filter(bag__in=bag_ids)  
         response = HttpResponse(content_type='text/csv')
         response['Content-Disposition'] = 'attachment; filename="bnr_status.csv"'
         writer = csv.writer(response)
         writer.writerow(['Bag', 'Status'])
-
         for bag in bnr_data:
             status = 'Received' if bag.recieved else 'Not Received'
             writer.writerow([bag.bag, status])
-
         return response
-
     return HttpResponse("Invalid Request")
