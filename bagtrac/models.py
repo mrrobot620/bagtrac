@@ -43,6 +43,7 @@ class Bags(models.Model):
     recieved_at_cv = models.BooleanField(default=False)
     put_in_grid = models.BooleanField(default=False)
     put_out_grid = models.BooleanField(default=False)
+    time1 = models.DateTimeField(auto_now_add=True)
     def __str__(self):
         return self.bag_id
     

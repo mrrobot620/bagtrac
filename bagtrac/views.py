@@ -260,24 +260,24 @@ def ib_bagtrac(request):
                 item.recieved  = True
                 item.save()
             messages.error(request, "Bag Not Received")
-        else:
-            cage_updated = False
-            for index, identifier in enumerate(identifiers):
-                if identifier.lower() in bag_id.lower():
-                    try:
-                        data_instance.save()
-                    except IntegrityError as e:
-                        messages.success(request, f"Bag Already Scanned {bag_id}")
-                        break
-                    else:
-                        messages.success(request, f"{identifier}", extra_tags=tags[index])
-                        last_cage_1 = cage_id
-                        cage_updated = True
-                        break
-            else:
-                data_instance.save()
-                if not cage_updated:
+        
+        cage_updated = False
+        for index, identifier in enumerate(identifiers):
+            if identifier.lower() in bag_id.lower():
+                try:
+                    data_instance.save()
+                except IntegrityError as e:
+                    messages.success(request, f"Bag Already Scanned {bag_id}")
+                    break
+                else:
+                    messages.success(request, f"{identifier}", extra_tags=tags[index])
                     last_cage_1 = cage_id
+                    cage_updated = True
+                    break
+        else:
+            data_instance.save()
+            if not cage_updated:
+                last_cage_1 = cage_id
 
     return render(request, 'ib.html', {"last_cage": last_cage_1})
 

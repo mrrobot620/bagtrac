@@ -50,6 +50,11 @@
     function clearCage() {
         document.getElementById("cage").value = "";
     }
+
+    document.addEventListener("DOMContentLoaded" , function(event){
+        var firstElement = document.getElementById("bag_seal");
+        firstElement.focus();
+    });
 </script>
 
 <style>
