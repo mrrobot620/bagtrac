@@ -20,4 +20,4 @@ urlpatterns = [
     path('download_bnr' , views.download_bnr , name="download_bnr")
 ]
 
-# this line added
+# this line added second time

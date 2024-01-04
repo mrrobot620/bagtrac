@@ -4710,3 +4710,22 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 568, in invalid_block_tag
     raise self.error(
 django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 34: 'endblock'. Did you forget to register or load this tag?
+01/04/2024 01:59:13 PM /home/flipkart/projects/bagtrac/bagtrac/urls.py changed, reloading.
+01/04/2024 01:59:14 PM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 01:59:14 PM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 01:59:14 PM chromedriver not found in PATH
+01/04/2024 01:59:14 PM chrome detected at /usr/bin/google-chrome
+01/04/2024 01:59:14 PM Running command: /usr/bin/google-chrome --version
+01/04/2024 01:59:14 PM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 01:59:14 PM Detected browser: chrome 119.0.6045.159
+01/04/2024 01:59:14 PM Required driver: chromedriver 119.0.6045.105
+01/04/2024 01:59:14 PM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 01:59:14 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 01:59:14 PM Browser path: /usr/bin/google-chrome
+01/04/2024 01:59:14 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 01:59:14 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 679937
+01/04/2024 01:59:15 PM POST http://localhost:34097/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 01:59:15 PM Starting new HTTP connection (1): localhost:34097
+01/04/2024 01:59:15 PM http://localhost:34097 "POST /session HTTP/1.1" 200 0
+01/04/2024 01:59:15 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.8OuTdP"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:38367"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"0dcc6464efc725900ed2ba31881e9d32"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 01:59:15 PM Finished Request
