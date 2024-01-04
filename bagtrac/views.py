@@ -445,3 +445,5 @@ def download_bnr(request):
             writer.writerow([bag.bag, status])
         return response
     return HttpResponse("Invalid Request")
+
+#Line added
