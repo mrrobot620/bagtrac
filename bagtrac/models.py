@@ -11,8 +11,6 @@ class GridArea(models.Model):
     grid_code = models.CharField(max_length=10)
     uuid = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
     is_assigned = models.BooleanField(default=False)
-    # Other fields or metadata related to the grid area
-    
     def __str__(self):
         return f"Grid {self.grid_code}"
 
@@ -37,6 +35,7 @@ class Data(models.Model):
     
 class Bags(models.Model):
     bag_id = models.CharField(max_length=255 , unique=True)
+    seal_id = models.CharField(max_length=255 , unique=True , blank=True )
     grid_code = models.CharField(max_length=10)
     cage = models.ForeignKey(Cage , on_delete=models.CASCADE , null=True , blank=True) 
     bag_created =  models.BooleanField(default=True)
@@ -55,3 +54,11 @@ class ibbags(models.Model):
     def __str__(self):
         return self.bag_id
     
+
+class BNRBag(models.Model):
+    time1 = models.DateTimeField(auto_now_add=True)
+    bag = models.CharField(max_length=255)
+    recieved = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.bag

@@ -3246,3 +3246,1237 @@ Stacktrace:
 01/03/2024 12:51:08 PM http://localhost:35603 "POST /session/21e11bac4ce4deeb186fedf761eea2ce/element/01876FDACC3DF4072C9DFFABED3FDF6C_element_26/value HTTP/1.1" 200 0
 01/03/2024 12:51:08 PM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
 01/03/2024 12:51:08 PM Finished Request
+01/04/2024 08:46:38 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 08:46:38 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 08:46:38 AM chromedriver not found in PATH
+01/04/2024 08:46:38 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 08:46:38 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 08:46:38 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 08:46:38 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 08:46:38 AM Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+01/04/2024 08:46:38 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 08:46:38 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 08:46:38 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 08:46:38 AM Browser path: /usr/bin/google-chrome
+01/04/2024 08:46:38 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 08:46:38 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 511505
+01/04/2024 08:46:39 AM POST http://localhost:42657/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 08:46:39 AM Starting new HTTP connection (1): localhost:42657
+01/04/2024 08:46:39 AM http://localhost:42657 "POST /session HTTP/1.1" 200 0
+01/04/2024 08:46:39 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.va2GvO"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:37389"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"ef2de25050ff1358dde2f58a7ea1353a"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 08:46:39 AM Finished Request
+01/04/2024 08:47:03 AM Not Found: /accounts/login/
+01/04/2024 08:47:03 AM Not Found: /favicon.ico
+01/04/2024 09:30:36 AM /home/flipkart/projects/bagtrac/bagtrac/models.py changed, reloading.
+01/04/2024 09:30:37 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 09:30:37 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 09:30:37 AM chromedriver not found in PATH
+01/04/2024 09:30:37 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 09:30:37 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 09:30:37 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 09:30:37 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 09:30:37 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 09:30:37 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 09:30:37 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:30:37 AM Browser path: /usr/bin/google-chrome
+01/04/2024 09:30:37 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:30:37 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 532667
+01/04/2024 09:30:38 AM POST http://localhost:50409/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 09:30:38 AM Starting new HTTP connection (1): localhost:50409
+01/04/2024 09:30:38 AM http://localhost:50409 "POST /session HTTP/1.1" 200 0
+01/04/2024 09:30:38 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.Icazp0"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:33931"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"2d182988f9dc10d0c0101ec34cd78600"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 09:30:38 AM Finished Request
+01/04/2024 09:30:45 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 09:30:45 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 09:30:45 AM chromedriver not found in PATH
+01/04/2024 09:30:45 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 09:30:45 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 09:30:45 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 09:30:45 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 09:30:45 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 09:30:45 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 09:30:45 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:30:45 AM Browser path: /usr/bin/google-chrome
+01/04/2024 09:30:45 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:30:45 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 532923
+01/04/2024 09:30:45 AM POST http://localhost:49975/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 09:30:45 AM Starting new HTTP connection (1): localhost:49975
+01/04/2024 09:30:45 AM http://localhost:49975 "POST /session HTTP/1.1" 200 0
+01/04/2024 09:30:45 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.hcWifl"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:39591"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"400c8ec2168492f1ac5f4ed8383865a3"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 09:30:45 AM Finished Request
+01/04/2024 09:33:19 AM Internal Server Error: /admin/bagtrac/cage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/home/flipkart/.local/lib/python3.8/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/home/flipkart/.local/lib/python3.8/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/home/flipkart/.local/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'bagtrac_bags.seal_id' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/admin/options.py", line 1959, in changelist_view
+    response = self.response_action(
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/admin/options.py", line 1593, in response_action
+    response = func(self, request, queryset)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/admin/actions.py", line 39, in delete_selected
+    ) = modeladmin.get_deleted_objects(queryset, request)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/admin/options.py", line 2101, in get_deleted_objects
+    return get_deleted_objects(objs, request, self.admin_site)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/admin/utils.py", line 121, in get_deleted_objects
+    collector.collect(objs)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/admin/utils.py", line 187, in collect
+    return super().collect(objs, source_attr=source_attr, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/db/models/deletion.py", line 348, in collect
+    if getattr(on_delete, "lazy_sub_objs", False) or sub_objs:
+  File "/usr/local/lib/python3.8/dist-packages/django/db/models/query.py", line 412, in __bool__
+    self._fetch_all()
+  File "/usr/local/lib/python3.8/dist-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.8/dist-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/usr/local/lib/python3.8/dist-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/dist-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/home/flipkart/.local/lib/python3.8/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/home/flipkart/.local/lib/python3.8/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/home/flipkart/.local/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1054, "Unknown column 'bagtrac_bags.seal_id' in 'field list'")
+01/04/2024 09:33:30 AM /home/flipkart/projects/bagtrac/bagtrac/models.py changed, reloading.
+01/04/2024 09:33:31 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 09:33:31 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 09:33:31 AM chromedriver not found in PATH
+01/04/2024 09:33:31 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 09:33:31 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 09:33:31 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 09:33:31 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 09:33:31 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 09:33:31 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 09:33:31 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:33:31 AM Browser path: /usr/bin/google-chrome
+01/04/2024 09:33:31 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:33:31 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 535080
+01/04/2024 09:33:31 AM POST http://localhost:36171/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 09:33:31 AM Starting new HTTP connection (1): localhost:36171
+01/04/2024 09:33:32 AM http://localhost:36171 "POST /session HTTP/1.1" 200 0
+01/04/2024 09:33:32 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.gyatts"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:39679"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"da2733def0a15c52c929c2923f4a63b7"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 09:33:32 AM Finished Request
+01/04/2024 09:34:17 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 09:34:17 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 09:34:17 AM chromedriver not found in PATH
+01/04/2024 09:34:17 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 09:34:17 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 09:34:17 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 09:34:17 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 09:34:17 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 09:34:17 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 09:34:17 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:34:17 AM Browser path: /usr/bin/google-chrome
+01/04/2024 09:34:17 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:34:17 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 535998
+01/04/2024 09:34:17 AM POST http://localhost:53821/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 09:34:17 AM Starting new HTTP connection (1): localhost:53821
+01/04/2024 09:34:17 AM http://localhost:53821 "POST /session HTTP/1.1" 200 0
+01/04/2024 09:34:17 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.fra2gR"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:42211"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"0e04f07009d5e07008062be7dd464008"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 09:34:17 AM Finished Request
+01/04/2024 09:34:24 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 09:34:24 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 09:34:24 AM chromedriver not found in PATH
+01/04/2024 09:34:24 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 09:34:24 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 09:34:24 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 09:34:24 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 09:34:24 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 09:34:24 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 09:34:24 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:34:24 AM Browser path: /usr/bin/google-chrome
+01/04/2024 09:34:24 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:34:24 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 536251
+01/04/2024 09:34:25 AM POST http://localhost:59791/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 09:34:25 AM Starting new HTTP connection (1): localhost:59791
+01/04/2024 09:34:25 AM http://localhost:59791 "POST /session HTTP/1.1" 200 0
+01/04/2024 09:34:25 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.zrIjTW"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:34743"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"726b3779b9668d9a398596d70058ecf5"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 09:34:25 AM Finished Request
+01/04/2024 09:34:27 AM /home/flipkart/projects/bagtrac/bagtrac/models.py changed, reloading.
+01/04/2024 09:34:28 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 09:34:28 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 09:34:28 AM chromedriver not found in PATH
+01/04/2024 09:34:28 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 09:34:28 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 09:34:28 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 09:34:28 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 09:34:28 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 09:34:28 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 09:34:28 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:34:28 AM Browser path: /usr/bin/google-chrome
+01/04/2024 09:34:28 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:34:28 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 536435
+01/04/2024 09:34:29 AM POST http://localhost:44041/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 09:34:29 AM Starting new HTTP connection (1): localhost:44041
+01/04/2024 09:34:29 AM http://localhost:44041 "POST /session HTTP/1.1" 200 0
+01/04/2024 09:34:29 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.lsK1xS"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:46867"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"c3238979b23caa6c2e76570d53649494"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 09:34:29 AM Finished Request
+01/04/2024 09:34:35 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 09:34:35 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 09:34:35 AM chromedriver not found in PATH
+01/04/2024 09:34:35 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 09:34:35 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 09:34:35 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 09:34:35 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 09:34:35 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 09:34:35 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 09:34:35 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:34:35 AM Browser path: /usr/bin/google-chrome
+01/04/2024 09:34:35 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:34:35 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 536685
+01/04/2024 09:34:35 AM POST http://localhost:38703/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 09:34:35 AM Starting new HTTP connection (1): localhost:38703
+01/04/2024 09:34:35 AM http://localhost:38703 "POST /session HTTP/1.1" 200 0
+01/04/2024 09:34:35 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.BKyGtP"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:40629"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"fc7a781965af8cee16a8926f06e99a77"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 09:34:35 AM Finished Request
+01/04/2024 09:34:45 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 09:34:45 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 09:34:45 AM chromedriver not found in PATH
+01/04/2024 09:34:45 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 09:34:45 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 09:34:45 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 09:34:45 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 09:34:45 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 09:34:45 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 09:34:45 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:34:45 AM Browser path: /usr/bin/google-chrome
+01/04/2024 09:34:45 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:34:45 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 536945
+01/04/2024 09:34:45 AM POST http://localhost:60635/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 09:34:45 AM Starting new HTTP connection (1): localhost:60635
+01/04/2024 09:34:45 AM http://localhost:60635 "POST /session HTTP/1.1" 200 0
+01/04/2024 09:34:45 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.u5AS8r"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:42973"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"792678e7693183c6c90645a6deac4744"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 09:34:45 AM Finished Request
+01/04/2024 09:35:24 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 09:35:24 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 09:35:24 AM chromedriver not found in PATH
+01/04/2024 09:35:24 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 09:35:24 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 09:35:24 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 09:35:24 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 09:35:24 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 09:35:24 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 09:35:24 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:35:24 AM Browser path: /usr/bin/google-chrome
+01/04/2024 09:35:24 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:35:24 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 537768
+01/04/2024 09:35:25 AM POST http://localhost:36181/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 09:35:25 AM Starting new HTTP connection (1): localhost:36181
+01/04/2024 09:35:25 AM http://localhost:36181 "POST /session HTTP/1.1" 200 0
+01/04/2024 09:35:25 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.0sC3jH"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:39851"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"9379c5cb3c3e7e8cc698853071b037dd"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 09:35:25 AM Finished Request
+01/04/2024 09:35:43 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 09:35:43 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 09:35:43 AM chromedriver not found in PATH
+01/04/2024 09:35:43 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 09:35:43 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 09:35:43 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 09:35:43 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 09:35:43 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 09:35:43 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 09:35:43 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:35:43 AM Browser path: /usr/bin/google-chrome
+01/04/2024 09:35:43 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:35:43 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 538296
+01/04/2024 09:35:43 AM POST http://localhost:55139/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 09:35:43 AM Starting new HTTP connection (1): localhost:55139
+01/04/2024 09:35:44 AM http://localhost:55139 "POST /session HTTP/1.1" 200 0
+01/04/2024 09:35:44 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.d9qChA"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:33071"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"b24bbd8615fd20019997ed17bb311665"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 09:35:44 AM Finished Request
+01/04/2024 09:35:54 AM /home/flipkart/projects/bagtrac/bagtrac/models.py changed, reloading.
+01/04/2024 09:35:55 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 09:35:55 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 09:35:55 AM chromedriver not found in PATH
+01/04/2024 09:35:55 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 09:35:55 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 09:35:55 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 09:35:55 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 09:35:55 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 09:35:55 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 09:35:55 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:35:55 AM Browser path: /usr/bin/google-chrome
+01/04/2024 09:35:55 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:35:55 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 538589
+01/04/2024 09:35:56 AM POST http://localhost:57273/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 09:35:56 AM Starting new HTTP connection (1): localhost:57273
+01/04/2024 09:35:56 AM http://localhost:57273 "POST /session HTTP/1.1" 200 0
+01/04/2024 09:35:56 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.sIGTTN"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:40031"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"a129793dea4536fee531ebda97721a75"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 09:35:56 AM Finished Request
+01/04/2024 09:36:04 AM /home/flipkart/projects/bagtrac/bagtrac/models.py changed, reloading.
+01/04/2024 09:36:05 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 09:36:05 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 09:36:05 AM chromedriver not found in PATH
+01/04/2024 09:36:05 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 09:36:05 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 09:36:05 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 09:36:05 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 09:36:05 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 09:36:05 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 09:36:05 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:36:05 AM Browser path: /usr/bin/google-chrome
+01/04/2024 09:36:05 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:36:05 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 538905
+01/04/2024 09:36:06 AM POST http://localhost:60643/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 09:36:06 AM Starting new HTTP connection (1): localhost:60643
+01/04/2024 09:36:06 AM http://localhost:60643 "POST /session HTTP/1.1" 200 0
+01/04/2024 09:36:06 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.w2EvLD"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:45105"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"017fbc60088af489120fcd505bdb667b"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 09:36:06 AM Finished Request
+01/04/2024 09:36:08 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 09:36:08 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 09:36:08 AM chromedriver not found in PATH
+01/04/2024 09:36:08 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 09:36:08 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 09:36:08 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 09:36:08 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 09:36:08 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 09:36:08 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 09:36:08 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:36:08 AM Browser path: /usr/bin/google-chrome
+01/04/2024 09:36:08 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:36:08 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 539079
+01/04/2024 09:36:08 AM POST http://localhost:35149/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 09:36:08 AM Starting new HTTP connection (1): localhost:35149
+01/04/2024 09:36:08 AM http://localhost:35149 "POST /session HTTP/1.1" 200 0
+01/04/2024 09:36:08 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.WkmOrO"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:33511"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"5985300a0fe6f61686119fad65211269"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 09:36:08 AM Finished Request
+01/04/2024 09:36:14 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 09:36:14 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 09:36:14 AM chromedriver not found in PATH
+01/04/2024 09:36:14 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 09:36:14 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 09:36:14 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 09:36:14 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 09:36:14 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 09:36:14 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 09:36:14 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:36:14 AM Browser path: /usr/bin/google-chrome
+01/04/2024 09:36:14 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:36:14 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 539328
+01/04/2024 09:36:14 AM POST http://localhost:43731/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 09:36:14 AM Starting new HTTP connection (1): localhost:43731
+01/04/2024 09:36:14 AM http://localhost:43731 "POST /session HTTP/1.1" 200 0
+01/04/2024 09:36:14 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.blTDbD"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:36379"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"87b07765324eaa58951359dc09f1c2d0"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 09:36:14 AM Finished Request
+01/04/2024 09:45:31 AM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/04/2024 09:45:32 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 09:45:32 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 09:45:32 AM chromedriver not found in PATH
+01/04/2024 09:45:32 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 09:45:32 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 09:45:32 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 09:45:32 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 09:45:32 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 09:45:32 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 09:45:32 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:45:32 AM Browser path: /usr/bin/google-chrome
+01/04/2024 09:45:32 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:45:32 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 544046
+01/04/2024 09:45:32 AM POST http://localhost:39837/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 09:45:32 AM Starting new HTTP connection (1): localhost:39837
+01/04/2024 09:45:33 AM http://localhost:39837 "POST /session HTTP/1.1" 200 0
+01/04/2024 09:45:33 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.64Lxmr"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:44887"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"d6657265b88e850b248c1931baeb4160"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 09:45:33 AM Finished Request
+01/04/2024 09:45:53 AM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/04/2024 09:45:54 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 09:45:54 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 09:45:54 AM chromedriver not found in PATH
+01/04/2024 09:45:54 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 09:45:54 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 09:45:54 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 09:45:54 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 09:45:54 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 09:45:54 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 09:45:54 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:45:54 AM Browser path: /usr/bin/google-chrome
+01/04/2024 09:45:54 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 09:45:54 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 544450
+01/04/2024 09:45:54 AM POST http://localhost:57221/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 09:45:54 AM Starting new HTTP connection (1): localhost:57221
+01/04/2024 09:45:55 AM http://localhost:57221 "POST /session HTTP/1.1" 200 0
+01/04/2024 09:45:55 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.J8UQpZ"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:39693"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"02a681cdb41a0dc2b3a3b0b318d5c321"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 09:45:55 AM Finished Request
+01/04/2024 10:18:06 AM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/04/2024 10:18:07 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 10:18:07 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 10:18:07 AM chromedriver not found in PATH
+01/04/2024 10:18:07 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 10:18:07 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 10:18:07 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 10:18:07 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 10:18:07 AM Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+01/04/2024 10:18:07 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 10:18:07 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 10:18:07 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:18:07 AM Browser path: /usr/bin/google-chrome
+01/04/2024 10:18:07 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:18:07 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 559990
+01/04/2024 10:18:08 AM POST http://localhost:32815/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 10:18:08 AM Starting new HTTP connection (1): localhost:32815
+01/04/2024 10:18:08 AM http://localhost:32815 "POST /session HTTP/1.1" 200 0
+01/04/2024 10:18:08 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.g3wxqZ"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:34479"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"6818805660507dd217a09a65dbe0ae39"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:18:08 AM Finished Request
+01/04/2024 10:18:44 AM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/04/2024 10:18:45 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 10:18:45 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 10:18:45 AM chromedriver not found in PATH
+01/04/2024 10:18:45 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 10:18:45 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 10:18:45 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 10:18:45 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 10:18:45 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 10:18:45 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 10:18:45 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:18:45 AM Browser path: /usr/bin/google-chrome
+01/04/2024 10:18:45 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:18:45 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 560496
+01/04/2024 10:18:45 AM POST http://localhost:55785/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 10:18:45 AM Starting new HTTP connection (1): localhost:55785
+01/04/2024 10:18:46 AM http://localhost:55785 "POST /session HTTP/1.1" 200 0
+01/04/2024 10:18:46 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.H4r5Cj"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:38915"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"17456d1f790570855423d6627f0e4f2d"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:18:46 AM Finished Request
+01/04/2024 10:19:40 AM POST http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/url {"url": "http://10.24.0.157/"}
+01/04/2024 10:19:42 AM http://localhost:55785 "POST /session/17456d1f790570855423d6627f0e4f2d/url HTTP/1.1" 200 0
+01/04/2024 10:19:42 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:19:42 AM Finished Request
+01/04/2024 10:19:47 AM GET http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/title {}
+01/04/2024 10:19:47 AM http://localhost:55785 "GET /session/17456d1f790570855423d6627f0e4f2d/title HTTP/1.1" 200 0
+01/04/2024 10:19:47 AM Remote response: status=200 | data={"value":"Login (AuthN)"} | headers=HTTPHeaderDict({'Content-Length': '25', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:19:47 AM Finished Request
+01/04/2024 10:19:47 AM POST http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]"}
+01/04/2024 10:19:47 AM http://localhost:55785 "POST /session/17456d1f790570855423d6627f0e4f2d/element HTTP/1.1" 200 0
+01/04/2024 10:19:47 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"A34FB77CE38779DCA34CEA66CCE2AA4C_element_7"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:19:47 AM Finished Request
+01/04/2024 10:19:47 AM POST http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element/A34FB77CE38779DCA34CEA66CCE2AA4C_element_7/value {"text": "ca.2670054", "value": ["c", "a", ".", "2", "6", "7", "0", "0", "5", "4"]}
+01/04/2024 10:19:47 AM http://localhost:55785 "POST /session/17456d1f790570855423d6627f0e4f2d/element/A34FB77CE38779DCA34CEA66CCE2AA4C_element_7/value HTTP/1.1" 200 0
+01/04/2024 10:19:47 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:19:47 AM Finished Request
+01/04/2024 10:19:47 AM POST http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[2]"}
+01/04/2024 10:19:47 AM http://localhost:55785 "POST /session/17456d1f790570855423d6627f0e4f2d/element HTTP/1.1" 200 0
+01/04/2024 10:19:47 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"A34FB77CE38779DCA34CEA66CCE2AA4C_element_10"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:19:47 AM Finished Request
+01/04/2024 10:19:47 AM POST http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element/A34FB77CE38779DCA34CEA66CCE2AA4C_element_10/value {"text": "Chauhan@8091", "value": ["C", "h", "a", "u", "h", "a", "n", "@", "8", "0", "9", "1"]}
+01/04/2024 10:19:47 AM http://localhost:55785 "POST /session/17456d1f790570855423d6627f0e4f2d/element/A34FB77CE38779DCA34CEA66CCE2AA4C_element_10/value HTTP/1.1" 200 0
+01/04/2024 10:19:47 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:19:47 AM Finished Request
+01/04/2024 10:19:50 AM POST http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element/A34FB77CE38779DCA34CEA66CCE2AA4C_element_10/value {"text": "\ue006", "value": ["\ue006"]}
+01/04/2024 10:19:53 AM http://localhost:55785 "POST /session/17456d1f790570855423d6627f0e4f2d/element/A34FB77CE38779DCA34CEA66CCE2AA4C_element_10/value HTTP/1.1" 200 0
+01/04/2024 10:19:53 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:19:53 AM Finished Request
+01/04/2024 10:19:53 AM POST http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element {"using": "css selector", "value": "[id=\"selectFacility\"]"}
+01/04/2024 10:19:53 AM http://localhost:55785 "POST /session/17456d1f790570855423d6627f0e4f2d/element HTTP/1.1" 200 0
+01/04/2024 10:19:53 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_10"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:19:53 AM Finished Request
+01/04/2024 10:19:53 AM POST http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element/0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_10/click {}
+01/04/2024 10:19:54 AM http://localhost:55785 "POST /session/17456d1f790570855423d6627f0e4f2d/element/0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_10/click HTTP/1.1" 200 0
+01/04/2024 10:19:54 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:19:54 AM Finished Request
+01/04/2024 10:19:54 AM POST http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element/0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_10/value {"text": "MotherHub_YKB", "value": ["M", "o", "t", "h", "e", "r", "H", "u", "b", "_", "Y", "K", "B"]}
+01/04/2024 10:19:54 AM http://localhost:55785 "POST /session/17456d1f790570855423d6627f0e4f2d/element/0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_10/value HTTP/1.1" 200 0
+01/04/2024 10:19:54 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:19:54 AM Finished Request
+01/04/2024 10:19:54 AM POST http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element/0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_10/value {"text": "\ue006", "value": ["\ue006"]}
+01/04/2024 10:19:54 AM http://localhost:55785 "POST /session/17456d1f790570855423d6627f0e4f2d/element/0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_10/value HTTP/1.1" 200 0
+01/04/2024 10:19:54 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:19:54 AM Finished Request
+01/04/2024 10:20:14 AM POST http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element {"using": "css selector", "value": ".humberger"}
+01/04/2024 10:20:14 AM http://localhost:55785 "POST /session/17456d1f790570855423d6627f0e4f2d/element HTTP/1.1" 200 0
+01/04/2024 10:20:14 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_3"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:20:14 AM Finished Request
+01/04/2024 10:20:14 AM POST http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element/0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_3/click {}
+01/04/2024 10:20:14 AM http://localhost:55785 "POST /session/17456d1f790570855423d6627f0e4f2d/element/0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_3/click HTTP/1.1" 200 0
+01/04/2024 10:20:14 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:20:14 AM Finished Request
+01/04/2024 10:20:17 AM POST http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/sidebar-main/div[2]/div[1]/ul[7]/li[1]"}
+01/04/2024 10:20:17 AM http://localhost:55785 "POST /session/17456d1f790570855423d6627f0e4f2d/element HTTP/1.1" 200 0
+01/04/2024 10:20:17 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_20"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:20:17 AM Finished Request
+01/04/2024 10:20:17 AM POST http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element/0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_20/click {}
+01/04/2024 10:20:17 AM http://localhost:55785 "POST /session/17456d1f790570855423d6627f0e4f2d/element/0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_20/click HTTP/1.1" 200 0
+01/04/2024 10:20:17 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:20:17 AM Finished Request
+01/04/2024 10:20:19 AM POST http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/04/2024 10:20:19 AM http://localhost:55785 "POST /session/17456d1f790570855423d6627f0e4f2d/element HTTP/1.1" 200 0
+01/04/2024 10:20:19 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_26"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:20:19 AM Finished Request
+01/04/2024 10:20:19 AM POST http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element/0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_26/value {"text": "bag1", "value": ["b", "a", "g", "1"]}
+01/04/2024 10:20:19 AM http://localhost:55785 "POST /session/17456d1f790570855423d6627f0e4f2d/element/0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_26/value HTTP/1.1" 200 0
+01/04/2024 10:20:19 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:20:19 AM Finished Request
+01/04/2024 10:20:19 AM POST http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element/0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_26/value {"text": "\ue006", "value": ["\ue006"]}
+01/04/2024 10:20:19 AM http://localhost:55785 "POST /session/17456d1f790570855423d6627f0e4f2d/element/0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_26/value HTTP/1.1" 200 0
+01/04/2024 10:20:19 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:20:19 AM Finished Request
+01/04/2024 10:20:20 AM POST http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[2]/div/label"}
+01/04/2024 10:20:20 AM http://localhost:55785 "POST /session/17456d1f790570855423d6627f0e4f2d/element HTTP/1.1" 200 0
+01/04/2024 10:20:20 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_23"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:20:20 AM Finished Request
+01/04/2024 10:20:20 AM GET http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element/0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_23/text {}
+01/04/2024 10:20:20 AM http://localhost:55785 "GET /session/17456d1f790570855423d6627f0e4f2d/element/0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_23/text HTTP/1.1" 200 0
+01/04/2024 10:20:20 AM Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:20:20 AM Finished Request
+01/04/2024 10:20:20 AM POST http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/04/2024 10:20:20 AM http://localhost:55785 "POST /session/17456d1f790570855423d6627f0e4f2d/element HTTP/1.1" 200 0
+01/04/2024 10:20:20 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_26"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:20:20 AM Finished Request
+01/04/2024 10:20:20 AM POST http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element/0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_26/value {"text": "bag1", "value": ["b", "a", "g", "1"]}
+01/04/2024 10:20:20 AM http://localhost:55785 "POST /session/17456d1f790570855423d6627f0e4f2d/element/0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_26/value HTTP/1.1" 200 0
+01/04/2024 10:20:20 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:20:20 AM Finished Request
+01/04/2024 10:20:20 AM POST http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element/0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_26/value {"text": "\ue006", "value": ["\ue006"]}
+01/04/2024 10:20:20 AM http://localhost:55785 "POST /session/17456d1f790570855423d6627f0e4f2d/element/0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_26/value HTTP/1.1" 200 0
+01/04/2024 10:20:20 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:20:20 AM Finished Request
+01/04/2024 10:20:21 AM POST http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[2]/div/label"}
+01/04/2024 10:20:21 AM http://localhost:55785 "POST /session/17456d1f790570855423d6627f0e4f2d/element HTTP/1.1" 200 0
+01/04/2024 10:20:21 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_23"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:20:21 AM Finished Request
+01/04/2024 10:20:21 AM GET http://localhost:55785/session/17456d1f790570855423d6627f0e4f2d/element/0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_23/text {}
+01/04/2024 10:20:21 AM http://localhost:55785 "GET /session/17456d1f790570855423d6627f0e4f2d/element/0CA6070C6AC24ED5E5F9BF64B47C4BAD_element_23/text HTTP/1.1" 200 0
+01/04/2024 10:20:21 AM Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:20:21 AM Finished Request
+01/04/2024 10:29:47 AM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/04/2024 10:29:48 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 10:29:48 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 10:29:48 AM chromedriver not found in PATH
+01/04/2024 10:29:48 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 10:29:48 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 10:29:48 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 10:29:48 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 10:29:48 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 10:29:48 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 10:29:48 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:29:48 AM Browser path: /usr/bin/google-chrome
+01/04/2024 10:29:48 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:29:48 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 566865
+01/04/2024 10:29:49 AM POST http://localhost:46739/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 10:29:49 AM Starting new HTTP connection (1): localhost:46739
+01/04/2024 10:29:49 AM http://localhost:46739 "POST /session HTTP/1.1" 200 0
+01/04/2024 10:29:49 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.u38mfS"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:46797"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"9b2ca9dec8cc4fcb866dd3a78d4f0fa3"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:29:49 AM Finished Request
+01/04/2024 10:29:55 AM Internal Server Error: /home
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/flipkart/projects/bagtrac/bagtrac/views.py", line 86, in home
+    messages.success(request, "Success", {'last_cv_value': last_cv_value} , extra_tags="Success" )
+TypeError: success() got multiple values for argument 'extra_tags'
+01/04/2024 10:30:58 AM Internal Server Error: /home
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/flipkart/projects/bagtrac/bagtrac/views.py", line 86, in home
+    messages.success(request, "Success", {'last_cv_value': last_cv_value} , extra_tags="Success" )
+TypeError: success() got multiple values for argument 'extra_tags'
+01/04/2024 10:31:06 AM Internal Server Error: /home
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/flipkart/projects/bagtrac/bagtrac/views.py", line 86, in home
+    messages.success(request, "Success", {'last_cv_value': last_cv_value} , extra_tags="Success" )
+TypeError: success() got multiple values for argument 'extra_tags'
+01/04/2024 10:31:07 AM Internal Server Error: /home
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/flipkart/projects/bagtrac/bagtrac/views.py", line 86, in home
+    messages.success(request, "Success", {'last_cv_value': last_cv_value} , extra_tags="Success" )
+TypeError: success() got multiple values for argument 'extra_tags'
+01/04/2024 10:33:31 AM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/04/2024 10:33:33 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 10:33:33 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 10:33:33 AM chromedriver not found in PATH
+01/04/2024 10:33:33 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 10:33:33 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 10:33:33 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 10:33:33 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 10:33:33 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 10:33:33 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 10:33:33 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:33:33 AM Browser path: /usr/bin/google-chrome
+01/04/2024 10:33:33 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:33:33 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 569100
+01/04/2024 10:33:33 AM POST http://localhost:59709/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 10:33:33 AM Starting new HTTP connection (1): localhost:59709
+01/04/2024 10:33:33 AM http://localhost:59709 "POST /session HTTP/1.1" 200 0
+01/04/2024 10:33:33 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.v2B4yQ"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:33623"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"7505d5d69c124a638481db7c84dd769e"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:33:33 AM Finished Request
+01/04/2024 10:33:34 AM Internal Server Error: /home
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/flipkart/projects/bagtrac/bagtrac/views.py", line 87, in home
+    return render(request, 'home.html', {'last_cv_value': last_cv_value})
+  File "/usr/local/lib/python3.8/dist-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 75: 'endblock', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+01/04/2024 10:35:19 AM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/04/2024 10:35:20 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 10:35:20 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 10:35:20 AM chromedriver not found in PATH
+01/04/2024 10:35:20 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 10:35:20 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 10:35:20 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 10:35:20 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 10:35:20 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 10:35:20 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 10:35:20 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:35:20 AM Browser path: /usr/bin/google-chrome
+01/04/2024 10:35:20 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:35:20 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 570481
+01/04/2024 10:35:21 AM POST http://localhost:35731/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 10:35:21 AM Starting new HTTP connection (1): localhost:35731
+01/04/2024 10:35:21 AM http://localhost:35731 "POST /session HTTP/1.1" 200 0
+01/04/2024 10:35:21 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.6FxvSg"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:35419"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"20f6457730bb6a7012f24317e1e84e16"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:35:21 AM Finished Request
+01/04/2024 10:35:22 AM Internal Server Error: /home
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/flipkart/projects/bagtrac/bagtrac/views.py", line 86, in home
+    messages.success(request, "Success", {'last_cv_value': last_cv_value} , extra_tags="Success" )
+TypeError: success() got multiple values for argument 'extra_tags'
+01/04/2024 10:35:34 AM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/04/2024 10:35:35 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 10:35:35 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 10:35:35 AM chromedriver not found in PATH
+01/04/2024 10:35:35 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 10:35:35 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 10:35:35 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 10:35:35 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 10:35:35 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 10:35:35 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 10:35:35 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:35:35 AM Browser path: /usr/bin/google-chrome
+01/04/2024 10:35:35 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:35:35 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 570819
+01/04/2024 10:35:35 AM POST http://localhost:48369/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 10:35:35 AM Starting new HTTP connection (1): localhost:48369
+01/04/2024 10:35:36 AM http://localhost:48369 "POST /session HTTP/1.1" 200 0
+01/04/2024 10:35:36 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.19DgaP"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:33487"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"c1e50023f99a282c543a451e31e26392"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:35:36 AM Finished Request
+01/04/2024 10:36:36 AM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/04/2024 10:36:37 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 10:36:37 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 10:36:37 AM chromedriver not found in PATH
+01/04/2024 10:36:37 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 10:36:37 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 10:36:37 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 10:36:37 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 10:36:37 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 10:36:37 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 10:36:37 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:36:37 AM Browser path: /usr/bin/google-chrome
+01/04/2024 10:36:37 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:36:37 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 572144
+01/04/2024 10:36:38 AM POST http://localhost:45399/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 10:36:38 AM Starting new HTTP connection (1): localhost:45399
+01/04/2024 10:36:38 AM http://localhost:45399 "POST /session HTTP/1.1" 200 0
+01/04/2024 10:36:38 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.DkEWd1"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:37249"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"79450fc9f6122b877d4de0ca5a4949b1"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:36:38 AM Finished Request
+01/04/2024 10:46:52 AM /home/flipkart/projects/bagtrac/bagtrac/models.py changed, reloading.
+01/04/2024 10:46:53 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 10:46:53 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 10:46:53 AM chromedriver not found in PATH
+01/04/2024 10:46:53 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 10:46:53 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 10:46:53 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 10:46:53 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 10:46:53 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 10:46:53 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 10:46:53 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:46:53 AM Browser path: /usr/bin/google-chrome
+01/04/2024 10:46:53 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:46:53 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 577452
+01/04/2024 10:46:54 AM POST http://localhost:34633/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 10:46:54 AM Starting new HTTP connection (1): localhost:34633
+01/04/2024 10:46:54 AM http://localhost:34633 "POST /session HTTP/1.1" 200 0
+01/04/2024 10:46:54 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.0p5PQp"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:32923"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"93456018ac5917857ac76339f4965e44"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:46:54 AM Finished Request
+01/04/2024 10:46:56 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 10:46:56 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 10:46:56 AM chromedriver not found in PATH
+01/04/2024 10:46:56 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 10:46:56 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 10:46:56 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 10:46:56 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 10:46:56 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 10:46:56 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 10:46:56 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:46:56 AM Browser path: /usr/bin/google-chrome
+01/04/2024 10:46:56 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:46:56 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 577610
+01/04/2024 10:46:56 AM POST http://localhost:47713/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 10:46:56 AM Starting new HTTP connection (1): localhost:47713
+01/04/2024 10:46:57 AM http://localhost:47713 "POST /session HTTP/1.1" 200 0
+01/04/2024 10:46:57 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.oCrdek"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:45323"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"d6d1560125063ebcccc00f33b4876912"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:46:57 AM Finished Request
+01/04/2024 10:47:14 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 10:47:14 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 10:47:14 AM chromedriver not found in PATH
+01/04/2024 10:47:14 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 10:47:14 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 10:47:14 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 10:47:14 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 10:47:14 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 10:47:14 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 10:47:14 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:47:14 AM Browser path: /usr/bin/google-chrome
+01/04/2024 10:47:14 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:47:14 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 578019
+01/04/2024 10:47:15 AM POST http://localhost:42827/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 10:47:15 AM Starting new HTTP connection (1): localhost:42827
+01/04/2024 10:47:15 AM http://localhost:42827 "POST /session HTTP/1.1" 200 0
+01/04/2024 10:47:15 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.asiK7f"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:35371"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"6565404d0abe2f08f19cd7ca97a31d78"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:47:15 AM Finished Request
+01/04/2024 10:48:13 AM /home/flipkart/projects/bagtrac/bagtrac/admin.py changed, reloading.
+01/04/2024 10:48:14 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 10:48:14 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 10:48:14 AM chromedriver not found in PATH
+01/04/2024 10:48:14 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 10:48:14 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 10:48:14 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 10:48:14 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 10:48:14 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 10:48:14 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 10:48:14 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:48:14 AM Browser path: /usr/bin/google-chrome
+01/04/2024 10:48:14 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:48:14 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 578797
+01/04/2024 10:48:14 AM POST http://localhost:44337/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 10:48:14 AM Starting new HTTP connection (1): localhost:44337
+01/04/2024 10:48:15 AM http://localhost:44337 "POST /session HTTP/1.1" 200 0
+01/04/2024 10:48:15 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.YwDaZ7"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:35155"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"392ae375d7ede75abf0e192267b63b57"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:48:15 AM Finished Request
+01/04/2024 10:59:30 AM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/04/2024 10:59:30 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 10:59:30 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 10:59:31 AM chromedriver not found in PATH
+01/04/2024 10:59:31 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 10:59:31 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 10:59:31 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 10:59:31 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 10:59:31 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 10:59:31 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 10:59:31 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:59:31 AM Browser path: /usr/bin/google-chrome
+01/04/2024 10:59:31 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 10:59:31 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 584527
+01/04/2024 10:59:31 AM POST http://localhost:44621/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 10:59:31 AM Starting new HTTP connection (1): localhost:44621
+01/04/2024 10:59:31 AM http://localhost:44621 "POST /session HTTP/1.1" 200 0
+01/04/2024 10:59:31 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.jiYvZo"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:35571"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"aec9cd21cd0f3215400433c46eaeea40"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 10:59:31 AM Finished Request
+01/04/2024 11:00:13 AM /home/flipkart/projects/bagtrac/bagtrac/urls.py changed, reloading.
+01/04/2024 11:00:14 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 11:00:14 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 11:00:14 AM chromedriver not found in PATH
+01/04/2024 11:00:14 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 11:00:14 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 11:00:14 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 11:00:14 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 11:00:14 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 11:00:14 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 11:00:14 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:00:14 AM Browser path: /usr/bin/google-chrome
+01/04/2024 11:00:14 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:00:14 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 585094
+01/04/2024 11:00:15 AM POST http://localhost:49209/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 11:00:15 AM Starting new HTTP connection (1): localhost:49209
+01/04/2024 11:00:15 AM http://localhost:49209 "POST /session HTTP/1.1" 200 0
+01/04/2024 11:00:15 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.GFLhje"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:45345"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"f635265c24322f7c4df084bbbd3bc062"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 11:00:15 AM Finished Request
+01/04/2024 11:00:56 AM Internal Server Error: /add_bnr
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/flipkart/projects/bagtrac/bagtrac/views.py", line 416, in add_bnr_bags
+    bnr = bnr_bags.split()
+AttributeError: 'NoneType' object has no attribute 'split'
+01/04/2024 11:01:59 AM Internal Server Error: /add_bnr
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/flipkart/projects/bagtrac/bagtrac/views.py", line 416, in add_bnr_bags
+    bnr = bnr_bags.split()
+AttributeError: 'NoneType' object has no attribute 'split'
+01/04/2024 11:02:21 AM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/04/2024 11:02:22 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 11:02:22 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 11:02:22 AM chromedriver not found in PATH
+01/04/2024 11:02:22 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 11:02:22 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 11:02:22 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 11:02:22 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 11:02:22 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 11:02:22 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 11:02:22 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:02:22 AM Browser path: /usr/bin/google-chrome
+01/04/2024 11:02:22 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:02:22 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 586794
+01/04/2024 11:02:22 AM POST http://localhost:43463/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 11:02:22 AM Starting new HTTP connection (1): localhost:43463
+01/04/2024 11:02:23 AM http://localhost:43463 "POST /session HTTP/1.1" 200 0
+01/04/2024 11:02:23 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.HEjX8M"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:43851"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"67d60eb965dff74db979518075e42962"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 11:02:23 AM Finished Request
+01/04/2024 11:02:28 AM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/04/2024 11:02:29 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 11:02:29 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 11:02:29 AM chromedriver not found in PATH
+01/04/2024 11:02:29 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 11:02:29 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 11:02:29 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 11:02:29 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 11:02:29 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 11:02:29 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 11:02:29 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:02:29 AM Browser path: /usr/bin/google-chrome
+01/04/2024 11:02:29 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:02:29 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 587079
+01/04/2024 11:02:29 AM POST http://localhost:43915/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 11:02:29 AM Starting new HTTP connection (1): localhost:43915
+01/04/2024 11:02:30 AM http://localhost:43915 "POST /session HTTP/1.1" 200 0
+01/04/2024 11:02:30 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.iLSNxl"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:37643"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"7bda7616c4da456cbbde61f128241b75"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 11:02:30 AM Finished Request
+01/04/2024 11:02:30 AM Internal Server Error: /add_bnr
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/flipkart/projects/bagtrac/bagtrac/views.py", line 416, in add_bnr_bags
+    bnr = bnr_bags.split()
+AttributeError: 'NoneType' object has no attribute 'split'
+01/04/2024 11:03:29 AM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/04/2024 11:03:30 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 11:03:30 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 11:03:30 AM chromedriver not found in PATH
+01/04/2024 11:03:30 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 11:03:30 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 11:03:30 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 11:03:30 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 11:03:30 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 11:03:30 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 11:03:30 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:03:30 AM Browser path: /usr/bin/google-chrome
+01/04/2024 11:03:30 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:03:30 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 587735
+01/04/2024 11:03:31 AM POST http://localhost:39483/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 11:03:31 AM Starting new HTTP connection (1): localhost:39483
+01/04/2024 11:03:31 AM http://localhost:39483 "POST /session HTTP/1.1" 200 0
+01/04/2024 11:03:31 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.k6OebW"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:46325"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"5343235fb73d28fd9900dba03db9040e"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 11:03:31 AM Finished Request
+01/04/2024 11:09:44 AM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/04/2024 11:09:45 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 11:09:45 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 11:09:45 AM chromedriver not found in PATH
+01/04/2024 11:09:45 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 11:09:45 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 11:09:45 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 11:09:45 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 11:09:45 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 11:09:45 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 11:09:45 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:09:45 AM Browser path: /usr/bin/google-chrome
+01/04/2024 11:09:45 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:09:45 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 590980
+01/04/2024 11:09:46 AM POST http://localhost:57429/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 11:09:46 AM Starting new HTTP connection (1): localhost:57429
+01/04/2024 11:09:46 AM http://localhost:57429 "POST /session HTTP/1.1" 200 0
+01/04/2024 11:09:46 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.TKMoqk"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:43023"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"7a34060bdf0cb8bb7f568eb07398d833"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 11:09:46 AM Finished Request
+01/04/2024 11:12:43 AM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/04/2024 11:12:44 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 11:12:44 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 11:12:44 AM chromedriver not found in PATH
+01/04/2024 11:12:44 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 11:12:44 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 11:12:44 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 11:12:44 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 11:12:44 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 11:12:44 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 11:12:44 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:12:44 AM Browser path: /usr/bin/google-chrome
+01/04/2024 11:12:44 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:12:44 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 592827
+01/04/2024 11:12:44 AM POST http://localhost:57457/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 11:12:44 AM Starting new HTTP connection (1): localhost:57457
+01/04/2024 11:12:45 AM http://localhost:57457 "POST /session HTTP/1.1" 200 0
+01/04/2024 11:12:45 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.3LuRUX"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:35603"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"db8ca2813f34f4937a350b261316bf58"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 11:12:45 AM Finished Request
+01/04/2024 11:13:20 AM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/04/2024 11:13:21 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 11:13:21 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 11:13:21 AM chromedriver not found in PATH
+01/04/2024 11:13:21 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 11:13:21 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 11:13:21 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 11:13:21 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 11:13:21 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 11:13:21 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 11:13:21 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:13:21 AM Browser path: /usr/bin/google-chrome
+01/04/2024 11:13:21 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:13:21 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 593507
+01/04/2024 11:13:21 AM POST http://localhost:34333/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 11:13:21 AM Starting new HTTP connection (1): localhost:34333
+01/04/2024 11:13:22 AM http://localhost:34333 "POST /session HTTP/1.1" 200 0
+01/04/2024 11:13:22 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.Ewa1Oq"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:34551"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"67f8048278c987037cac5ff0bb59ecb0"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 11:13:22 AM Finished Request
+01/04/2024 11:13:54 AM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/04/2024 11:13:55 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 11:13:55 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 11:13:55 AM chromedriver not found in PATH
+01/04/2024 11:13:55 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 11:13:55 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 11:13:55 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 11:13:55 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 11:13:55 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 11:13:55 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 11:13:55 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:13:55 AM Browser path: /usr/bin/google-chrome
+01/04/2024 11:13:55 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:13:55 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 594071
+01/04/2024 11:13:55 AM POST http://localhost:55677/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 11:13:55 AM Starting new HTTP connection (1): localhost:55677
+01/04/2024 11:13:56 AM http://localhost:55677 "POST /session HTTP/1.1" 200 0
+01/04/2024 11:13:56 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.ZXhuT5"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:43793"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"b7bf911bbd6802e6994ded99c9c8e2fc"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 11:13:56 AM Finished Request
+01/04/2024 11:14:16 AM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/04/2024 11:14:17 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 11:14:17 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 11:14:17 AM chromedriver not found in PATH
+01/04/2024 11:14:17 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 11:14:17 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 11:14:17 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 11:14:17 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 11:14:17 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 11:14:17 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 11:14:17 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:14:17 AM Browser path: /usr/bin/google-chrome
+01/04/2024 11:14:17 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:14:17 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 594478
+01/04/2024 11:14:18 AM POST http://localhost:47465/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 11:14:18 AM Starting new HTTP connection (1): localhost:47465
+01/04/2024 11:14:18 AM http://localhost:47465 "POST /session HTTP/1.1" 200 0
+01/04/2024 11:14:18 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.HQuS1Q"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:36687"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"c7abbde918b6b08d0667056fc9e9331b"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 11:14:18 AM Finished Request
+01/04/2024 11:17:00 AM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/04/2024 11:17:01 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 11:17:01 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 11:17:01 AM chromedriver not found in PATH
+01/04/2024 11:17:01 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 11:17:01 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 11:17:01 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 11:17:01 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 11:17:01 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 11:17:01 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 11:17:01 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:17:01 AM Browser path: /usr/bin/google-chrome
+01/04/2024 11:17:01 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:17:01 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 596228
+01/04/2024 11:17:01 AM POST http://localhost:59599/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 11:17:01 AM Starting new HTTP connection (1): localhost:59599
+01/04/2024 11:17:02 AM http://localhost:59599 "POST /session HTTP/1.1" 200 0
+01/04/2024 11:17:02 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.OP87Q9"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:36321"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"4c6ee32872fdca40f87aa6bac7ccf45d"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 11:17:02 AM Finished Request
+01/04/2024 11:17:25 AM Internal Server Error: /ib
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/flipkart/projects/bagtrac/bagtrac/views.py", line 256, in ib_bagtrac
+    bag_in_db = BNRBag.objects.filter(bag_id=bag_id)
+  File "/usr/local/lib/python3.8/dist-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/db/models/query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/db/models/query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/db/models/query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.8/dist-packages/django/db/models/sql/query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.8/dist-packages/django/db/models/sql/query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/usr/local/lib/python3.8/dist-packages/django/db/models/sql/query.py", line 1426, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "/usr/local/lib/python3.8/dist-packages/django/db/models/sql/query.py", line 1236, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python3.8/dist-packages/django/db/models/sql/query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'bag_id' into field. Choices are: bag, id, recieved, time1
+01/04/2024 11:17:50 AM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/04/2024 11:17:51 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 11:17:51 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 11:17:51 AM chromedriver not found in PATH
+01/04/2024 11:17:51 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 11:17:51 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 11:17:51 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 11:17:51 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 11:17:51 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 11:17:51 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 11:17:51 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:17:51 AM Browser path: /usr/bin/google-chrome
+01/04/2024 11:17:51 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:17:51 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 597098
+01/04/2024 11:17:52 AM POST http://localhost:57589/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 11:17:52 AM Starting new HTTP connection (1): localhost:57589
+01/04/2024 11:17:52 AM http://localhost:57589 "POST /session HTTP/1.1" 200 0
+01/04/2024 11:17:52 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.bBCGVV"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:42397"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"69cfb016f5d914697cde5f1a4db46a08"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 11:17:52 AM Finished Request
+01/04/2024 11:21:35 AM Internal Server Error: /add_bnr
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/flipkart/projects/bagtrac/bagtrac/views.py", line 431, in add_bnr_bags
+    return render(request, 'bnr.html')
+  File "/usr/local/lib/python3.8/dist-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'download_bnr' not found. 'download_bnr' is not a valid view function or pattern name.
+01/04/2024 11:22:41 AM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/04/2024 11:22:42 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 11:22:42 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 11:22:43 AM chromedriver not found in PATH
+01/04/2024 11:22:43 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 11:22:43 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 11:22:43 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 11:22:43 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 11:22:43 AM Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+01/04/2024 11:22:43 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 11:22:43 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 11:22:43 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:22:43 AM Browser path: /usr/bin/google-chrome
+01/04/2024 11:22:43 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:22:43 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 599954
+01/04/2024 11:22:43 AM POST http://localhost:57825/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 11:22:43 AM Starting new HTTP connection (1): localhost:57825
+01/04/2024 11:22:43 AM http://localhost:57825 "POST /session HTTP/1.1" 200 0
+01/04/2024 11:22:43 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.EAVyfW"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:38267"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"8271dd72379049b063ee58f17b3f8d27"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 11:22:43 AM Finished Request
+01/04/2024 11:22:45 AM /home/flipkart/projects/bagtrac/bagtrac/urls.py changed, reloading.
+01/04/2024 11:22:46 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 11:22:46 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 11:22:46 AM chromedriver not found in PATH
+01/04/2024 11:22:46 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 11:22:46 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 11:22:46 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 11:22:46 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 11:22:46 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 11:22:46 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 11:22:46 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:22:46 AM Browser path: /usr/bin/google-chrome
+01/04/2024 11:22:46 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:22:46 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 600121
+01/04/2024 11:22:46 AM POST http://localhost:41693/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 11:22:46 AM Starting new HTTP connection (1): localhost:41693
+01/04/2024 11:22:47 AM http://localhost:41693 "POST /session HTTP/1.1" 200 0
+01/04/2024 11:22:47 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.VDsoby"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:46005"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"682a2a249df5fb52015654078ccb280f"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 11:22:47 AM Finished Request
+01/04/2024 11:27:31 AM /home/flipkart/projects/bagtrac/bagtrac/views.py changed, reloading.
+01/04/2024 11:27:32 AM Selenium Manager binary found at: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager
+01/04/2024 11:27:32 AM Executing process: /home/flipkart/.local/lib/python3.8/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/04/2024 11:27:32 AM chromedriver not found in PATH
+01/04/2024 11:27:32 AM chrome detected at /usr/bin/google-chrome
+01/04/2024 11:27:32 AM Running command: /usr/bin/google-chrome --version
+01/04/2024 11:27:32 AM Output: "Google Chrome 119.0.6045.159 "
+01/04/2024 11:27:32 AM Detected browser: chrome 119.0.6045.159
+01/04/2024 11:27:32 AM Required driver: chromedriver 119.0.6045.105
+01/04/2024 11:27:32 AM chromedriver 119.0.6045.105 already in the cache
+01/04/2024 11:27:32 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:27:32 AM Browser path: /usr/bin/google-chrome
+01/04/2024 11:27:32 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver
+01/04/2024 11:27:32 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver` in a child process with pid: 602738
+01/04/2024 11:27:33 AM POST http://localhost:36573/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/04/2024 11:27:33 AM Starting new HTTP connection (1): localhost:36573
+01/04/2024 11:27:33 AM http://localhost:36573 "POST /session HTTP/1.1" 200 0
+01/04/2024 11:27:33 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.159","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"/tmp/.org.chromium.Chromium.wCNIbq"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:43793"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"dd227755cc5c28c1682bc428fefb9975"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/04/2024 11:27:33 AM Finished Request

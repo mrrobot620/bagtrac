@@ -274,11 +274,11 @@
     color:rgb(0, 150, 136);
 }
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
   .nav_link:nth-child(n+3):nth-child(-n+5) {
     display: none;
   }
-}
+} */
 
 @media screen and (min-width: 768px) {
     body {
@@ -369,6 +369,12 @@
             <i class="bx bx-barcode nav_icon"></i>
             <span class="nav_name">Cage Generate</span>
           </a>
+          <a href="{% url 'ib_search'%}" class="nav_link">
+            <i class="bx bx-search nav_icon"></i>
+            <span class="nav_name">IB Search</span>
+            <a href="{% url 'add_bnr'%}" class="nav_link">
+              <i class="bx bx-info-circle"></i>
+              <span class="nav_name">IB BNR</span>
           <a href="{% url 'download_all_data'%}" class="nav_link">
             <i class="bx bx-cloud-download nav_icon"></i>
             <span class="nav_name">IB Raw Data</span>

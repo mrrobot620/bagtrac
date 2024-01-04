@@ -1,0 +1,58 @@
+{% extends 'base.html' %} 
+{% block content %}
+
+<h1 class="mt-4"> BNR </h1>
+  <form method="POST" action="{% url 'add_bnr' %}">
+    {% csrf_token %}
+    <div class="top_margin">
+      <textarea
+        class="form-control"
+        name="addbnr"
+        placeholder="Paste Bag IDs"
+        id="addbnr"
+      ></textarea>
+      <button class="btn mt-3" style="background-color: rgb(0, 150, 136); color: white;" type="submit">
+        Add BNR Bags
+      </button>
+    </div>
+  </form>
+
+
+  <form method="POST" action="{% url 'download_bnr' %}">
+    {% csrf_token %}
+    <div class="top_margin">
+      <textarea
+        class="form-control"
+        name="download_bnr"
+        placeholder="Paste Bag IDs"
+        id="download_bnr"
+      ></textarea>
+      <button class="btn mt-3" style="background-color: rgb(0, 150, 136); color: white;" type="submit">
+        Download BNR Status
+      </button>
+    </div>
+  </form>
+
+  <script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const userInput = document.getElementById("addbnr").value;
+      const bagIds = userInput.split(/[\n, ]/).filter(Boolean);
+      // Use bagIds or perform any action with it
+      console.log(bagIds);
+      // Proceed with form submission if needed
+      this.submit();
+    });
+
+    document.querySelector('form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const userInput = document.getElementById("download_bnr").value;
+      const bagIds = userInput.split(/[\n, ]/).filter(Boolean);
+      // Use bagIds or perform any action with it
+      console.log(bagIds);
+      // Proceed with form submission if needed
+      this.submit();
+    });
+    
+  </script>
+{% endblock %}

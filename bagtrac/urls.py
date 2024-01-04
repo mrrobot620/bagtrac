@@ -15,7 +15,9 @@ urlpatterns = [
     path('ib_mult_search' , views.ib_multi_search , name="ib_multi_search"),
     path('download_all_data' , views.download_all_data , name="download_all_data"),
     path("put_in" , views.put_in , name="put_in"),
-    path('put_out' , views.put_out , name="put_out" )
+    path('put_out' , views.put_out , name="put_out" ),
+    path('add_bnr' , views.add_bnr_bags , name="add_bnr"),
+    path('download_bnr' , views.download_bnr , name="download_bnr")
 ]
 
 # this line added

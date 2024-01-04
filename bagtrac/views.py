@@ -8,7 +8,7 @@ from django.db.models import Count
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.csrf import csrf_protect
 from reportlab.lib.pagesizes import landscape
-from .models import Data , Cage , Bags , ibbags , GridArea
+from .models import Data , Cage , Bags , ibbags , GridArea , BNRBag
 from django.utils import timezone
 from django.db import IntegrityError
 import pytz
@@ -83,7 +83,7 @@ def home(request):
                 messages.error(request, f"Error in assigning bag: {e}")
             
             last_cv_value = cv
-        return render(request, 'home.html', {'last_cv_value': last_cv_value})
+        return render(request, 'home.html', {'last_cv_value': last_cv_value} )
     else:
         return render(request, 'login.html')
 
@@ -243,7 +243,7 @@ def assign_bag_to_cage(bag_id , cage_id):
 @login_required
 def ib_bagtrac(request):
     last_cage = ibbags.objects.filter(user=request.user).last()
-    last_cage_1 = last_cage.cage_id if last_cage else ""  
+    last_cage_1 = last_cage.cage_id if last_cage else ""
     if request.method == 'POST':
         bag_id = request.POST.get('Bag/Seal_ID', '')
         cage_id = request.POST.get('Cage_ID', '')
@@ -252,24 +252,33 @@ def ib_bagtrac(request):
         user = User.objects.get(pk=current_user.id)
         data_instance = ibbags(bag_id=bag_id, cage_id=cage_id, time1=time1, user=user)
         identifiers = ["ZO", "B5", "B1", "B2", "B3", "B4", "B6"]
-        tags = ["Success"] * len(identifiers) 
-        cage_updated = False
-        for index, identifier in enumerate(identifiers):
-            if identifier.lower() in bag_id.lower():
-                try:
-                    data_instance.save()
-                except IntegrityError as e:
-                    messages.success(request, f"Bag Already Scanned {bag_id}")
-                    break
-                else:
-                    messages.success(request, f"{identifier}", extra_tags=tags[index])
-                    last_cage_1 = cage_id
-                    cage_updated = True 
-                    break 
+        tags = ["Success"] * len(identifiers)
+        bag_in_db = BNRBag.objects.filter(bag=bag_id)
+        print(bag_in_db)
+        if bag_in_db.exists():
+            for item in bag_in_db:
+                item.recieved  = True
+                item.save()
+            messages.error(request, "Bag Not Received")
         else:
-            data_instance.save()
-            if not cage_updated: 
-                last_cage_1 = cage_id
+            cage_updated = False
+            for index, identifier in enumerate(identifiers):
+                if identifier.lower() in bag_id.lower():
+                    try:
+                        data_instance.save()
+                    except IntegrityError as e:
+                        messages.success(request, f"Bag Already Scanned {bag_id}")
+                        break
+                    else:
+                        messages.success(request, f"{identifier}", extra_tags=tags[index])
+                        last_cage_1 = cage_id
+                        cage_updated = True
+                        break
+            else:
+                data_instance.save()
+                if not cage_updated:
+                    last_cage_1 = cage_id
+
     return render(request, 'ib.html', {"last_cage": last_cage_1})
 
 
@@ -407,3 +416,36 @@ def put_out(request):
         except Exception as e:
             messages.error(request, f"Error: {e}")
     return render(request, 'put_out.html')
+
+@login_required
+def add_bnr_bags(request):
+    if request.method == "POST":
+        if 'addbnr' in request.POST:
+            bnr_bags = request.POST.get('addbnr')
+            bnrs = bnr_bags.split()
+            print(bnrs)
+            for bnr in bnrs:
+                BNRBag.objects.create(bag=bnr)
+        else:
+            print("'addbnr' key not found in POST data")
+    return render(request, 'bnr.html')
+
+
+@login_required
+def download_bnr(request):
+    if request.method == 'POST':
+        user = request.user
+        bag_ids = request.POST.get('download_bnr', '').split()  
+        bnr_data = BNRBag.objects.filter(bag__in=bag_ids)  
+        response = HttpResponse(content_type='text/csv')
+        response['Content-Disposition'] = 'attachment; filename="bnr_status.csv"'
+        writer = csv.writer(response)
+        writer.writerow(['Bag', 'Status'])
+
+        for bag in bnr_data:
+            status = 'Received' if bag.recieved else 'Not Received'
+            writer.writerow([bag.bag, status])
+
+        return response
+
+    return HttpResponse("Invalid Request")
