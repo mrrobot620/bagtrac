@@ -1,0 +1,268 @@
+01/05/2024 02:36:06 PM Selenium Manager binary found at: /opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager
+01/05/2024 02:36:06 PM Executing process: /opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome --debug --output json
+01/05/2024 02:36:06 PM Found chromedriver 118.0.5993.70 in PATH: /opt/homebrew/bin/chromedriver
+01/05/2024 02:36:06 PM chrome detected at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+01/05/2024 02:36:06 PM Running command: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version
+01/05/2024 02:36:06 PM Output: "Google Chrome 119.0.6045.199 "
+01/05/2024 02:36:06 PM Detected browser: chrome 119.0.6045.199
+01/05/2024 02:36:06 PM Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+01/05/2024 02:36:06 PM Required driver: chromedriver 119.0.6045.105
+01/05/2024 02:36:06 PM The chromedriver version (118.0.5993.70) detected in PATH at /opt/homebrew/bin/chromedriver might not be compatible with the detected chrome version (119.0.6045.199); currently, chromedriver 119.0.6045.105 is recommended for chrome 119.*, so it is advised to delete the driver in PATH and retry
+01/05/2024 02:36:06 PM Driver path: /opt/homebrew/bin/chromedriver
+01/05/2024 02:36:06 PM Browser path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+01/05/2024 02:36:06 PM Using driver at: /opt/homebrew/bin/chromedriver
+01/05/2024 02:36:06 PM Started executable: `/opt/homebrew/bin/chromedriver` in a child process with pid: 32775
+01/05/2024 02:36:07 PM POST http://localhost:63046/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "args": ["--headless=new"]}}}}
+01/05/2024 02:36:07 PM Starting new HTTP connection (1): localhost:63046
+01/05/2024 02:36:08 PM http://localhost:63046 "POST /session HTTP/1.1" 200 0
+01/05/2024 02:36:08 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.199","chrome":{"chromedriverVersion":"118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216})","userDataDir":"/var/folders/_4/bc29t88d5ml7g9p13zkltr6w0000gn/T/.org.chromium.Chromium.p51YbB"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:63052"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"ce5a75613de2833933cf1d1043b0b935"}} | headers=HTTPHeaderDict({'Content-Length': '891', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/05/2024 02:36:08 PM Finished Request
+01/05/2024 02:36:13 PM Selenium Manager binary found at: /opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager
+01/05/2024 02:36:13 PM Executing process: /opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome --debug --output json
+01/05/2024 02:36:13 PM Found chromedriver 118.0.5993.70 in PATH: /opt/homebrew/bin/chromedriver
+01/05/2024 02:36:13 PM chrome detected at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+01/05/2024 02:36:13 PM Running command: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version
+01/05/2024 02:36:13 PM Output: "Google Chrome 119.0.6045.199 "
+01/05/2024 02:36:13 PM Detected browser: chrome 119.0.6045.199
+01/05/2024 02:36:13 PM Required driver: chromedriver 119.0.6045.105
+01/05/2024 02:36:13 PM The chromedriver version (118.0.5993.70) detected in PATH at /opt/homebrew/bin/chromedriver might not be compatible with the detected chrome version (119.0.6045.199); currently, chromedriver 119.0.6045.105 is recommended for chrome 119.*, so it is advised to delete the driver in PATH and retry
+01/05/2024 02:36:13 PM Driver path: /opt/homebrew/bin/chromedriver
+01/05/2024 02:36:13 PM Browser path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+01/05/2024 02:36:13 PM Using driver at: /opt/homebrew/bin/chromedriver
+01/05/2024 02:36:13 PM Started executable: `/opt/homebrew/bin/chromedriver` in a child process with pid: 32860
+01/05/2024 02:36:14 PM POST http://localhost:63064/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "args": ["--headless=new"]}}}}
+01/05/2024 02:36:14 PM Starting new HTTP connection (1): localhost:63064
+01/05/2024 02:36:14 PM http://localhost:63064 "POST /session HTTP/1.1" 200 0
+01/05/2024 02:36:14 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.199","chrome":{"chromedriverVersion":"118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216})","userDataDir":"/var/folders/_4/bc29t88d5ml7g9p13zkltr6w0000gn/T/.org.chromium.Chromium.QDh0nh"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:63070"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"222d5b581b2af39e769b307018e416d0"}} | headers=HTTPHeaderDict({'Content-Length': '891', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/05/2024 02:36:14 PM Finished Request
+01/05/2024 02:36:31 PM Selenium Manager binary found at: /opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager
+01/05/2024 02:36:31 PM Executing process: /opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome --debug --output json
+01/05/2024 02:36:31 PM Found chromedriver 118.0.5993.70 in PATH: /opt/homebrew/bin/chromedriver
+01/05/2024 02:36:31 PM chrome detected at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+01/05/2024 02:36:31 PM Running command: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version
+01/05/2024 02:36:31 PM Output: "Google Chrome 119.0.6045.199 "
+01/05/2024 02:36:31 PM Detected browser: chrome 119.0.6045.199
+01/05/2024 02:36:31 PM Required driver: chromedriver 119.0.6045.105
+01/05/2024 02:36:31 PM The chromedriver version (118.0.5993.70) detected in PATH at /opt/homebrew/bin/chromedriver might not be compatible with the detected chrome version (119.0.6045.199); currently, chromedriver 119.0.6045.105 is recommended for chrome 119.*, so it is advised to delete the driver in PATH and retry
+01/05/2024 02:36:31 PM Driver path: /opt/homebrew/bin/chromedriver
+01/05/2024 02:36:31 PM Browser path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+01/05/2024 02:36:31 PM Using driver at: /opt/homebrew/bin/chromedriver
+01/05/2024 02:36:31 PM Started executable: `/opt/homebrew/bin/chromedriver` in a child process with pid: 32990
+01/05/2024 02:36:32 PM POST http://localhost:63087/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "args": ["--headless=new"]}}}}
+01/05/2024 02:36:32 PM Starting new HTTP connection (1): localhost:63087
+01/05/2024 02:36:32 PM http://localhost:63087 "POST /session HTTP/1.1" 200 0
+01/05/2024 02:36:32 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.199","chrome":{"chromedriverVersion":"118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216})","userDataDir":"/var/folders/_4/bc29t88d5ml7g9p13zkltr6w0000gn/T/.org.chromium.Chromium.NK7T5q"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:63093"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"7b0303471b50d13daac0681a2ac44566"}} | headers=HTTPHeaderDict({'Content-Length': '891', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/05/2024 02:36:32 PM Finished Request
+01/05/2024 02:36:54 PM Internal Server Error: /api/add_bag/
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/rest_framework/renderers.py", line 722, in render
+    template = loader.get_template(self.template)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+01/05/2024 02:42:35 PM Unsupported Media Type: /api/add_bag/
+01/05/2024 02:44:51 PM /Users/abhishekrajput/Desktop/bagtrac/bagtrac/serializers.py changed, reloading.
+01/05/2024 02:44:52 PM Selenium Manager binary found at: /opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager
+01/05/2024 02:44:52 PM Executing process: /opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome --debug --output json
+01/05/2024 02:44:53 PM Found chromedriver 118.0.5993.70 in PATH: /opt/homebrew/bin/chromedriver
+01/05/2024 02:44:53 PM chrome detected at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+01/05/2024 02:44:53 PM Running command: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version
+01/05/2024 02:44:53 PM Output: "Google Chrome 119.0.6045.199 "
+01/05/2024 02:44:53 PM Detected browser: chrome 119.0.6045.199
+01/05/2024 02:44:53 PM Required driver: chromedriver 119.0.6045.105
+01/05/2024 02:44:53 PM The chromedriver version (118.0.5993.70) detected in PATH at /opt/homebrew/bin/chromedriver might not be compatible with the detected chrome version (119.0.6045.199); currently, chromedriver 119.0.6045.105 is recommended for chrome 119.*, so it is advised to delete the driver in PATH and retry
+01/05/2024 02:44:53 PM Driver path: /opt/homebrew/bin/chromedriver
+01/05/2024 02:44:53 PM Browser path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+01/05/2024 02:44:53 PM Using driver at: /opt/homebrew/bin/chromedriver
+01/05/2024 02:44:53 PM Started executable: `/opt/homebrew/bin/chromedriver` in a child process with pid: 34271
+01/05/2024 02:44:53 PM POST http://localhost:63539/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "args": ["--headless=new"]}}}}
+01/05/2024 02:44:53 PM Starting new HTTP connection (1): localhost:63539
+01/05/2024 02:44:54 PM http://localhost:63539 "POST /session HTTP/1.1" 200 0
+01/05/2024 02:44:54 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.199","chrome":{"chromedriverVersion":"118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216})","userDataDir":"/var/folders/_4/bc29t88d5ml7g9p13zkltr6w0000gn/T/.org.chromium.Chromium.BcQela"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:63545"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"aed474dda0fac3a84a5404696b42cd29"}} | headers=HTTPHeaderDict({'Content-Length': '891', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/05/2024 02:44:54 PM Finished Request
+01/05/2024 02:44:59 PM /Users/abhishekrajput/Desktop/bagtrac/bagtrac/serializers.py changed, reloading.
+01/05/2024 02:45:00 PM Selenium Manager binary found at: /opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager
+01/05/2024 02:45:00 PM Executing process: /opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome --debug --output json
+01/05/2024 02:45:00 PM Found chromedriver 118.0.5993.70 in PATH: /opt/homebrew/bin/chromedriver
+01/05/2024 02:45:00 PM chrome detected at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+01/05/2024 02:45:00 PM Running command: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version
+01/05/2024 02:45:00 PM Output: "Google Chrome 119.0.6045.199 "
+01/05/2024 02:45:00 PM Detected browser: chrome 119.0.6045.199
+01/05/2024 02:45:00 PM Required driver: chromedriver 119.0.6045.105
+01/05/2024 02:45:00 PM The chromedriver version (118.0.5993.70) detected in PATH at /opt/homebrew/bin/chromedriver might not be compatible with the detected chrome version (119.0.6045.199); currently, chromedriver 119.0.6045.105 is recommended for chrome 119.*, so it is advised to delete the driver in PATH and retry
+01/05/2024 02:45:00 PM Driver path: /opt/homebrew/bin/chromedriver
+01/05/2024 02:45:00 PM Browser path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+01/05/2024 02:45:00 PM Using driver at: /opt/homebrew/bin/chromedriver
+01/05/2024 02:45:00 PM Started executable: `/opt/homebrew/bin/chromedriver` in a child process with pid: 34358
+01/05/2024 02:45:01 PM POST http://localhost:63556/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "args": ["--headless=new"]}}}}
+01/05/2024 02:45:01 PM Starting new HTTP connection (1): localhost:63556
+01/05/2024 02:45:01 PM http://localhost:63556 "POST /session HTTP/1.1" 200 0
+01/05/2024 02:45:01 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.199","chrome":{"chromedriverVersion":"118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216})","userDataDir":"/var/folders/_4/bc29t88d5ml7g9p13zkltr6w0000gn/T/.org.chromium.Chromium.ds1xOn"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:63561"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"e141d607570f5a3642370850158e395f"}} | headers=HTTPHeaderDict({'Content-Length': '891', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/05/2024 02:45:01 PM Finished Request
+01/05/2024 02:45:03 PM /Users/abhishekrajput/Desktop/bagtrac/bagtrac/serializers.py changed, reloading.
+01/05/2024 02:45:04 PM Selenium Manager binary found at: /opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager
+01/05/2024 02:45:04 PM Executing process: /opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome --debug --output json
+01/05/2024 02:45:04 PM Found chromedriver 118.0.5993.70 in PATH: /opt/homebrew/bin/chromedriver
+01/05/2024 02:45:04 PM chrome detected at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+01/05/2024 02:45:04 PM Running command: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version
+01/05/2024 02:45:04 PM Output: "Google Chrome 119.0.6045.199 "
+01/05/2024 02:45:04 PM Detected browser: chrome 119.0.6045.199
+01/05/2024 02:45:04 PM Required driver: chromedriver 119.0.6045.105
+01/05/2024 02:45:04 PM The chromedriver version (118.0.5993.70) detected in PATH at /opt/homebrew/bin/chromedriver might not be compatible with the detected chrome version (119.0.6045.199); currently, chromedriver 119.0.6045.105 is recommended for chrome 119.*, so it is advised to delete the driver in PATH and retry
+01/05/2024 02:45:04 PM Driver path: /opt/homebrew/bin/chromedriver
+01/05/2024 02:45:04 PM Browser path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+01/05/2024 02:45:04 PM Using driver at: /opt/homebrew/bin/chromedriver
+01/05/2024 02:45:04 PM Started executable: `/opt/homebrew/bin/chromedriver` in a child process with pid: 34420
+01/05/2024 02:45:04 PM POST http://localhost:63571/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "args": ["--headless=new"]}}}}
+01/05/2024 02:45:04 PM Starting new HTTP connection (1): localhost:63571
+01/05/2024 02:45:05 PM http://localhost:63571 "POST /session HTTP/1.1" 200 0
+01/05/2024 02:45:05 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.199","chrome":{"chromedriverVersion":"118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216})","userDataDir":"/var/folders/_4/bc29t88d5ml7g9p13zkltr6w0000gn/T/.org.chromium.Chromium.u7rd20"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:63576"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"342420c91536d4290bca074f6530e5c6"}} | headers=HTTPHeaderDict({'Content-Length': '891', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/05/2024 02:45:05 PM Finished Request
+01/05/2024 02:45:21 PM /Users/abhishekrajput/Desktop/bagtrac/bagtrac/views.py changed, reloading.
+01/05/2024 02:45:21 PM Selenium Manager binary found at: /opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager
+01/05/2024 02:45:21 PM Executing process: /opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome --debug --output json
+01/05/2024 02:45:21 PM Found chromedriver 118.0.5993.70 in PATH: /opt/homebrew/bin/chromedriver
+01/05/2024 02:45:21 PM chrome detected at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+01/05/2024 02:45:21 PM Running command: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version
+01/05/2024 02:45:21 PM Output: "Google Chrome 119.0.6045.199 "
+01/05/2024 02:45:21 PM Detected browser: chrome 119.0.6045.199
+01/05/2024 02:45:21 PM Required driver: chromedriver 119.0.6045.105
+01/05/2024 02:45:21 PM The chromedriver version (118.0.5993.70) detected in PATH at /opt/homebrew/bin/chromedriver might not be compatible with the detected chrome version (119.0.6045.199); currently, chromedriver 119.0.6045.105 is recommended for chrome 119.*, so it is advised to delete the driver in PATH and retry
+01/05/2024 02:45:21 PM Driver path: /opt/homebrew/bin/chromedriver
+01/05/2024 02:45:21 PM Browser path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+01/05/2024 02:45:21 PM Using driver at: /opt/homebrew/bin/chromedriver
+01/05/2024 02:45:21 PM Started executable: `/opt/homebrew/bin/chromedriver` in a child process with pid: 34515
+01/05/2024 02:45:22 PM POST http://localhost:63593/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "args": ["--headless=new"]}}}}
+01/05/2024 02:45:22 PM Starting new HTTP connection (1): localhost:63593
+01/05/2024 02:45:22 PM http://localhost:63593 "POST /session HTTP/1.1" 200 0
+01/05/2024 02:45:22 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.199","chrome":{"chromedriverVersion":"118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216})","userDataDir":"/var/folders/_4/bc29t88d5ml7g9p13zkltr6w0000gn/T/.org.chromium.Chromium.b9joPe"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:63598"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"7b02ce53f0f7d5a7a8d43b10409d397d"}} | headers=HTTPHeaderDict({'Content-Length': '891', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/05/2024 02:45:22 PM Finished Request
+01/05/2024 02:45:32 PM /Users/abhishekrajput/Desktop/bagtrac/bagtrac/views.py changed, reloading.
+01/05/2024 02:45:33 PM Selenium Manager binary found at: /opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager
+01/05/2024 02:45:33 PM Executing process: /opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome --debug --output json
+01/05/2024 02:45:33 PM Found chromedriver 118.0.5993.70 in PATH: /opt/homebrew/bin/chromedriver
+01/05/2024 02:45:33 PM chrome detected at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+01/05/2024 02:45:33 PM Running command: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version
+01/05/2024 02:45:33 PM Output: "Google Chrome 119.0.6045.199 "
+01/05/2024 02:45:33 PM Detected browser: chrome 119.0.6045.199
+01/05/2024 02:45:33 PM Required driver: chromedriver 119.0.6045.105
+01/05/2024 02:45:33 PM The chromedriver version (118.0.5993.70) detected in PATH at /opt/homebrew/bin/chromedriver might not be compatible with the detected chrome version (119.0.6045.199); currently, chromedriver 119.0.6045.105 is recommended for chrome 119.*, so it is advised to delete the driver in PATH and retry
+01/05/2024 02:45:33 PM Driver path: /opt/homebrew/bin/chromedriver
+01/05/2024 02:45:33 PM Browser path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+01/05/2024 02:45:33 PM Using driver at: /opt/homebrew/bin/chromedriver
+01/05/2024 02:45:33 PM Started executable: `/opt/homebrew/bin/chromedriver` in a child process with pid: 34602
+01/05/2024 02:45:33 PM POST http://localhost:63613/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "args": ["--headless=new"]}}}}
+01/05/2024 02:45:33 PM Starting new HTTP connection (1): localhost:63613
+01/05/2024 02:45:34 PM http://localhost:63613 "POST /session HTTP/1.1" 200 0
+01/05/2024 02:45:34 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.199","chrome":{"chromedriverVersion":"118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216})","userDataDir":"/var/folders/_4/bc29t88d5ml7g9p13zkltr6w0000gn/T/.org.chromium.Chromium.Tk5SmJ"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:63619"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"19c9690f6851e4916fbfe7f4e4bdf371"}} | headers=HTTPHeaderDict({'Content-Length': '891', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/05/2024 02:45:34 PM Finished Request
+01/05/2024 02:45:52 PM Internal Server Error: /api/add_bag/
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/abhishekrajput/Desktop/bagtrac/bagtrac/views.py", line 461, in create
+    return super().create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/rest_framework/serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/rest_framework/serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/rest_framework/serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/rest_framework/serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/rest_framework/serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/rest_framework/serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `label_generated` is not valid for model `Bags`.
+01/05/2024 02:46:40 PM /Users/abhishekrajput/Desktop/bagtrac/bagtrac/serializers.py changed, reloading.
+01/05/2024 02:46:40 PM Selenium Manager binary found at: /opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager
+01/05/2024 02:46:40 PM Executing process: /opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome --debug --output json
+01/05/2024 02:46:41 PM Found chromedriver 118.0.5993.70 in PATH: /opt/homebrew/bin/chromedriver
+01/05/2024 02:46:41 PM chrome detected at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+01/05/2024 02:46:41 PM Running command: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version
+01/05/2024 02:46:41 PM Output: "Google Chrome 119.0.6045.199 "
+01/05/2024 02:46:41 PM Detected browser: chrome 119.0.6045.199
+01/05/2024 02:46:41 PM Required driver: chromedriver 119.0.6045.105
+01/05/2024 02:46:41 PM The chromedriver version (118.0.5993.70) detected in PATH at /opt/homebrew/bin/chromedriver might not be compatible with the detected chrome version (119.0.6045.199); currently, chromedriver 119.0.6045.105 is recommended for chrome 119.*, so it is advised to delete the driver in PATH and retry
+01/05/2024 02:46:41 PM Driver path: /opt/homebrew/bin/chromedriver
+01/05/2024 02:46:41 PM Browser path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+01/05/2024 02:46:41 PM Using driver at: /opt/homebrew/bin/chromedriver
+01/05/2024 02:46:41 PM Started executable: `/opt/homebrew/bin/chromedriver` in a child process with pid: 34850
+01/05/2024 02:46:41 PM POST http://localhost:63663/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "args": ["--headless=new"]}}}}
+01/05/2024 02:46:41 PM Starting new HTTP connection (1): localhost:63663
+01/05/2024 02:46:42 PM http://localhost:63663 "POST /session HTTP/1.1" 200 0
+01/05/2024 02:46:42 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.199","chrome":{"chromedriverVersion":"118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216})","userDataDir":"/var/folders/_4/bc29t88d5ml7g9p13zkltr6w0000gn/T/.org.chromium.Chromium.YDkVEZ"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:63668"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"28e6f747cc78feed6d1d25eb86533a29"}} | headers=HTTPHeaderDict({'Content-Length': '891', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/05/2024 02:46:42 PM Finished Request
+01/05/2024 02:47:00 PM /Users/abhishekrajput/Desktop/bagtrac/bagtrac/views.py changed, reloading.
+01/05/2024 02:47:01 PM Selenium Manager binary found at: /opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager
+01/05/2024 02:47:01 PM Executing process: /opt/homebrew/anaconda3/envs/bagtrac/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome --debug --output json
+01/05/2024 02:47:01 PM Found chromedriver 118.0.5993.70 in PATH: /opt/homebrew/bin/chromedriver
+01/05/2024 02:47:01 PM chrome detected at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+01/05/2024 02:47:01 PM Running command: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version
+01/05/2024 02:47:01 PM Output: "Google Chrome 119.0.6045.199 "
+01/05/2024 02:47:01 PM Detected browser: chrome 119.0.6045.199
+01/05/2024 02:47:01 PM Required driver: chromedriver 119.0.6045.105
+01/05/2024 02:47:01 PM The chromedriver version (118.0.5993.70) detected in PATH at /opt/homebrew/bin/chromedriver might not be compatible with the detected chrome version (119.0.6045.199); currently, chromedriver 119.0.6045.105 is recommended for chrome 119.*, so it is advised to delete the driver in PATH and retry
+01/05/2024 02:47:01 PM Driver path: /opt/homebrew/bin/chromedriver
+01/05/2024 02:47:01 PM Browser path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+01/05/2024 02:47:01 PM Using driver at: /opt/homebrew/bin/chromedriver
+01/05/2024 02:47:01 PM Started executable: `/opt/homebrew/bin/chromedriver` in a child process with pid: 34967
+01/05/2024 02:47:02 PM POST http://localhost:63686/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "args": ["--headless=new"]}}}}
+01/05/2024 02:47:02 PM Starting new HTTP connection (1): localhost:63686
+01/05/2024 02:47:02 PM http://localhost:63686 "POST /session HTTP/1.1" 200 0
+01/05/2024 02:47:02 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.199","chrome":{"chromedriverVersion":"118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216})","userDataDir":"/var/folders/_4/bc29t88d5ml7g9p13zkltr6w0000gn/T/.org.chromium.Chromium.IqonBn"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:63691"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"ad1e7d9ea968eabbef6625c3a8d84175"}} | headers=HTTPHeaderDict({'Content-Length': '891', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/05/2024 02:47:02 PM Finished Request
+01/05/2024 02:47:03 PM Bad Request: /api/add_bag/
