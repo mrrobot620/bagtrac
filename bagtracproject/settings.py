@@ -136,12 +136,12 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
-CERT_DIR = os.path.join(BASE_DIR, 'cert')
+# CERT_DIR = os.path.join(BASE_DIR, 'cert')
 
-SECURE_SSL_REDIRECT = True
+# SECURE_SSL_REDIRECT = True
 
-SECURE_SSL_CERT = os.path.join(CERT_DIR, 'cert.pem')
-SECURE_SSL_KEY = os.path.join(CERT_DIR, 'key.pem')
+# SECURE_SSL_CERT = os.path.join(CERT_DIR, 'cert.pem')
+# SECURE_SSL_KEY = os.path.join(CERT_DIR, 'key.pem')
 
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+# SESSION_COOKIE_SECURE = True
+# CSRF_COOKIE_SECURE = True
