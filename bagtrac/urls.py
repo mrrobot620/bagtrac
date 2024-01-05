@@ -1,5 +1,9 @@
 from django.urls import path
 from . import views
+from .views import BagsCreateView
+
+
+
 
 urlpatterns = [
     path("login" , views.login_view , name="login"),
@@ -17,7 +21,9 @@ urlpatterns = [
     path("put_in" , views.put_in , name="put_in"),
     path('put_out' , views.put_out , name="put_out" ),
     path('add_bnr' , views.add_bnr_bags , name="add_bnr"),
-    path('download_bnr' , views.download_bnr , name="download_bnr")
+    path('download_bnr' , views.download_bnr , name="download_bnr"),
+    path('api/add_bag/', BagsCreateView.as_view(), name='add_bag')
+
 ]
 
 # this line added second time

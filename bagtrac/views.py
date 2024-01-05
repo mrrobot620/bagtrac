@@ -34,6 +34,8 @@ from PIL import ImageFont
 from reportlab.pdfgen import canvas
 import re
 from .auto_put_in import hms_login , hubSystem , auto_bag_put
+from rest_framework import generics
+from .serializers import BagsSerializer
 
 
 IST = pytz_timezone('Asia/Kolkata') 
@@ -446,4 +448,15 @@ def download_bnr(request):
         return response
     return HttpResponse("Invalid Request")
 
+
+class BagsCreateView(generics.CreateAPIView):
+    queryset = Bags.objects.all()
+    serializer_class = BagsSerializer
+
+    def create(self, request, *args, **kwargs):
+        # Add 'label_generated' to request data with default value True if not provided
+        if 'bag_label_generated' not in request.data:
+            request.data['bag_label_generated'] = True
+        
+        return super().create(request, *args, **kwargs)
 #Line added
