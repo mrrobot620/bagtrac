@@ -63,3 +63,10 @@ class BNRBag(models.Model):
 
     def __str__(self):
         return self.bag
+    
+class PTC(models.Model):
+    grid = models.CharField(unique=True , max_length=255)
+    ptc = models.CharField(unique=True , max_length=255)
+
+    def __str__(self):
+        return self.grid

@@ -8,7 +8,7 @@ from django.db.models import Count
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.csrf import csrf_protect
 from reportlab.lib.pagesizes import landscape
-from .models import Data , Cage , Bags , ibbags , GridArea , BNRBag
+from .models import Data , Cage , Bags , ibbags , GridArea , BNRBag , PTC
 from django.utils import timezone
 from django.db import IntegrityError
 import pytz
@@ -393,28 +393,13 @@ def put_in(request):
                 grid_area.cage_id = cage
                 hms_login()
                 hubSystem()
-                try:
-                    ptc_file_path = os.path.join(settings.STATIC_ROOT, 'ptc.csv')
-                    ptc_data = {}
-
-                    with open(ptc_file_path, newline='') as csvfile:
-                        reader = csv.reader(csvfile)
-                        for row in reader:
-                            ptc_data[row[0]] = row[1]
-                    if grid_area_id in ptc_data:
-                        ptc_value = ptc_data[grid_area_id]
-                        print(f"PTC for grid_area_id {grid_area_id} is: {ptc_value}")
-                    else:
-                        messages.error(request, f"No PTC found for grid_area_id {grid_area_id}")
-
-                except Exception as e:
-                    messages.error(request, f"Error: {e}")
                 for bag in bags:
                     print(bag)
                     if bag is not None:
                         bag.put_in_grid = True
-                        
-                        auto_bag_put(bag.bag_id , ptc_value)
+                        ptc = PTC.objects.get(grid=cage.grid_code)
+                        auto_bag_put(bag.seal_id , ptc.ptc )
+                        print(f"Sucessful:   The bag = {bag.seal_id} & ptc = {ptc.ptc}")
                         bag.save()
                     else:
                         messages.error(request , f"Empty Cage")
