@@ -36,6 +36,9 @@ import re
 from .auto_put_in import hms_login , hubSystem , auto_bag_put
 from rest_framework import generics
 from .serializers import BagsSerializer
+from django.db.models import Q
+from django.utils.timezone import localtime, make_aware
+
 
 
 IST = pytz_timezone('Asia/Kolkata') 
@@ -70,7 +73,7 @@ def home(request):
                         user = User.objects.get(pk=current_user.id)
                         data_instance = Data(cv=cv, bag_seal_id=bag_seal_id, cage_id=cage_instance, time1=time1, user=user.username)
                         try:
-                            bag_instance = get_object_or_404(Bags, bag_id=bag_seal_id)
+                            bag_instance = get_object_or_404(Bags, seal_id=bag_seal_id)
                             bag_instance.recieved_at_cv = True
                             bag_instance.save()
                         except Exception as e:
@@ -89,36 +92,51 @@ def home(request):
     else:
         return render(request, 'login.html')
 
+
+
 @login_required
 def search(request):
-    bag_id = request.GET.get('bag_id')
-    search_results = Data.objects.filter(bag_seal_id=bag_id)
-    bag_grid = []
-    bag_status = {}
-    if search_results:
-        print(search_results.__dict__)
-        for result in search_results:
-            result.time1 = result.time1.astimezone(IST)
-            result.time1_str = result.time1.strftime("%b. %d, %Y, %I:%M %p")
-            bag_grid_data = Bags.objects.filter(bag_id=result.bag_seal_id)
-            for bag in bag_grid_data:
-                if bag is not None:
-                    try:
-                        bag.bag_label_generated = True
-                        bag.save()
-                        bag_status = {
-                                'Bag Created': Bags.objects.filter(bag_id=result.bag_seal_id, bag_created=True).exists(),
-                                'Label Pasted': Bags.objects.filter(bag_id=result.bag_seal_id, bag_label_generated=True).exists(),
-                                'Received at CV': Bags.objects.filter(bag_id=result.bag_seal_id, recieved_at_cv=True).exists(),
-                                'Grid Put In': Bags.objects.filter(bag_id=result.bag_seal_id, put_in_grid=True).exists(),
-                                'Grid Put Out': Bags.objects.filter(bag_id=result.bag_seal_id, put_out_grid=True).exists(),}
-                        print(bag_status)
-                    except Exception as e:
-                        print(e)
-            bag_grid.extend(bag_grid_data)
-    if not search_results and bag_id:
-        return render(request, 'search.html', {'search_results': search_results, 'bag_id': bag_id, 'not_found': True})
-    return render(request, 'search.html', {'search_results': search_results , 'bag_id':bag_id , "bag_grid":bag_grid , "bag_status":bag_status} )
+    query = request.GET.get('search_query')
+    search_results = None
+    search_result2 = None
+    bag_grid = None
+    bag_status = None
+    
+    if query:
+        search_results = Bags.objects.filter(
+            Q(bag_id__icontains=query) | Q(seal_id__icontains=query)
+        )
+        
+        if search_results:
+            for result in search_results:
+                result.time1 = result.time1.astimezone(IST)
+                result.time1_str = result.time1.strftime("%b. %d, %Y, %I:%M %p")
+                print(result.time1_str)
+                bag_status = {
+                    'Bag Created': result.bag_created,
+                    'Label Pasted': result.bag_label_generated,
+                    'Received at CV': result.recieved_at_cv,
+                    'Grid Put In': result.put_in_grid,
+                    'Grid Put Out': result.put_out_grid,
+                }
+
+                search_result2 = None
+                bag_grid = result.grid_code
+                try:
+                    search_result2 = Data.objects.get(bag_seal_id=query)
+                    print(search_result2)
+                    time2 = search_result2.time1.astimezone(IST)
+                    search_result2.time2_str = time2.strftime("%b. %d, %Y, %I:%M %p")
+                    print(search_result2.time2_str)
+                except Exception as e:
+                    print(e)
+
+    if not search_results and query:
+        return render(request, 'new_search.html', {'search_results': None, 'bag_id': query, 'not_found': True})
+    
+    return render(request, 'new_search.html', {'search_results': search_results, 'search_result2': search_result2, 'bag_id': query, 'bag_grid': bag_grid, 'bag_status': bag_status})
+                
+                
 
 @login_required
 def cage_search(request):
@@ -218,29 +236,38 @@ def generate_cage(request):
             return HttpResponse(f'Error occurred: {str(e)}')
     return HttpResponse('Invalid request method')
 
-def assign_bag_to_cage(bag_id , cage_id):
+def assign_bag_to_cage(bag_id, cage_id):
     try:
-        bag = Bags.objects.get(bag_id=bag_id)
+        bag = Bags.objects.get(seal_id=bag_id)
         bag_grid_code = bag.grid_code
         print(bag_grid_code)
+        
+        assigned_cage = None
+        
         assigned_cages = Cage.objects.filter(is_occupied=True, cage_name=cage_id)
-        print(assigned_cages.__dict__)
-        cage1 = Cage.objects.get(cage_name = cage_id )
-        print(cage1)
         for cage in assigned_cages:
             assigned_bags = Bags.objects.filter(cage=cage)
             if not assigned_bags.exists() or any(assigned_bag.grid_code == bag_grid_code for assigned_bag in assigned_bags):
-                bag.cage = cage
-                bag.save()
-                cage1.grid_code = bag_grid_code
-                cage1.save()
-                print("Cage Assigned")
-                return True
-            else:
-                print("cage_not_assigned")
-                return False
+                assigned_cage = cage
+                break
+        if assigned_cage:
+            bag.cage = assigned_cage
+            bag.save()
+            assigned_cage.grid_code = bag_grid_code
+            assigned_cage.save()
+            print("Cage Assigned")
+            return True
+        else:
+            print("No suitable cage found or bag already assigned.")
+            return False
+    
+    except Bags.DoesNotExist:
+        print("Bag does not exist.")
+        return False
     except Exception as e:
-        print(e)
+        print(f"Error: {e}")
+        return False
+
 
 @login_required
 def ib_bagtrac(request):
@@ -366,11 +393,28 @@ def put_in(request):
                 grid_area.cage_id = cage
                 hms_login()
                 hubSystem()
+                try:
+                    ptc_file_path = os.path.join(settings.STATIC_ROOT, 'ptc.csv')
+                    ptc_data = {}
+
+                    with open(ptc_file_path, newline='') as csvfile:
+                        reader = csv.reader(csvfile)
+                        for row in reader:
+                            ptc_data[row[0]] = row[1]
+                    if grid_area_id in ptc_data:
+                        ptc_value = ptc_data[grid_area_id]
+                        print(f"PTC for grid_area_id {grid_area_id} is: {ptc_value}")
+                    else:
+                        messages.error(request, f"No PTC found for grid_area_id {grid_area_id}")
+
+                except Exception as e:
+                    messages.error(request, f"Error: {e}")
                 for bag in bags:
                     print(bag)
                     if bag is not None:
                         bag.put_in_grid = True
-                        auto_bag_put(bag.bag_id , "36b93e66-2cdb-4859-8ed9-e2796bd522dd")
+                        
+                        auto_bag_put(bag.bag_id , ptc_value)
                         bag.save()
                     else:
                         messages.error(request , f"Empty Cage")
@@ -458,4 +502,4 @@ class BagsCreateView(generics.CreateAPIView):
             request.data['bag_label_generated'] = True
         
         return super().create(request, *args, **kwargs)
-#Line added
+#Line added 1 bfgd
