@@ -96,8 +96,8 @@ def search(request):
     bag_grid = []
     bag_status = {}
     if search_results:
+        print(search_results.__dict__)
         for result in search_results:
-            # Convert time from UTC to IST
             result.time1 = result.time1.astimezone(IST)
             result.time1_str = result.time1.strftime("%b. %d, %Y, %I:%M %p")
             bag_grid_data = Bags.objects.filter(bag_id=result.bag_seal_id)
@@ -454,7 +454,6 @@ class BagsCreateView(generics.CreateAPIView):
     serializer_class = BagsSerializer
 
     def create(self, request, *args, **kwargs):
-        # Add 'label_generated' to request data with default value True if not provided
         if 'bag_label_generated' not in request.data:
             request.data['bag_label_generated'] = True
         

@@ -143,10 +143,3 @@ STATICFILES_DIRS = [
 # SECURE_SSL_CERT = os.path.join(CERT_DIR, 'cert.pem')
 # SECURE_SSL_KEY = os.path.join(CERT_DIR, 'key.pem')
 
-<<<<<<< HEAD
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
-=======
-# SESSION_COOKIE_SECURE = True
-# CSRF_COOKIE_SECURE = True
->>>>>>> 11f43aa92313c28a807e5b5415ced233b8eb0fc4

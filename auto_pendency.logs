@@ -1,0 +1,1021 @@
+01/05/2024 03:37:34 PM Selenium Manager binary found at: /usr/local/lib/python3.8/dist-packages/selenium/webdriver/common/linux/selenium-manager
+01/05/2024 03:37:34 PM Executing process: /usr/local/lib/python3.8/dist-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/05/2024 03:37:35 PM chromedriver not found in PATH
+01/05/2024 03:37:35 PM chrome detected at /usr/bin/google-chrome
+01/05/2024 03:37:35 PM Running command: /usr/bin/google-chrome --version
+01/05/2024 03:37:35 PM Output: "Google Chrome 115.0.5790.102 "
+01/05/2024 03:37:35 PM Detected browser: chrome 115.0.5790.102
+01/05/2024 03:37:35 PM Required driver: chromedriver 115.0.5790.170
+01/05/2024 03:37:35 PM chromedriver 115.0.5790.170 already in the cache
+01/05/2024 03:37:35 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver
+01/05/2024 03:37:35 PM Browser path: /usr/bin/google-chrome
+01/05/2024 03:37:35 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver
+01/05/2024 03:37:35 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver` in a child process with pid: 325586
+01/05/2024 03:37:35 PM POST http://localhost:46531/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/05/2024 03:37:35 PM Starting new HTTP connection (1): localhost:46531
+01/05/2024 03:37:35 PM http://localhost:46531 "POST /session HTTP/1.1" 200 0
+01/05/2024 03:37:35 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"115.0.5790.102","chrome":{"chromedriverVersion":"115.0.5790.170 (cc0d30c2ca5577520c8646671513241faa0bc105-refs/branch-heads/5790@{#1923})","userDataDir":"/tmp/.org.chromium.Chromium.Mpk7dw"},"goog:chromeOptions":{"debuggerAddress":"localhost:42959"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"b9a3e3a4b1f4a53ec71223239bddeee4"}} | headers=HTTPHeaderDict({'Content-Length': '828', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/05/2024 03:37:35 PM Finished Request
+01/05/2024 03:39:53 PM Not Found: /admin'
+01/05/2024 03:39:53 PM Not Found: /favicon.ico
+01/05/2024 03:40:19 PM Forbidden (CSRF cookie not set.): /admin/login/
+01/05/2024 03:40:22 PM Forbidden (CSRF cookie not set.): /admin/login/
+01/05/2024 03:49:55 PM Forbidden (CSRF cookie not set.): /admin/login/
+01/05/2024 03:50:01 PM Forbidden (CSRF cookie not set.): /admin/login/
+01/05/2024 04:01:25 PM Not Found: /favicon.ico
+01/05/2024 04:01:31 PM Forbidden (CSRF cookie not set.): /admin/login/
+01/05/2024 04:02:29 PM Selenium Manager binary found at: /usr/local/lib/python3.8/dist-packages/selenium/webdriver/common/linux/selenium-manager
+01/05/2024 04:02:29 PM Executing process: /usr/local/lib/python3.8/dist-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/05/2024 04:02:29 PM chromedriver not found in PATH
+01/05/2024 04:02:29 PM chrome detected at /usr/bin/google-chrome
+01/05/2024 04:02:29 PM Running command: /usr/bin/google-chrome --version
+01/05/2024 04:02:29 PM Output: "Google Chrome 115.0.5790.102 "
+01/05/2024 04:02:29 PM Detected browser: chrome 115.0.5790.102
+01/05/2024 04:02:29 PM Required driver: chromedriver 115.0.5790.170
+01/05/2024 04:02:29 PM chromedriver 115.0.5790.170 already in the cache
+01/05/2024 04:02:29 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver
+01/05/2024 04:02:29 PM Browser path: /usr/bin/google-chrome
+01/05/2024 04:02:29 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver
+01/05/2024 04:02:29 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver` in a child process with pid: 326108
+01/05/2024 04:02:30 PM POST http://localhost:60679/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/05/2024 04:02:30 PM Starting new HTTP connection (1): localhost:60679
+01/05/2024 04:02:30 PM http://localhost:60679 "POST /session HTTP/1.1" 200 0
+01/05/2024 04:02:30 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"115.0.5790.102","chrome":{"chromedriverVersion":"115.0.5790.170 (cc0d30c2ca5577520c8646671513241faa0bc105-refs/branch-heads/5790@{#1923})","userDataDir":"/tmp/.org.chromium.Chromium.87YweZ"},"goog:chromeOptions":{"debuggerAddress":"localhost:46183"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"357cb227a47aff110cbe1a80950ec553"}} | headers=HTTPHeaderDict({'Content-Length': '828', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/05/2024 04:02:30 PM Finished Request
+01/05/2024 04:02:35 PM Forbidden (CSRF cookie not set.): /admin/login/
+01/05/2024 04:02:41 PM Forbidden (CSRF cookie not set.): /admin/login/
+01/05/2024 05:52:58 PM Not Found: /struts2-showcase/struts/utils.js
+01/05/2024 05:52:58 PM Not Found: /
+01/05/2024 05:52:58 PM Not Found: /
+01/05/2024 05:52:58 PM Not Found: /
+01/05/2024 05:52:58 PM Not Found: /
+01/05/2024 05:52:59 PM Not Found: /js/
+01/05/2024 05:53:00 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Not Found: /struts2-showcase/struts/tooltip.gif
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Not Found: /
+01/05/2024 05:53:01 PM Not Found: /
+01/05/2024 05:53:01 PM Not Found: /
+01/05/2024 05:53:01 PM Not Found: /
+01/05/2024 05:53:01 PM Not Found: /struts2-showcase/struts/domtt.css
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Not Found: /struts2-showcase/struts/domTT.js
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Not Found: /
+01/05/2024 05:53:01 PM Not Found: /struts2-showcase/struts/inputtransfersselect.js
+01/05/2024 05:53:01 PM Not Found: /
+01/05/2024 05:53:01 PM Not Found: /
+01/05/2024 05:53:01 PM Not Found: /
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Not Found: /struts2-showcase/struts/optiontransferselect.js
+01/05/2024 05:53:01 PM Not Found: /
+01/05/2024 05:53:01 PM Not Found: /
+01/05/2024 05:53:01 PM Not Found: /
+01/05/2024 05:53:01 PM Not Found: /
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Not Found: /struts2-showcase
+01/05/2024 05:53:01 PM Not Found: /index.action/struts/utils.js
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Not Found: /api/v2/${jndi:dns://10.244.18.97:5353/MDEDiscoverySeenInTheWildGet-8000}
+01/05/2024 05:53:01 PM Not Found: /api/
+01/05/2024 05:53:01 PM Not Found: /index.html
+01/05/2024 05:53:01 PM Not Found: /
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Not Found: /
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Forbidden (CSRF cookie not set.): /login
+01/05/2024 05:53:01 PM Not Found: /
+01/05/2024 05:53:01 PM Not Found: /
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Not Found: /
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Not Found: /
+01/05/2024 05:53:01 PM Not Found: /cgi-bin/
+01/05/2024 05:53:01 PM Not Found: /
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Not Found: /
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:01 PM Not Found: /
+01/05/2024 05:53:01 PM Not Found: /:undefined
+01/05/2024 05:53:02 PM Not Found: /
+01/05/2024 05:53:02 PM Not Found: /
+01/05/2024 05:53:02 PM Not Found: /:undefined
+01/05/2024 05:53:02 PM Not Found: /:undefined
+01/05/2024 05:53:02 PM Not Found: /
+01/05/2024 05:53:02 PM Not Found: /:undefined
+01/05/2024 05:53:02 PM Not Found: /
+01/05/2024 05:53:02 PM Not Found: /
+01/05/2024 05:53:02 PM Not Found: /:undefined
+01/05/2024 05:53:02 PM Not Found: /cgi-bin/
+01/06/2024 12:44:07 AM Not Found: /accounts/login/
+01/06/2024 12:44:07 AM Not Found: /favicon.ico
+01/06/2024 12:44:09 AM Not Found: /accounts/login/
+01/06/2024 12:44:13 AM Not Found: /accounts/login/
+01/06/2024 12:44:25 AM Not Found: /accounts/login/
+01/06/2024 12:45:14 AM Not Found: /accounts/login/
+01/06/2024 12:45:14 AM Not Found: /favicon.ico
+01/06/2024 12:45:18 AM Not Found: /accounts/login/
+01/06/2024 12:45:30 AM Not Found: /
+01/06/2024 12:45:34 AM Not Found: /
+01/06/2024 12:45:50 AM Not Found: /accounts/login/
+01/06/2024 12:45:53 AM Not Found: /accounts/login/
+01/06/2024 12:46:33 AM Not Found: /
+01/06/2024 12:49:20 AM Not Found: /accounts/login/
+01/06/2024 12:49:43 AM Not Found: /accounts/login/
+01/06/2024 12:50:00 AM Not Found: /accounts/login/
+01/06/2024 12:50:05 AM Not Found: /accounts/login/
+01/06/2024 06:03:52 AM Not Found: /
+01/06/2024 06:03:52 AM Not Found: /
+01/06/2024 06:03:52 AM Not Found: /struts2-showcase/struts/utils.js
+01/06/2024 06:03:52 AM Not Found: /
+01/06/2024 06:03:52 AM Not Found: /
+01/06/2024 06:03:53 AM Not Found: /js/
+01/06/2024 06:03:54 AM Not Found: /:undefined
+01/06/2024 06:03:54 AM Not Found: /:undefined
+01/06/2024 06:03:54 AM Not Found: /:undefined
+01/06/2024 06:03:54 AM Not Found: /struts2-showcase/struts/tooltip.gif
+01/06/2024 06:03:54 AM Not Found: /:undefined
+01/06/2024 06:03:54 AM Not Found: /
+01/06/2024 06:03:54 AM Not Found: /
+01/06/2024 06:03:54 AM Not Found: /
+01/06/2024 06:03:54 AM Not Found: /struts2-showcase/struts/domtt.css
+01/06/2024 06:03:54 AM Not Found: /
+01/06/2024 06:03:54 AM Not Found: /:undefined
+01/06/2024 06:03:54 AM Not Found: /:undefined
+01/06/2024 06:03:54 AM Not Found: /struts2-showcase/struts/domTT.js
+01/06/2024 06:03:54 AM Not Found: /:undefined
+01/06/2024 06:03:54 AM Not Found: /
+01/06/2024 06:03:54 AM Not Found: /
+01/06/2024 06:03:54 AM Not Found: /:undefined
+01/06/2024 06:03:54 AM Not Found: /
+01/06/2024 06:03:54 AM Not Found: /struts2-showcase/struts/inputtransfersselect.js
+01/06/2024 06:03:54 AM Not Found: /
+01/06/2024 06:03:54 AM Not Found: /:undefined
+01/06/2024 06:03:54 AM Not Found: /:undefined
+01/06/2024 06:03:54 AM Not Found: /:undefined
+01/06/2024 06:03:54 AM Not Found: /struts2-showcase/struts/optiontransferselect.js
+01/06/2024 06:03:54 AM Not Found: /
+01/06/2024 06:03:54 AM Not Found: /
+01/06/2024 06:03:54 AM Not Found: /:undefined
+01/06/2024 06:03:54 AM Not Found: /
+01/06/2024 06:03:54 AM Not Found: /struts2-showcase
+01/06/2024 06:03:54 AM Not Found: /
+01/06/2024 06:03:54 AM Not Found: /index.action/struts/utils.js
+01/06/2024 06:03:54 AM Not Found: /:undefined
+01/06/2024 06:03:54 AM Not Found: /:undefined
+01/06/2024 06:03:54 AM Not Found: /:undefined
+01/06/2024 06:03:54 AM Not Found: /
+01/06/2024 06:03:54 AM Not Found: /
+01/06/2024 06:03:54 AM Not Found: /struts2-showcase/token/transfer4.action
+01/06/2024 06:03:54 AM Not Found: /:undefined
+01/06/2024 06:03:55 AM Not Found: /
+01/06/2024 06:03:55 AM Not Found: /
+01/06/2024 06:03:55 AM Not Found: /:undefined
+01/06/2024 06:03:55 AM Not Found: /:undefined
+01/06/2024 06:03:55 AM Not Found: /:undefined
+01/06/2024 06:03:55 AM Not Found: /struts2-showcase/${jndi:dns://10.244.18.157:5353/MDEDiscoveryApacheStruts2-8000}
+01/06/2024 06:03:55 AM Not Found: /:undefined
+01/06/2024 06:03:55 AM Not Found: /api/v2/${jndi:dns://10.244.18.157:5353/MDEDiscoverySeenInTheWildGet-8000}
+01/06/2024 06:03:55 AM Not Found: /api/
+01/06/2024 06:03:55 AM Not Found: /index.html
+01/06/2024 06:03:55 AM Not Found: /
+01/06/2024 06:03:55 AM Not Found: /:undefined
+01/06/2024 06:03:55 AM Not Found: /
+01/06/2024 06:03:55 AM Not Found: /:undefined
+01/06/2024 06:03:55 AM Forbidden (CSRF cookie not set.): /login
+01/06/2024 06:03:55 AM Not Found: /
+01/06/2024 06:03:55 AM Not Found: /:undefined
+01/06/2024 06:03:55 AM Not Found: /
+01/06/2024 06:03:55 AM Not Found: /:undefined
+01/06/2024 06:03:55 AM Not Found: /
+01/06/2024 06:03:55 AM Not Found: /:undefined
+01/06/2024 06:03:55 AM Not Found: /
+01/06/2024 06:03:55 AM Not Found: /cgi-bin/
+01/06/2024 06:03:55 AM Not Found: /
+01/06/2024 06:03:55 AM Not Found: /:undefined
+01/06/2024 06:03:55 AM Not Found: /
+01/06/2024 06:03:55 AM Not Found: /:undefined
+01/06/2024 06:03:55 AM Not Found: /
+01/06/2024 06:03:55 AM Not Found: /:undefined
+01/06/2024 06:03:55 AM Not Found: /
+01/06/2024 06:03:55 AM Not Found: /:undefined
+01/06/2024 06:03:55 AM Not Found: /
+01/06/2024 06:03:55 AM Not Found: /:undefined
+01/06/2024 06:03:55 AM Not Found: /
+01/06/2024 06:03:55 AM Not Found: /:undefined
+01/06/2024 06:03:55 AM Not Found: /
+01/06/2024 06:03:55 AM Not Found: /:undefined
+01/06/2024 06:03:55 AM Not Found: /
+01/06/2024 06:03:55 AM Not Found: /cgi-bin/
+01/06/2024 08:09:59 AM Internal Server Error: /api/add_bag/
+Traceback (most recent call last):
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/flipkart/.local/lib/python3.8/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/rest_framework/renderers.py", line 722, in render
+    template = loader.get_template(self.template)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+01/06/2024 08:09:59 AM Not Found: /favicon.ico
+01/06/2024 08:34:24 AM Not Found: /
+01/06/2024 08:34:24 AM Not Found: /favicon.ico
+01/06/2024 08:37:22 AM Not Found: /favicon.ico
+01/06/2024 08:52:39 AM Not Found: /favicon.ico
+01/06/2024 08:54:00 AM Bad Request: /api/add_bag/
+01/06/2024 08:56:58 AM Bad Request: /api/add_bag/
+01/06/2024 09:05:11 AM Not Found: /lpgin
+01/06/2024 09:05:12 AM Not Found: /favicon.ico
+01/06/2024 09:08:52 AM Bad Request: /api/add_bag/
+01/06/2024 09:09:38 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/url {"url": "http://10.24.0.157/"}
+01/06/2024 09:09:40 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/url HTTP/1.1" 200 0
+01/06/2024 09:09:40 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:09:40 AM Finished Request
+01/06/2024 09:09:45 AM GET http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/title {}
+01/06/2024 09:09:45 AM http://localhost:60679 "GET /session/357cb227a47aff110cbe1a80950ec553/title HTTP/1.1" 200 0
+01/06/2024 09:09:45 AM Remote response: status=200 | data={"value":"Login (AuthN)"} | headers=HTTPHeaderDict({'Content-Length': '25', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:09:45 AM Finished Request
+01/06/2024 09:09:45 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[1]"}
+01/06/2024 09:09:45 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:09:45 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"81181BB93317A2A86F0714EA39F08637_element_7"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:09:45 AM Finished Request
+01/06/2024 09:09:45 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/81181BB93317A2A86F0714EA39F08637_element_7/value {"text": "ca.2670054", "value": ["c", "a", ".", "2", "6", "7", "0", "0", "5", "4"]}
+01/06/2024 09:09:45 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/81181BB93317A2A86F0714EA39F08637_element_7/value HTTP/1.1" 200 0
+01/06/2024 09:09:45 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:09:45 AM Finished Request
+01/06/2024 09:09:45 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[2]/div[2]/div/div/form/div/div[4]/input[2]"}
+01/06/2024 09:09:45 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:09:45 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"81181BB93317A2A86F0714EA39F08637_element_9"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:09:45 AM Finished Request
+01/06/2024 09:09:45 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/81181BB93317A2A86F0714EA39F08637_element_9/value {"text": "Chauhan@8091", "value": ["C", "h", "a", "u", "h", "a", "n", "@", "8", "0", "9", "1"]}
+01/06/2024 09:09:45 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/81181BB93317A2A86F0714EA39F08637_element_9/value HTTP/1.1" 200 0
+01/06/2024 09:09:45 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:09:45 AM Finished Request
+01/06/2024 09:09:48 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/81181BB93317A2A86F0714EA39F08637_element_9/value {"text": "\ue006", "value": ["\ue006"]}
+01/06/2024 09:09:51 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/81181BB93317A2A86F0714EA39F08637_element_9/value HTTP/1.1" 200 0
+01/06/2024 09:09:51 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:09:51 AM Finished Request
+01/06/2024 09:09:51 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "css selector", "value": "[id=\"selectFacility\"]"}
+01/06/2024 09:09:51 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:09:51 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_8"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:09:51 AM Finished Request
+01/06/2024 09:09:51 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_8/click {}
+01/06/2024 09:09:51 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_8/click HTTP/1.1" 200 0
+01/06/2024 09:09:51 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:09:51 AM Finished Request
+01/06/2024 09:09:51 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_8/value {"text": "MotherHub_YKB", "value": ["M", "o", "t", "h", "e", "r", "H", "u", "b", "_", "Y", "K", "B"]}
+01/06/2024 09:09:51 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_8/value HTTP/1.1" 200 0
+01/06/2024 09:09:51 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:09:51 AM Finished Request
+01/06/2024 09:09:51 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_8/value {"text": "\ue006", "value": ["\ue006"]}
+01/06/2024 09:09:51 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_8/value HTTP/1.1" 200 0
+01/06/2024 09:09:51 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:09:51 AM Finished Request
+01/06/2024 09:10:11 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "css selector", "value": ".humberger"}
+01/06/2024 09:10:11 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:10:11 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_6"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:11 AM Finished Request
+01/06/2024 09:10:11 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_6/click {}
+01/06/2024 09:10:11 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_6/click HTTP/1.1" 200 0
+01/06/2024 09:10:11 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:11 AM Finished Request
+01/06/2024 09:10:14 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/sidebar-main/div[2]/div[1]/ul[7]/li[1]"}
+01/06/2024 09:10:14 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:10:14 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_18"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:14 AM Finished Request
+01/06/2024 09:10:14 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_18/click {}
+01/06/2024 09:10:14 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_18/click HTTP/1.1" 200 0
+01/06/2024 09:10:14 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:14 AM Finished Request
+01/06/2024 09:10:16 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/06/2024 09:10:16 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:10:16 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_20"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:16 AM Finished Request
+01/06/2024 09:10:16 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value {"text": "EGAUNNM-660876569", "value": ["E", "G", "A", "U", "N", "N", "M", "-", "6", "6", "0", "8", "7", "6", "5", "6", "9"]}
+01/06/2024 09:10:16 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value HTTP/1.1" 200 0
+01/06/2024 09:10:16 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:16 AM Finished Request
+01/06/2024 09:10:16 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value {"text": "\ue006", "value": ["\ue006"]}
+01/06/2024 09:10:16 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value HTTP/1.1" 200 0
+01/06/2024 09:10:16 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:16 AM Finished Request
+01/06/2024 09:10:17 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[2]/div/label"}
+01/06/2024 09:10:17 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:10:17 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_23"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:17 AM Finished Request
+01/06/2024 09:10:17 AM GET http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_23/text {}
+01/06/2024 09:10:18 AM http://localhost:60679 "GET /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_23/text HTTP/1.1" 200 0
+01/06/2024 09:10:18 AM Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:18 AM Finished Request
+01/06/2024 09:10:18 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/06/2024 09:10:18 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:10:18 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_20"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:18 AM Finished Request
+01/06/2024 09:10:18 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value {"text": "EGAUNNM-660876569", "value": ["E", "G", "A", "U", "N", "N", "M", "-", "6", "6", "0", "8", "7", "6", "5", "6", "9"]}
+01/06/2024 09:10:18 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value HTTP/1.1" 200 0
+01/06/2024 09:10:18 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:18 AM Finished Request
+01/06/2024 09:10:18 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value {"text": "\ue006", "value": ["\ue006"]}
+01/06/2024 09:10:18 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value HTTP/1.1" 200 0
+01/06/2024 09:10:18 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:18 AM Finished Request
+01/06/2024 09:10:19 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[2]/div/label"}
+01/06/2024 09:10:19 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:10:19 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_23"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:19 AM Finished Request
+01/06/2024 09:10:19 AM GET http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_23/text {}
+01/06/2024 09:10:19 AM http://localhost:60679 "GET /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_23/text HTTP/1.1" 200 0
+01/06/2024 09:10:19 AM Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:19 AM Finished Request
+01/06/2024 09:10:21 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/06/2024 09:10:21 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:10:21 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_20"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:21 AM Finished Request
+01/06/2024 09:10:21 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value {"text": "EGAUGLP-660862594", "value": ["E", "G", "A", "U", "G", "L", "P", "-", "6", "6", "0", "8", "6", "2", "5", "9", "4"]}
+01/06/2024 09:10:21 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value HTTP/1.1" 200 0
+01/06/2024 09:10:21 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:21 AM Finished Request
+01/06/2024 09:10:21 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value {"text": "\ue006", "value": ["\ue006"]}
+01/06/2024 09:10:21 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value HTTP/1.1" 200 0
+01/06/2024 09:10:21 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:21 AM Finished Request
+01/06/2024 09:10:22 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[2]/div/label"}
+01/06/2024 09:10:22 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:10:22 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_23"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:22 AM Finished Request
+01/06/2024 09:10:22 AM GET http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_23/text {}
+01/06/2024 09:10:22 AM http://localhost:60679 "GET /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_23/text HTTP/1.1" 200 0
+01/06/2024 09:10:22 AM Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:22 AM Finished Request
+01/06/2024 09:10:22 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/06/2024 09:10:22 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:10:22 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_20"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:22 AM Finished Request
+01/06/2024 09:10:22 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value {"text": "EGAUGLP-660862594", "value": ["E", "G", "A", "U", "G", "L", "P", "-", "6", "6", "0", "8", "6", "2", "5", "9", "4"]}
+01/06/2024 09:10:22 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value HTTP/1.1" 200 0
+01/06/2024 09:10:22 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:22 AM Finished Request
+01/06/2024 09:10:22 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value {"text": "\ue006", "value": ["\ue006"]}
+01/06/2024 09:10:22 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value HTTP/1.1" 200 0
+01/06/2024 09:10:22 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:22 AM Finished Request
+01/06/2024 09:10:23 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[2]/div/label"}
+01/06/2024 09:10:23 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:10:23 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_23"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:23 AM Finished Request
+01/06/2024 09:10:23 AM GET http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_23/text {}
+01/06/2024 09:10:23 AM http://localhost:60679 "GET /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_23/text HTTP/1.1" 200 0
+01/06/2024 09:10:23 AM Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:23 AM Finished Request
+01/06/2024 09:10:25 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/06/2024 09:10:25 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:10:25 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_20"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:25 AM Finished Request
+01/06/2024 09:10:25 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value {"text": "EGAURNG-1377355", "value": ["E", "G", "A", "U", "R", "N", "G", "-", "1", "3", "7", "7", "3", "5", "5"]}
+01/06/2024 09:10:25 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value HTTP/1.1" 200 0
+01/06/2024 09:10:25 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:25 AM Finished Request
+01/06/2024 09:10:25 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value {"text": "\ue006", "value": ["\ue006"]}
+01/06/2024 09:10:25 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value HTTP/1.1" 200 0
+01/06/2024 09:10:25 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:25 AM Finished Request
+01/06/2024 09:10:26 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[2]/div/label"}
+01/06/2024 09:10:26 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:10:26 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_23"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:26 AM Finished Request
+01/06/2024 09:10:26 AM GET http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_23/text {}
+01/06/2024 09:10:26 AM http://localhost:60679 "GET /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_23/text HTTP/1.1" 200 0
+01/06/2024 09:10:26 AM Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:26 AM Finished Request
+01/06/2024 09:10:26 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/06/2024 09:10:26 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:10:26 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_20"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:26 AM Finished Request
+01/06/2024 09:10:26 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value {"text": "EGAURNG-1377355", "value": ["E", "G", "A", "U", "R", "N", "G", "-", "1", "3", "7", "7", "3", "5", "5"]}
+01/06/2024 09:10:26 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value HTTP/1.1" 200 0
+01/06/2024 09:10:26 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:26 AM Finished Request
+01/06/2024 09:10:26 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value {"text": "\ue006", "value": ["\ue006"]}
+01/06/2024 09:10:26 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value HTTP/1.1" 200 0
+01/06/2024 09:10:26 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:26 AM Finished Request
+01/06/2024 09:10:27 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[2]/div/label"}
+01/06/2024 09:10:27 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:10:27 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_23"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:27 AM Finished Request
+01/06/2024 09:10:27 AM GET http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_23/text {}
+01/06/2024 09:10:27 AM http://localhost:60679 "GET /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_23/text HTTP/1.1" 200 0
+01/06/2024 09:10:27 AM Remote response: status=200 | data={"value":"Request timed out. Please try again"} | headers=HTTPHeaderDict({'Content-Length': '47', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:27 AM Finished Request
+01/06/2024 09:10:29 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/06/2024 09:10:29 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:10:29 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_20"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:29 AM Finished Request
+01/06/2024 09:10:29 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value {"text": "ESHLJID-1628588", "value": ["E", "S", "H", "L", "J", "I", "D", "-", "1", "6", "2", "8", "5", "8", "8"]}
+01/06/2024 09:10:30 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value HTTP/1.1" 200 0
+01/06/2024 09:10:30 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:30 AM Finished Request
+01/06/2024 09:10:30 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value {"text": "\ue006", "value": ["\ue006"]}
+01/06/2024 09:10:30 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value HTTP/1.1" 200 0
+01/06/2024 09:10:30 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:30 AM Finished Request
+01/06/2024 09:10:31 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[2]/div/label"}
+01/06/2024 09:10:31 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:10:31 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_23"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:31 AM Finished Request
+01/06/2024 09:10:31 AM GET http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_23/text {}
+01/06/2024 09:10:31 AM http://localhost:60679 "GET /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_23/text HTTP/1.1" 200 0
+01/06/2024 09:10:31 AM Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:31 AM Finished Request
+01/06/2024 09:10:31 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/06/2024 09:10:31 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:10:31 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_20"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:31 AM Finished Request
+01/06/2024 09:10:31 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value {"text": "ESHLJID-1628588", "value": ["E", "S", "H", "L", "J", "I", "D", "-", "1", "6", "2", "8", "5", "8", "8"]}
+01/06/2024 09:10:31 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value HTTP/1.1" 200 0
+01/06/2024 09:10:31 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:31 AM Finished Request
+01/06/2024 09:10:31 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value {"text": "\ue006", "value": ["\ue006"]}
+01/06/2024 09:10:31 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value HTTP/1.1" 200 0
+01/06/2024 09:10:31 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:31 AM Finished Request
+01/06/2024 09:10:32 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[2]/div/label"}
+01/06/2024 09:10:32 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:10:32 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_23"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:32 AM Finished Request
+01/06/2024 09:10:32 AM GET http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_23/text {}
+01/06/2024 09:10:32 AM http://localhost:60679 "GET /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_23/text HTTP/1.1" 200 0
+01/06/2024 09:10:32 AM Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:32 AM Finished Request
+01/06/2024 09:10:34 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/06/2024 09:10:34 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:10:34 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_20"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:34 AM Finished Request
+01/06/2024 09:10:34 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value {"text": "EROAROA-660793471", "value": ["E", "R", "O", "A", "R", "O", "A", "-", "6", "6", "0", "7", "9", "3", "4", "7", "1"]}
+01/06/2024 09:10:34 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value HTTP/1.1" 200 0
+01/06/2024 09:10:34 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:34 AM Finished Request
+01/06/2024 09:10:34 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value {"text": "\ue006", "value": ["\ue006"]}
+01/06/2024 09:10:34 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value HTTP/1.1" 200 0
+01/06/2024 09:10:34 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:34 AM Finished Request
+01/06/2024 09:10:35 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[2]/div/label"}
+01/06/2024 09:10:35 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:10:35 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_23"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:35 AM Finished Request
+01/06/2024 09:10:35 AM GET http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_23/text {}
+01/06/2024 09:10:35 AM http://localhost:60679 "GET /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_23/text HTTP/1.1" 200 0
+01/06/2024 09:10:35 AM Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:35 AM Finished Request
+01/06/2024 09:10:35 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[1]/input"}
+01/06/2024 09:10:35 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:10:35 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_20"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:35 AM Finished Request
+01/06/2024 09:10:35 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value {"text": "EROAROA-660793471", "value": ["E", "R", "O", "A", "R", "O", "A", "-", "6", "6", "0", "7", "9", "3", "4", "7", "1"]}
+01/06/2024 09:10:35 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value HTTP/1.1" 200 0
+01/06/2024 09:10:35 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:35 AM Finished Request
+01/06/2024 09:10:35 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value {"text": "\ue006", "value": ["\ue006"]}
+01/06/2024 09:10:35 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_20/value HTTP/1.1" 200 0
+01/06/2024 09:10:35 AM Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:35 AM Finished Request
+01/06/2024 09:10:36 AM POST http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element {"using": "xpath", "value": "/html/body/div[1]/div[2]/div/div/div/div/form/div[2]/div/label"}
+01/06/2024 09:10:36 AM http://localhost:60679 "POST /session/357cb227a47aff110cbe1a80950ec553/element HTTP/1.1" 200 0
+01/06/2024 09:10:36 AM Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"EC2E481AB098670A3AD51771AC727B9E_element_23"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:36 AM Finished Request
+01/06/2024 09:10:36 AM GET http://localhost:60679/session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_23/text {}
+01/06/2024 09:10:36 AM http://localhost:60679 "GET /session/357cb227a47aff110cbe1a80950ec553/element/EC2E481AB098670A3AD51771AC727B9E_element_23/text HTTP/1.1" 200 0
+01/06/2024 09:10:36 AM Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 09:10:36 AM Finished Request
+01/06/2024 09:12:18 AM Bad Request: /api/add_bag/
+01/06/2024 09:12:33 AM Bad Request: /api/add_bag/
+01/06/2024 09:13:23 AM Bad Request: /api/add_bag/
+01/06/2024 09:20:31 AM Bad Request: /api/add_bag/
+01/06/2024 09:21:14 AM Bad Request: /api/add_bag/
+01/06/2024 09:21:14 AM Bad Request: /api/add_bag/
+01/06/2024 09:21:38 AM Bad Request: /api/add_bag/
+01/06/2024 09:21:50 AM Bad Request: /api/add_bag/
+01/06/2024 09:24:37 AM Not Found: /favicon.ico
+01/06/2024 09:25:57 AM Bad Request: /api/add_bag/
+01/06/2024 09:26:13 AM Bad Request: /api/add_bag/
+01/06/2024 09:32:20 AM Bad Request: /api/add_bag/
+01/06/2024 10:14:37 AM Bad Request: /api/add_bag/
+01/06/2024 10:14:40 AM Bad Request: /api/add_bag/
+01/06/2024 10:16:48 AM Bad Request: /api/add_bag/
+01/06/2024 10:17:07 AM Bad Request: /api/add_bag/
+01/06/2024 10:17:26 AM Bad Request: /api/add_bag/
+01/06/2024 10:18:55 AM Bad Request: /api/add_bag/
+01/06/2024 10:23:16 AM Bad Request: /api/add_bag/
+01/06/2024 10:24:03 AM Bad Request: /api/add_bag/
+01/06/2024 10:24:13 AM Bad Request: /api/add_bag/
+01/06/2024 10:24:27 AM Bad Request: /api/add_bag/
+01/06/2024 10:24:37 AM Bad Request: /api/add_bag/
+01/06/2024 10:25:03 AM Bad Request: /api/add_bag/
+01/06/2024 10:25:20 AM Bad Request: /api/add_bag/
+01/06/2024 10:25:59 AM Bad Request: /api/add_bag/
+01/06/2024 10:27:24 AM Bad Request: /api/add_bag/
+01/06/2024 10:27:31 AM Bad Request: /api/add_bag/
+01/06/2024 10:27:41 AM Bad Request: /api/add_bag/
+01/06/2024 10:27:52 AM Bad Request: /api/add_bag/
+01/06/2024 10:28:03 AM Bad Request: /api/add_bag/
+01/06/2024 10:28:25 AM Bad Request: /api/add_bag/
+01/06/2024 10:28:48 AM Bad Request: /api/add_bag/
+01/06/2024 10:29:37 AM Bad Request: /api/add_bag/
+01/06/2024 10:29:48 AM Bad Request: /api/add_bag/
+01/06/2024 10:30:32 AM Bad Request: /api/add_bag/
+01/06/2024 10:30:44 AM Bad Request: /api/add_bag/
+01/06/2024 10:33:19 AM Bad Request: /api/add_bag/
+01/06/2024 10:35:06 AM Bad Request: /api/add_bag/
+01/06/2024 10:36:12 AM Bad Request: /api/add_bag/
+01/06/2024 10:37:39 AM Bad Request: /api/add_bag/
+01/06/2024 10:42:08 AM Bad Request: /api/add_bag/
+01/06/2024 10:43:16 AM Bad Request: /api/add_bag/
+01/06/2024 10:44:30 AM Bad Request: /api/add_bag/
+01/06/2024 10:44:56 AM Bad Request: /api/add_bag/
+01/06/2024 10:45:38 AM Bad Request: /api/add_bag/
+01/06/2024 10:48:03 AM Bad Request: /api/add_bag/
+01/06/2024 10:48:11 AM Bad Request: /api/add_bag/
+01/06/2024 10:52:27 AM Bad Request: /api/add_bag/
+01/06/2024 10:53:04 AM Bad Request: /api/add_bag/
+01/06/2024 10:53:12 AM Bad Request: /api/add_bag/
+01/06/2024 10:53:38 AM Bad Request: /api/add_bag/
+01/06/2024 10:53:44 AM Bad Request: /api/add_bag/
+01/06/2024 10:54:14 AM Bad Request: /api/add_bag/
+01/06/2024 10:55:52 AM Bad Request: /api/add_bag/
+01/06/2024 10:56:28 AM Bad Request: /api/add_bag/
+01/06/2024 10:56:36 AM Bad Request: /api/add_bag/
+01/06/2024 10:56:50 AM Bad Request: /api/add_bag/
+01/06/2024 10:57:35 AM Bad Request: /api/add_bag/
+01/06/2024 10:59:20 AM Bad Request: /api/add_bag/
+01/06/2024 10:59:50 AM Bad Request: /api/add_bag/
+01/06/2024 11:00:47 AM Bad Request: /api/add_bag/
+01/06/2024 11:02:19 AM Bad Request: /api/add_bag/
+01/06/2024 11:02:25 AM Bad Request: /api/add_bag/
+01/06/2024 11:02:36 AM Bad Request: /api/add_bag/
+01/06/2024 11:03:09 AM Bad Request: /api/add_bag/
+01/06/2024 11:03:15 AM Bad Request: /api/add_bag/
+01/06/2024 11:03:38 AM Bad Request: /api/add_bag/
+01/06/2024 11:03:44 AM Bad Request: /api/add_bag/
+01/06/2024 11:04:27 AM Bad Request: /api/add_bag/
+01/06/2024 11:04:29 AM Bad Request: /api/add_bag/
+01/06/2024 11:07:26 AM Bad Request: /api/add_bag/
+01/06/2024 11:07:36 AM Bad Request: /api/add_bag/
+01/06/2024 11:08:14 AM Bad Request: /api/add_bag/
+01/06/2024 11:08:26 AM Bad Request: /api/add_bag/
+01/06/2024 11:08:33 AM Bad Request: /api/add_bag/
+01/06/2024 11:08:39 AM Bad Request: /api/add_bag/
+01/06/2024 11:08:57 AM Bad Request: /api/add_bag/
+01/06/2024 11:09:10 AM Bad Request: /api/add_bag/
+01/06/2024 11:11:11 AM Bad Request: /api/add_bag/
+01/06/2024 11:13:13 AM Bad Request: /api/add_bag/
+01/06/2024 11:13:33 AM Bad Request: /api/add_bag/
+01/06/2024 11:14:07 AM Bad Request: /api/add_bag/
+01/06/2024 11:14:28 AM Bad Request: /api/add_bag/
+01/06/2024 11:15:51 AM Bad Request: /api/add_bag/
+01/06/2024 11:16:02 AM Bad Request: /api/add_bag/
+01/06/2024 11:17:41 AM Bad Request: /api/add_bag/
+01/06/2024 11:17:46 AM Bad Request: /api/add_bag/
+01/06/2024 11:17:54 AM Bad Request: /api/add_bag/
+01/06/2024 11:18:01 AM Bad Request: /api/add_bag/
+01/06/2024 11:18:15 AM Bad Request: /api/add_bag/
+01/06/2024 11:18:29 AM Bad Request: /api/add_bag/
+01/06/2024 11:18:48 AM Bad Request: /api/add_bag/
+01/06/2024 11:19:43 AM Bad Request: /api/add_bag/
+01/06/2024 11:19:55 AM Bad Request: /api/add_bag/
+01/06/2024 11:19:58 AM Bad Request: /api/add_bag/
+01/06/2024 11:20:10 AM Bad Request: /api/add_bag/
+01/06/2024 11:21:53 AM Bad Request: /api/add_bag/
+01/06/2024 11:22:01 AM Bad Request: /api/add_bag/
+01/06/2024 11:22:26 AM Bad Request: /api/add_bag/
+01/06/2024 11:22:35 AM Bad Request: /api/add_bag/
+01/06/2024 11:23:20 AM Bad Request: /api/add_bag/
+01/06/2024 11:26:26 AM Bad Request: /api/add_bag/
+01/06/2024 11:28:13 AM Bad Request: /api/add_bag/
+01/06/2024 11:29:42 AM Bad Request: /api/add_bag/
+01/06/2024 11:30:28 AM Bad Request: /api/add_bag/
+01/06/2024 11:30:48 AM Bad Request: /api/add_bag/
+01/06/2024 11:31:04 AM Bad Request: /api/add_bag/
+01/06/2024 11:32:33 AM Bad Request: /api/add_bag/
+01/06/2024 11:32:46 AM Bad Request: /api/add_bag/
+01/06/2024 11:32:58 AM Bad Request: /api/add_bag/
+01/06/2024 11:33:07 AM Bad Request: /api/add_bag/
+01/06/2024 11:33:09 AM Bad Request: /api/add_bag/
+01/06/2024 11:33:38 AM Bad Request: /api/add_bag/
+01/06/2024 11:34:09 AM Bad Request: /api/add_bag/
+01/06/2024 11:34:34 AM Bad Request: /api/add_bag/
+01/06/2024 11:34:42 AM Bad Request: /api/add_bag/
+01/06/2024 11:35:54 AM Bad Request: /api/add_bag/
+01/06/2024 11:36:04 AM Bad Request: /api/add_bag/
+01/06/2024 11:38:44 AM Bad Request: /api/add_bag/
+01/06/2024 11:38:59 AM Bad Request: /api/add_bag/
+01/06/2024 11:40:03 AM Bad Request: /api/add_bag/
+01/06/2024 11:40:15 AM Bad Request: /api/add_bag/
+01/06/2024 11:41:01 AM Bad Request: /api/add_bag/
+01/06/2024 11:41:33 AM Bad Request: /api/add_bag/
+01/06/2024 11:43:05 AM Bad Request: /api/add_bag/
+01/06/2024 11:43:33 AM Bad Request: /api/add_bag/
+01/06/2024 11:44:05 AM Bad Request: /api/add_bag/
+01/06/2024 11:45:24 AM Bad Request: /api/add_bag/
+01/06/2024 11:45:53 AM Bad Request: /api/add_bag/
+01/06/2024 11:46:21 AM Bad Request: /api/add_bag/
+01/06/2024 11:48:05 AM Bad Request: /api/add_bag/
+01/06/2024 11:48:26 AM Bad Request: /api/add_bag/
+01/06/2024 11:51:23 AM Bad Request: /api/add_bag/
+01/06/2024 11:52:43 AM Bad Request: /api/add_bag/
+01/06/2024 11:53:42 AM Bad Request: /api/add_bag/
+01/06/2024 11:53:54 AM Bad Request: /api/add_bag/
+01/06/2024 11:57:14 AM Bad Request: /api/add_bag/
+01/06/2024 11:57:24 AM Bad Request: /api/add_bag/
+01/06/2024 11:59:36 AM Bad Request: /api/add_bag/
+01/06/2024 12:00:01 PM Bad Request: /api/add_bag/
+01/06/2024 12:01:59 PM Bad Request: /api/add_bag/
+01/06/2024 12:02:04 PM Bad Request: /api/add_bag/
+01/06/2024 12:03:21 PM Bad Request: /api/add_bag/
+01/06/2024 12:03:31 PM Bad Request: /api/add_bag/
+01/06/2024 12:03:58 PM Bad Request: /api/add_bag/
+01/06/2024 12:04:08 PM Bad Request: /api/add_bag/
+01/06/2024 12:04:10 PM Bad Request: /api/add_bag/
+01/06/2024 12:04:26 PM Bad Request: /api/add_bag/
+01/06/2024 12:04:36 PM Bad Request: /api/add_bag/
+01/06/2024 12:04:58 PM Bad Request: /api/add_bag/
+01/06/2024 12:06:45 PM Bad Request: /api/add_bag/
+01/06/2024 12:13:21 PM Bad Request: /api/add_bag/
+01/06/2024 12:14:36 PM Bad Request: /api/add_bag/
+01/06/2024 12:15:51 PM Bad Request: /api/add_bag/
+01/06/2024 12:17:24 PM Bad Request: /api/add_bag/
+01/06/2024 12:20:24 PM Bad Request: /api/add_bag/
+01/06/2024 12:30:41 PM Forbidden (CSRF cookie not set.): /admin/login/
+01/06/2024 01:10:24 PM Not Found: /favicon.ico
+01/06/2024 01:10:41 PM /home/flipkart/bagtrac/bagtrac/views.py changed, reloading.
+01/06/2024 01:10:42 PM Selenium Manager binary found at: /usr/local/lib/python3.8/dist-packages/selenium/webdriver/common/linux/selenium-manager
+01/06/2024 01:10:42 PM Executing process: /usr/local/lib/python3.8/dist-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/06/2024 01:10:42 PM chromedriver not found in PATH
+01/06/2024 01:10:42 PM chrome detected at /usr/bin/google-chrome
+01/06/2024 01:10:42 PM Running command: /usr/bin/google-chrome --version
+01/06/2024 01:10:42 PM Output: "Google Chrome 115.0.5790.102 "
+01/06/2024 01:10:42 PM Detected browser: chrome 115.0.5790.102
+01/06/2024 01:10:42 PM Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+01/06/2024 01:10:42 PM Required driver: chromedriver 115.0.5790.170
+01/06/2024 01:10:42 PM chromedriver 115.0.5790.170 already in the cache
+01/06/2024 01:10:42 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver
+01/06/2024 01:10:42 PM Browser path: /usr/bin/google-chrome
+01/06/2024 01:10:42 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver
+01/06/2024 01:10:42 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver` in a child process with pid: 337648
+01/06/2024 01:10:42 PM POST http://localhost:45851/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/06/2024 01:10:42 PM Starting new HTTP connection (1): localhost:45851
+01/06/2024 01:10:42 PM http://localhost:45851 "POST /session HTTP/1.1" 200 0
+01/06/2024 01:10:42 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"115.0.5790.102","chrome":{"chromedriverVersion":"115.0.5790.170 (cc0d30c2ca5577520c8646671513241faa0bc105-refs/branch-heads/5790@{#1923})","userDataDir":"/tmp/.org.chromium.Chromium.FMP4ty"},"goog:chromeOptions":{"debuggerAddress":"localhost:33141"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"f1ba131ba77262bb43628c081c3b3e4e"}} | headers=HTTPHeaderDict({'Content-Length': '828', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 01:10:42 PM Finished Request
+01/06/2024 01:12:24 PM /home/flipkart/bagtrac/bagtrac/views.py changed, reloading.
+01/06/2024 01:12:25 PM Selenium Manager binary found at: /usr/local/lib/python3.8/dist-packages/selenium/webdriver/common/linux/selenium-manager
+01/06/2024 01:12:25 PM Executing process: /usr/local/lib/python3.8/dist-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/06/2024 01:12:25 PM chromedriver not found in PATH
+01/06/2024 01:12:25 PM chrome detected at /usr/bin/google-chrome
+01/06/2024 01:12:25 PM Running command: /usr/bin/google-chrome --version
+01/06/2024 01:12:25 PM Output: "Google Chrome 115.0.5790.102 "
+01/06/2024 01:12:25 PM Detected browser: chrome 115.0.5790.102
+01/06/2024 01:12:25 PM Required driver: chromedriver 115.0.5790.170
+01/06/2024 01:12:25 PM chromedriver 115.0.5790.170 already in the cache
+01/06/2024 01:12:25 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver
+01/06/2024 01:12:25 PM Browser path: /usr/bin/google-chrome
+01/06/2024 01:12:25 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver
+01/06/2024 01:12:25 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver` in a child process with pid: 338011
+01/06/2024 01:12:26 PM POST http://localhost:36459/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/06/2024 01:12:26 PM Starting new HTTP connection (1): localhost:36459
+01/06/2024 01:12:26 PM http://localhost:36459 "POST /session HTTP/1.1" 200 0
+01/06/2024 01:12:26 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"115.0.5790.102","chrome":{"chromedriverVersion":"115.0.5790.170 (cc0d30c2ca5577520c8646671513241faa0bc105-refs/branch-heads/5790@{#1923})","userDataDir":"/tmp/.org.chromium.Chromium.3icHQ0"},"goog:chromeOptions":{"debuggerAddress":"localhost:44703"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"2815fe0e11905e853b50d2a42d9bd7d4"}} | headers=HTTPHeaderDict({'Content-Length': '828', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 01:12:26 PM Finished Request
+01/06/2024 01:12:51 PM /home/flipkart/bagtrac/bagtrac/views.py changed, reloading.
+01/06/2024 01:12:52 PM Selenium Manager binary found at: /usr/local/lib/python3.8/dist-packages/selenium/webdriver/common/linux/selenium-manager
+01/06/2024 01:12:52 PM Executing process: /usr/local/lib/python3.8/dist-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/06/2024 01:12:52 PM chromedriver not found in PATH
+01/06/2024 01:12:52 PM chrome detected at /usr/bin/google-chrome
+01/06/2024 01:12:52 PM Running command: /usr/bin/google-chrome --version
+01/06/2024 01:12:52 PM Output: "Google Chrome 115.0.5790.102 "
+01/06/2024 01:12:52 PM Detected browser: chrome 115.0.5790.102
+01/06/2024 01:12:52 PM Required driver: chromedriver 115.0.5790.170
+01/06/2024 01:12:52 PM chromedriver 115.0.5790.170 already in the cache
+01/06/2024 01:12:52 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver
+01/06/2024 01:12:52 PM Browser path: /usr/bin/google-chrome
+01/06/2024 01:12:52 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver
+01/06/2024 01:12:52 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver` in a child process with pid: 338176
+01/06/2024 01:12:53 PM POST http://localhost:49525/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/06/2024 01:12:53 PM Starting new HTTP connection (1): localhost:49525
+01/06/2024 01:12:53 PM http://localhost:49525 "POST /session HTTP/1.1" 200 0
+01/06/2024 01:12:53 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"115.0.5790.102","chrome":{"chromedriverVersion":"115.0.5790.170 (cc0d30c2ca5577520c8646671513241faa0bc105-refs/branch-heads/5790@{#1923})","userDataDir":"/tmp/.org.chromium.Chromium.j1cZ0r"},"goog:chromeOptions":{"debuggerAddress":"localhost:45385"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"07e7e43c0ca71e61b371bc35f1b2f220"}} | headers=HTTPHeaderDict({'Content-Length': '828', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 01:12:53 PM Finished Request
+01/06/2024 01:12:55 PM Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/flipkart/bagtrac/bagtrac/views.py", line 103, in search
+    bag_grid_data = Bags.objects.filter(bag_id=result.bag_seal_id)
+AttributeError: 'Bags' object has no attribute 'bag_seal_id'
+01/06/2024 01:18:50 PM /home/flipkart/bagtrac/bagtrac/views.py changed, reloading.
+01/06/2024 01:18:51 PM Selenium Manager binary found at: /usr/local/lib/python3.8/dist-packages/selenium/webdriver/common/linux/selenium-manager
+01/06/2024 01:18:51 PM Executing process: /usr/local/lib/python3.8/dist-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/06/2024 01:18:51 PM chromedriver not found in PATH
+01/06/2024 01:18:51 PM chrome detected at /usr/bin/google-chrome
+01/06/2024 01:18:51 PM Running command: /usr/bin/google-chrome --version
+01/06/2024 01:18:51 PM Output: "Google Chrome 115.0.5790.102 "
+01/06/2024 01:18:51 PM Detected browser: chrome 115.0.5790.102
+01/06/2024 01:18:51 PM Required driver: chromedriver 115.0.5790.170
+01/06/2024 01:18:51 PM chromedriver 115.0.5790.170 already in the cache
+01/06/2024 01:18:51 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver
+01/06/2024 01:18:51 PM Browser path: /usr/bin/google-chrome
+01/06/2024 01:18:51 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver
+01/06/2024 01:18:51 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver` in a child process with pid: 338478
+01/06/2024 01:18:51 PM POST http://localhost:39367/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/06/2024 01:18:51 PM Starting new HTTP connection (1): localhost:39367
+01/06/2024 01:18:51 PM http://localhost:39367 "POST /session HTTP/1.1" 200 0
+01/06/2024 01:18:51 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"115.0.5790.102","chrome":{"chromedriverVersion":"115.0.5790.170 (cc0d30c2ca5577520c8646671513241faa0bc105-refs/branch-heads/5790@{#1923})","userDataDir":"/tmp/.org.chromium.Chromium.F8WO4h"},"goog:chromeOptions":{"debuggerAddress":"localhost:37171"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"fcc06a889587d72f0f5a87a5dac185a2"}} | headers=HTTPHeaderDict({'Content-Length': '828', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 01:18:51 PM Finished Request
+01/06/2024 01:19:06 PM /home/flipkart/bagtrac/bagtrac/views.py changed, reloading.
+01/06/2024 01:19:06 PM Selenium Manager binary found at: /usr/local/lib/python3.8/dist-packages/selenium/webdriver/common/linux/selenium-manager
+01/06/2024 01:19:06 PM Executing process: /usr/local/lib/python3.8/dist-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/06/2024 01:19:06 PM chromedriver not found in PATH
+01/06/2024 01:19:06 PM chrome detected at /usr/bin/google-chrome
+01/06/2024 01:19:06 PM Running command: /usr/bin/google-chrome --version
+01/06/2024 01:19:06 PM Output: "Google Chrome 115.0.5790.102 "
+01/06/2024 01:19:06 PM Detected browser: chrome 115.0.5790.102
+01/06/2024 01:19:06 PM Required driver: chromedriver 115.0.5790.170
+01/06/2024 01:19:06 PM chromedriver 115.0.5790.170 already in the cache
+01/06/2024 01:19:06 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver
+01/06/2024 01:19:06 PM Browser path: /usr/bin/google-chrome
+01/06/2024 01:19:06 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver
+01/06/2024 01:19:07 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver` in a child process with pid: 338633
+01/06/2024 01:19:07 PM POST http://localhost:49721/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/06/2024 01:19:07 PM Starting new HTTP connection (1): localhost:49721
+01/06/2024 01:19:07 PM http://localhost:49721 "POST /session HTTP/1.1" 200 0
+01/06/2024 01:19:07 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"115.0.5790.102","chrome":{"chromedriverVersion":"115.0.5790.170 (cc0d30c2ca5577520c8646671513241faa0bc105-refs/branch-heads/5790@{#1923})","userDataDir":"/tmp/.org.chromium.Chromium.tgug23"},"goog:chromeOptions":{"debuggerAddress":"localhost:35319"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"8978f48f21676e11c83e083d45d036b5"}} | headers=HTTPHeaderDict({'Content-Length': '828', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 01:19:07 PM Finished Request
+01/06/2024 01:19:21 PM Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/flipkart/bagtrac/bagtrac/views.py", line 126, in search
+    return render(request, 'search.html', {'search_results': bag, 'bag_id': bag_id, 'bag_grid': bag_grid, 'bag_status': bag_status})
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/template/defaulttags.py", line 193, in render
+    values = list(values)
+TypeError: 'Bags' object is not iterable
+01/06/2024 01:20:56 PM /home/flipkart/bagtrac/bagtrac/views.py changed, reloading.
+01/06/2024 01:20:57 PM Selenium Manager binary found at: /usr/local/lib/python3.8/dist-packages/selenium/webdriver/common/linux/selenium-manager
+01/06/2024 01:20:57 PM Executing process: /usr/local/lib/python3.8/dist-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/06/2024 01:20:57 PM chromedriver not found in PATH
+01/06/2024 01:20:57 PM chrome detected at /usr/bin/google-chrome
+01/06/2024 01:20:57 PM Running command: /usr/bin/google-chrome --version
+01/06/2024 01:20:57 PM Output: "Google Chrome 115.0.5790.102 "
+01/06/2024 01:20:57 PM Detected browser: chrome 115.0.5790.102
+01/06/2024 01:20:57 PM Required driver: chromedriver 115.0.5790.170
+01/06/2024 01:20:57 PM chromedriver 115.0.5790.170 already in the cache
+01/06/2024 01:20:57 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver
+01/06/2024 01:20:57 PM Browser path: /usr/bin/google-chrome
+01/06/2024 01:20:57 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver
+01/06/2024 01:20:57 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver` in a child process with pid: 338889
+01/06/2024 01:20:57 PM POST http://localhost:50699/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/06/2024 01:20:57 PM Starting new HTTP connection (1): localhost:50699
+01/06/2024 01:20:58 PM http://localhost:50699 "POST /session HTTP/1.1" 200 0
+01/06/2024 01:20:58 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"115.0.5790.102","chrome":{"chromedriverVersion":"115.0.5790.170 (cc0d30c2ca5577520c8646671513241faa0bc105-refs/branch-heads/5790@{#1923})","userDataDir":"/tmp/.org.chromium.Chromium.qg0Xsn"},"goog:chromeOptions":{"debuggerAddress":"localhost:37905"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"6ff1ce2aced8fa6d96ade8742612b3e0"}} | headers=HTTPHeaderDict({'Content-Length': '828', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 01:20:58 PM Finished Request
+01/06/2024 01:21:08 PM /home/flipkart/bagtrac/bagtrac/views.py changed, reloading.
+01/06/2024 01:21:09 PM Selenium Manager binary found at: /usr/local/lib/python3.8/dist-packages/selenium/webdriver/common/linux/selenium-manager
+01/06/2024 01:21:09 PM Executing process: /usr/local/lib/python3.8/dist-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/06/2024 01:21:09 PM chromedriver not found in PATH
+01/06/2024 01:21:09 PM chrome detected at /usr/bin/google-chrome
+01/06/2024 01:21:09 PM Running command: /usr/bin/google-chrome --version
+01/06/2024 01:21:09 PM Output: "Google Chrome 115.0.5790.102 "
+01/06/2024 01:21:09 PM Detected browser: chrome 115.0.5790.102
+01/06/2024 01:21:09 PM Required driver: chromedriver 115.0.5790.170
+01/06/2024 01:21:09 PM chromedriver 115.0.5790.170 already in the cache
+01/06/2024 01:21:09 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver
+01/06/2024 01:21:09 PM Browser path: /usr/bin/google-chrome
+01/06/2024 01:21:09 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver
+01/06/2024 01:21:09 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver` in a child process with pid: 339040
+01/06/2024 01:21:09 PM POST http://localhost:59323/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/06/2024 01:21:09 PM Starting new HTTP connection (1): localhost:59323
+01/06/2024 01:21:09 PM http://localhost:59323 "POST /session HTTP/1.1" 200 0
+01/06/2024 01:21:09 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"115.0.5790.102","chrome":{"chromedriverVersion":"115.0.5790.170 (cc0d30c2ca5577520c8646671513241faa0bc105-refs/branch-heads/5790@{#1923})","userDataDir":"/tmp/.org.chromium.Chromium.NmQdhM"},"goog:chromeOptions":{"debuggerAddress":"localhost:45031"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"9bd11b4f0535c36806553bc9f6d007c9"}} | headers=HTTPHeaderDict({'Content-Length': '828', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 01:21:09 PM Finished Request
+01/06/2024 01:21:11 PM Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/flipkart/bagtrac/bagtrac/views.py", line 95, in search
+    search_results = Data.objects.filter(bag_id=bag_id)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/db/models/query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/db/models/query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/db/models/query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/flipkart/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'bag_id' into field. Choices are: bag_seal_id, cage_id, cage_id_id, cv, id, time1, user
+01/06/2024 01:21:39 PM /home/flipkart/bagtrac/bagtrac/views.py changed, reloading.
+01/06/2024 01:21:40 PM Selenium Manager binary found at: /usr/local/lib/python3.8/dist-packages/selenium/webdriver/common/linux/selenium-manager
+01/06/2024 01:21:40 PM Executing process: /usr/local/lib/python3.8/dist-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/06/2024 01:21:40 PM chromedriver not found in PATH
+01/06/2024 01:21:40 PM chrome detected at /usr/bin/google-chrome
+01/06/2024 01:21:40 PM Running command: /usr/bin/google-chrome --version
+01/06/2024 01:21:40 PM Output: "Google Chrome 115.0.5790.102 "
+01/06/2024 01:21:40 PM Detected browser: chrome 115.0.5790.102
+01/06/2024 01:21:40 PM Required driver: chromedriver 115.0.5790.170
+01/06/2024 01:21:40 PM chromedriver 115.0.5790.170 already in the cache
+01/06/2024 01:21:40 PM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver
+01/06/2024 01:21:40 PM Browser path: /usr/bin/google-chrome
+01/06/2024 01:21:40 PM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver
+01/06/2024 01:21:40 PM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver` in a child process with pid: 339200
+01/06/2024 01:21:41 PM POST http://localhost:48847/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/06/2024 01:21:41 PM Starting new HTTP connection (1): localhost:48847
+01/06/2024 01:21:41 PM http://localhost:48847 "POST /session HTTP/1.1" 200 0
+01/06/2024 01:21:41 PM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"115.0.5790.102","chrome":{"chromedriverVersion":"115.0.5790.170 (cc0d30c2ca5577520c8646671513241faa0bc105-refs/branch-heads/5790@{#1923})","userDataDir":"/tmp/.org.chromium.Chromium.IMN1zT"},"goog:chromeOptions":{"debuggerAddress":"localhost:35919"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"ff3259b03607f56b053290d0399d23b9"}} | headers=HTTPHeaderDict({'Content-Length': '828', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/06/2024 01:21:41 PM Finished Request
+01/06/2024 05:48:35 PM Bad Request: /api/add_bag/
+01/06/2024 05:48:47 PM Bad Request: /api/add_bag/
+01/06/2024 05:49:14 PM Bad Request: /api/add_bag/
+01/06/2024 05:49:32 PM Bad Request: /api/add_bag/
+01/06/2024 05:49:40 PM Bad Request: /api/add_bag/
+01/06/2024 05:50:07 PM Bad Request: /api/add_bag/
+01/06/2024 05:55:05 PM Bad Request: /api/add_bag/
+01/06/2024 05:56:21 PM Bad Request: /api/add_bag/
+01/06/2024 05:56:50 PM Bad Request: /api/add_bag/
+01/06/2024 05:57:30 PM Bad Request: /api/add_bag/
+01/06/2024 05:57:42 PM Bad Request: /api/add_bag/
+01/06/2024 06:02:13 PM Bad Request: /api/add_bag/
+01/06/2024 06:02:19 PM Bad Request: /api/add_bag/
+01/06/2024 06:02:39 PM Bad Request: /api/add_bag/
+01/06/2024 06:05:22 PM Bad Request: /api/add_bag/
+01/06/2024 06:05:33 PM Bad Request: /api/add_bag/
+01/06/2024 06:05:47 PM Bad Request: /api/add_bag/
+01/06/2024 06:05:55 PM Bad Request: /api/add_bag/
+01/06/2024 06:11:25 PM Bad Request: /api/add_bag/
+01/06/2024 06:11:36 PM Bad Request: /api/add_bag/
+01/06/2024 06:11:50 PM Bad Request: /api/add_bag/
+01/06/2024 06:17:28 PM Bad Request: /api/add_bag/
+01/06/2024 06:25:09 PM Bad Request: /api/add_bag/
+01/06/2024 06:26:17 PM Bad Request: /api/add_bag/
+01/06/2024 06:32:44 PM Bad Request: /api/add_bag/
+01/06/2024 06:34:31 PM Bad Request: /api/add_bag/
+01/06/2024 06:35:21 PM Bad Request: /api/add_bag/
+01/06/2024 06:38:34 PM Bad Request: /api/add_bag/
+01/06/2024 06:44:03 PM Bad Request: /api/add_bag/
+01/06/2024 11:19:30 PM Not Found: /accounts/login/
+01/06/2024 11:19:30 PM Not Found: /favicon.ico
+01/06/2024 11:19:59 PM Not Found: /accounts/login/
+01/06/2024 11:20:01 PM Not Found: /accounts/login/
+01/06/2024 11:21:05 PM Not Found: /accounts/login/
+01/06/2024 11:22:57 PM Not Found: /accounts/login/
+01/06/2024 11:22:58 PM Not Found: /favicon.ico
+01/06/2024 11:23:08 PM Not Found: /accounts/login/
+01/06/2024 11:23:09 PM Not Found: /accounts/login/
+01/06/2024 11:23:21 PM Not Found: /accounts/login/
+01/06/2024 11:23:22 PM Not Found: /accounts/login/
+01/06/2024 11:23:43 PM Not Found: /accounts/login/
+01/06/2024 11:23:44 PM Not Found: /accounts/login/
+01/06/2024 11:23:45 PM Not Found: /
+01/06/2024 11:23:45 PM Not Found: /accounts/login/
+01/06/2024 11:24:00 PM Not Found: /accounts/login/
+01/06/2024 11:24:43 PM Not Found: /accounts/login/
+01/06/2024 11:24:46 PM Not Found: /accounts/login/
+01/06/2024 11:24:47 PM Not Found: /accounts/login/
+01/06/2024 11:24:50 PM Not Found: /accounts/login/
+01/06/2024 11:26:47 PM Not Found: /favicon.ico
+01/07/2024 01:59:48 AM Bad Request: /api/add_bag/
+01/07/2024 01:59:55 AM Bad Request: /api/add_bag/
+01/07/2024 02:00:14 AM Bad Request: /api/add_bag/
+01/07/2024 02:00:25 AM Bad Request: /api/add_bag/
+01/07/2024 02:02:14 AM Bad Request: /api/add_bag/
+01/07/2024 02:07:23 AM Bad Request: /api/add_bag/
+01/07/2024 02:11:05 AM Bad Request: /api/add_bag/
+01/07/2024 02:19:26 AM Bad Request: /api/add_bag/
+01/07/2024 02:19:43 AM Bad Request: /api/add_bag/
+01/07/2024 02:22:12 AM Bad Request: /api/add_bag/
+01/07/2024 02:24:02 AM Bad Request: /api/add_bag/
+01/07/2024 02:32:05 AM Bad Request: /api/add_bag/
+01/07/2024 02:32:19 AM Bad Request: /api/add_bag/
+01/07/2024 02:34:22 AM Bad Request: /api/add_bag/
+01/07/2024 02:36:41 AM Bad Request: /api/add_bag/
+01/07/2024 02:37:18 AM Bad Request: /api/add_bag/
+01/07/2024 02:40:03 AM Bad Request: /api/add_bag/
+01/07/2024 02:40:56 AM Bad Request: /api/add_bag/
+01/07/2024 02:41:25 AM Bad Request: /api/add_bag/
+01/07/2024 02:42:44 AM Bad Request: /api/add_bag/
+01/07/2024 02:42:54 AM Bad Request: /api/add_bag/
+01/07/2024 02:43:24 AM Bad Request: /api/add_bag/
+01/07/2024 02:44:35 AM Bad Request: /api/add_bag/
+01/07/2024 02:44:53 AM Bad Request: /api/add_bag/
+01/07/2024 02:47:20 AM Bad Request: /api/add_bag/
+01/07/2024 02:49:31 AM Bad Request: /api/add_bag/
+01/07/2024 02:49:40 AM Bad Request: /api/add_bag/
+01/07/2024 02:49:58 AM Bad Request: /api/add_bag/
+01/07/2024 02:50:34 AM Bad Request: /api/add_bag/
+01/07/2024 02:50:54 AM Bad Request: /api/add_bag/
+01/07/2024 02:50:54 AM Bad Request: /api/add_bag/
+01/07/2024 02:51:40 AM Bad Request: /api/add_bag/
+01/07/2024 02:53:38 AM Bad Request: /api/add_bag/
+01/07/2024 02:54:30 AM Bad Request: /api/add_bag/
+01/07/2024 02:55:02 AM Bad Request: /api/add_bag/
+01/07/2024 02:56:41 AM Bad Request: /api/add_bag/
+01/07/2024 02:57:09 AM Bad Request: /api/add_bag/
+01/07/2024 03:00:07 AM Bad Request: /api/add_bag/
+01/07/2024 03:07:00 AM Bad Request: /api/add_bag/
+01/07/2024 03:08:27 AM Bad Request: /api/add_bag/
+01/07/2024 03:09:58 AM Bad Request: /api/add_bag/
+01/07/2024 03:12:33 AM Bad Request: /api/add_bag/
+01/07/2024 03:14:39 AM Bad Request: /api/add_bag/
+01/07/2024 03:39:08 AM Bad Request: /api/add_bag/
+01/07/2024 03:54:01 AM Bad Request: /api/add_bag/
+01/07/2024 03:54:45 AM Bad Request: /api/add_bag/
+01/07/2024 03:54:54 AM Bad Request: /api/add_bag/
+01/07/2024 03:57:13 AM Bad Request: /api/add_bag/
+01/07/2024 03:57:22 AM Bad Request: /api/add_bag/
+01/07/2024 03:57:57 AM Bad Request: /api/add_bag/
+01/07/2024 04:02:17 AM Bad Request: /api/add_bag/
+01/07/2024 04:32:06 AM Bad Request: /api/add_bag/
+01/07/2024 04:36:27 AM Bad Request: /api/add_bag/
+01/07/2024 04:41:03 AM Bad Request: /api/add_bag/
+01/07/2024 04:46:17 AM Bad Request: /api/add_bag/
+01/07/2024 04:46:53 AM Bad Request: /api/add_bag/
+01/07/2024 04:48:47 AM Bad Request: /api/add_bag/
+01/07/2024 05:21:50 AM Bad Request: /api/add_bag/
+01/07/2024 07:51:46 AM Bad Request: /api/add_bag/
+01/07/2024 08:26:48 AM Bad Request: /api/add_bag/
