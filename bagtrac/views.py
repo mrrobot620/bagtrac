@@ -36,6 +36,9 @@ import re
 from .auto_put_in import hms_login , hubSystem , auto_bag_put
 from rest_framework import generics
 from .serializers import BagsSerializer
+from django.db.models import Q
+from django.utils.timezone import localtime, make_aware
+
 
 
 IST = pytz_timezone('Asia/Kolkata') 
@@ -97,7 +100,6 @@ def search(request):
     bag_status = {}
     if search_results:
         for result in search_results:
-            # Convert time from UTC to IST
             result.time1 = result.time1.astimezone(IST)
             result.time1_str = result.time1.strftime("%b. %d, %Y, %I:%M %p")
             bag_grid_data = Bags.objects.filter(bag_id=result.bag_seal_id)
@@ -119,6 +121,43 @@ def search(request):
     if not search_results and bag_id:
         return render(request, 'search.html', {'search_results': search_results, 'bag_id': bag_id, 'not_found': True})
     return render(request, 'search.html', {'search_results': search_results , 'bag_id':bag_id , "bag_grid":bag_grid , "bag_status":bag_status} )
+
+@login_required
+def new_search(request):
+    query = request.GET.get('search_query')
+    search_results = None
+    bag_grid = None
+    bag_status = None
+    if query:
+        search_results = Bags.objects.filter(
+            Q(bag_id__icontains=query) | Q(seal_id__icontains=query)
+        )
+        if search_results:
+            for result in search_results:
+                result.time1 = localtime(result.time1).strftime("%b. %d, %Y, %I:%M %p")
+                bag_status = {
+                    'Bag Created': result.bag_created,
+                    'Label Pasted': result.bag_label_generated,
+                    'Received at CV': result.recieved_at_cv,
+                    'Grid Put In': result.put_in_grid,
+                    'Grid Put Out': result.put_out_grid,
+                }
+                bag_grid = result.grid_code
+            return render(
+                request,
+                'new_search.html',
+                {
+                    'search_results': search_results,
+                    'bag_id': query,
+                    'bag_grid': bag_grid,
+                    'bag_status': bag_status,
+                },
+            )
+    if not search_results and query:
+        return render(request,'new_search.html',{'search_results': search_results, 'bag_id': query, 'not_found': True})
+    return render(request, 'new_search.html', {"search_results":search_results , 'bag_id':query , 'bag_grid':bag_grid , "bag_status":bag_status })
+                
+                
 
 @login_required
 def cage_search(request):
