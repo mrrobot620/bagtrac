@@ -498,4 +498,4 @@ class BagsCreateView(generics.CreateAPIView):
             request.data['bag_label_generated'] = True
         
         return super().create(request, *args, **kwargs)
-#Line added
+#Line added 1 bfgd
