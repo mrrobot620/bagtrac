@@ -19,8 +19,16 @@
                     </div>
                 {% endif %}
             {% endfor %}
+            {% endif %}
         </div>
-        {% endif %}
+        {% if grid_suggestion %}
+          <div class = "container mt-4">
+            <div class="alert alert-success alert-dismissible fade show d-flex align-items-center justify-content-center" role="alert">
+                <h1>{{ grid_suggestion}}</h1> 
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endif %}
+
         {% csrf_token %}
         <div class="mt-5">
             <select class="form-select" aria-label="Default select example" name="CV" id="selectCV">

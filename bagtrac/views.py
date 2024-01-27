@@ -44,6 +44,7 @@ from django.utils.timezone import localtime, make_aware
 IST = pytz_timezone('Asia/Kolkata') 
 @login_required
 def home(request):
+    grid_suggestion = None
     if request.user.is_authenticated:
         last_cv = Data.objects.filter(user=request.user).last() 
         last_cv_value = last_cv.cv if last_cv else "" 
@@ -74,6 +75,7 @@ def home(request):
                         data_instance = Data(cv=cv, bag_seal_id=bag_seal_id, cage_id=cage_instance, time1=time1, user=user.username)
                         try:
                             bag_instance = get_object_or_404(Bags, seal_id=bag_seal_id)
+                            grid_suggestion = bag_instance.grid_code
                             bag_instance.recieved_at_cv = True
                             bag_instance.save()
                         except Exception as e:
@@ -88,13 +90,12 @@ def home(request):
                 messages.error(request, f"Error in assigning bag: {e}")
             
             last_cv_value = cv
-        return render(request, 'home.html', {'last_cv_value': last_cv_value} )
+        return render(request, 'home.html', {'last_cv_value': last_cv_value , "grid_suggestion": grid_suggestion})
     else:
         return render(request, 'login.html')
 
 
-
-@login_required
+@login_required 
 def search(request):
     query = request.GET.get('search_query')
     search_results = None
@@ -344,18 +345,16 @@ def ib_search(request):
 
 @login_required
 def download_all_data(request):
-    # Fetch all data from your model
     all_data = ibbags.objects.all()
-    
     if all_data:
         response = HttpResponse(content_type='text/csv')
         response['Content-Disposition'] = 'attachment; filename="all_data.csv"'
         writer = csv.writer(response)
-        writer.writerow(['Bag ID', 'Cage ID', 'Time' , "User"])  # Adjust headers as needed
+        writer.writerow(['Bag ID', 'Cage ID', 'Time' , "User"]) 
         for result in all_data:
             result.time1 = result.time1.astimezone(IST)
             result.time1_str = result.time1.strftime("%b. %d, %Y, %I:%M %p")
-            writer.writerow([result.bag_id, result.cage_id, result.time1 , result.user])  # Adjust fields based on your model
+            writer.writerow([result.bag_id, result.cage_id, result.time1 , result.user])
         return response
     messages.error(request , F'Error No Data Available')
 
@@ -485,6 +484,4 @@ class BagsCreateView(generics.CreateAPIView):
     def create(self, request, *args, **kwargs):
         if 'bag_label_generated' not in request.data:
             request.data['bag_label_generated'] = True
-        
         return super().create(request, *args, **kwargs)
-#Line added 1 bfgd
