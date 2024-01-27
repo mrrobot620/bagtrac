@@ -10289,3 +10289,22 @@ UnboundLocalError: local variable 'grid_suggestion' referenced before assignment
 01/27/2024 05:27:46 AM http://localhost:52271 "POST /session HTTP/1.1" 200 0
 01/27/2024 05:27:46 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"115.0.5790.102","chrome":{"chromedriverVersion":"115.0.5790.170 (cc0d30c2ca5577520c8646671513241faa0bc105-refs/branch-heads/5790@{#1923})","userDataDir":"/tmp/.org.chromium.Chromium.ertDPu"},"goog:chromeOptions":{"debuggerAddress":"localhost:45381"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"ebab4d656fe8b6671faeb6bd2423a3a6"}} | headers=HTTPHeaderDict({'Content-Length': '828', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
 01/27/2024 05:27:46 AM Finished Request
+01/27/2024 05:34:47 AM /home/flipkart/bagtrac/bagtrac/models.py changed, reloading.
+01/27/2024 05:34:48 AM Selenium Manager binary found at: /usr/local/lib/python3.8/dist-packages/selenium/webdriver/common/linux/selenium-manager
+01/27/2024 05:34:48 AM Executing process: /usr/local/lib/python3.8/dist-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --output json
+01/27/2024 05:34:48 AM chromedriver not found in PATH
+01/27/2024 05:34:48 AM chrome detected at /usr/bin/google-chrome
+01/27/2024 05:34:48 AM Running command: /usr/bin/google-chrome --version
+01/27/2024 05:34:48 AM Output: "Google Chrome 115.0.5790.102 "
+01/27/2024 05:34:48 AM Detected browser: chrome 115.0.5790.102
+01/27/2024 05:34:48 AM Required driver: chromedriver 115.0.5790.170
+01/27/2024 05:34:48 AM chromedriver 115.0.5790.170 already in the cache
+01/27/2024 05:34:48 AM Driver path: /home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver
+01/27/2024 05:34:48 AM Browser path: /usr/bin/google-chrome
+01/27/2024 05:34:48 AM Using driver at: /home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver
+01/27/2024 05:34:48 AM Started executable: `/home/flipkart/.cache/selenium/chromedriver/linux64/115.0.5790.170/chromedriver` in a child process with pid: 68155
+01/27/2024 05:34:48 AM POST http://localhost:60361/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"prefs": {"profile.default_content_settings.popups": 0, "download.default_directory": "/home/administrator/cbs_bag_hold/data", "directory_upgrade": true}, "extensions": [], "binary": "/usr/bin/google-chrome", "args": ["--headless=new"]}}}}
+01/27/2024 05:34:48 AM Starting new HTTP connection (1): localhost:60361
+01/27/2024 05:34:49 AM http://localhost:60361 "POST /session HTTP/1.1" 200 0
+01/27/2024 05:34:49 AM Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"115.0.5790.102","chrome":{"chromedriverVersion":"115.0.5790.170 (cc0d30c2ca5577520c8646671513241faa0bc105-refs/branch-heads/5790@{#1923})","userDataDir":"/tmp/.org.chromium.Chromium.AxfAhL"},"goog:chromeOptions":{"debuggerAddress":"localhost:36667"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"761655d0ac3ad1bc5605b3f5e2acd461"}} | headers=HTTPHeaderDict({'Content-Length': '828', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/27/2024 05:34:49 AM Finished Request
